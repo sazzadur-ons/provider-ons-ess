@@ -1,0 +1,17 @@
+{
+    "$schema": "https://gss-cogs.github.io/family-schemas/pipelines-schema.json",
+    "family": "Participation Survey",
+    "github": "https://github.com/GSS-Cogs/family-participation-survey",
+    "jenkins": {
+        "base": "https://ci.floop.org.uk",
+        "path": [
+            "GSS_data",
+            "Participation-Survey"
+        ]
+    },
+    "sparql": "https://staging.gss-data.org.uk/sparql",
+    "pmd": "http://staging.gss-data.org.uk",
+    "pipelines": [
+        "DCMS-Participation-Survey-2021-22-annual-data-tables"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "id": "dcms-participation-survey-2021-22-annual-data-tables",
+    "title": "Participation Survey 2021-22 annual data tables",
+    "publisher": "Department for Digital, Culture, Media & Sport",
+    "description": "The results of the Participation Survey, covering the period from October 2021 to March 2022.",
+    "landingPage": "https://www.gov.uk/government/statistics/participation-survey-2021-22-annual-report",
+    "datasetNotes": [
+        "Data on landing page"
+    ],
+    "published": "2022-07-28",
+    "families": [
+        "Participation Survey"
+    ],
+    "extract": {
+        "source": "ODS",
+        "stage": "Documented"
+    },
+    "transform": {
+        "stage": [
+            "To Do"
+        ],
+        "airtable": "recDdwVz4gfcRc0bB"
+    },
+    "sizingNotes": "Simple table structure with straight forward dimensions across multiple tabs, footnotes in the notes tab",
+    "notes": ""
+}
