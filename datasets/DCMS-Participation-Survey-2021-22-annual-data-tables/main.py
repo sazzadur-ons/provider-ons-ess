@@ -127,7 +127,7 @@ for tab in tabs:
         ]
 
     tidy_sheet = ConversionSegment(tab, dimensions, observations)
-    savepreviewhtml(tidy_sheet, fname='previews/' + tab.name + " Preview.html")
+    savepreviewhtml(tidy_sheet, fname=tab.name + " Preview.html")
 
     df = tidy_sheet.topandas()
 
