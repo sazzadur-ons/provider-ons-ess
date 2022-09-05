@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[49]:
+# In[98]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[50]:
+# In[99]:
 
 
 def cell_to_string(cell):
@@ -41,14 +41,14 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-# In[51]:
+# In[100]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[52]:
+# In[101]:
 
 
 for i in scraper.distributions:
@@ -57,7 +57,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[53]:
+# In[102]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -66,7 +66,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[54]:
+# In[103]:
 
 
 tidied_sheets = []
@@ -136,15 +136,16 @@ for tab in tabs:
 df
 
 
-# In[55]:
+# In[104]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
 
-df = df.replace({'DATAMARKER' : {'x' : 'suppressed'},
-                 'Lower Estimate' : {'x' : ''},
+df = df.replace({'Lower Estimate' : {'x' : ''},
                  'Upper Estimate' : {'x' : ''},
                  'No. of Respondents' : {'x' : ''}})
+
+df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else ' ', axis = 1)               
 
 df = df.rename(columns={'DATAMARKER' : 'Marker', 'OBS' : 'Value'})
 
@@ -179,7 +180,7 @@ df = df.rename(columns= {'Response' : 'Response Breakdown'})
 df
 
 
-# In[56]:
+# In[105]:
 
 
 info = open('info.json')
@@ -191,7 +192,7 @@ info.close()
 data
 
 
-# In[57]:
+# In[106]:
 
 
 for i in df['Survey Topic'].unique().tolist():
@@ -205,10 +206,10 @@ for i in df['Survey Topic'].unique().tolist():
     catalog_metadata.to_json_file(pathify(i.replace('/', '-')) + '-catalog-metadata.json')
 
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
-        json.dump(data, outfile)
+        json.dump(data, outfile, indent=4)
 
 
-# In[58]:
+# In[107]:
 
 
 from IPython.core.display import HTML
@@ -217,4 +218,19 @@ for col in df:
         df[col] = df[col].astype('category')
         display(HTML(f"<h2>{col}</h2>"))
         display(df[col].cat.categories)
+
+
+# In[108]:
+
+
+df.to_csv('observations.csv', index=False)
+
+catalog_metadata = scraper.as_csvqb_catalog_metadata()
+catalog_metadata.to_json_file('catalog-metadata.json')
+
+
+# In[109]:
+
+
+"""1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
 
