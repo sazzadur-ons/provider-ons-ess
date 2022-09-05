@@ -199,7 +199,7 @@ for i in df['Survey Topic'].unique().tolist():
     frame = df[ df['Survey Topic'] == i ]
     frame = frame.drop(columns=['Survey Topic'])
 
-    scraper.dataset.title = i
+    scraper.dataset.title = i.replace('/', '-')
     frame.to_csv(pathify(i.replace('/', '-')) + '-observations.csv', index=False)
 
     catalog_metadata = scraper.as_csvqb_catalog_metadata()
