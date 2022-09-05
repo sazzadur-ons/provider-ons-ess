@@ -19,7 +19,69 @@
         "stage": [
             "To Do"
         ],
-        "airtable": "recDdwVz4gfcRc0bB"
+        "airtable": "recDdwVz4gfcRc0bB",
+        "columns": {
+            "Period": {
+            "type": "dimension",
+            "new": {
+                "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+                "codelist": false
+            },
+            "value": "https://reference.data.gov.uk/id/{+period}"
+            },
+            "Question": {
+                "type": "dimension"
+            },
+            "Response Breakdown": {
+                "type": "dimension"
+            },
+            "Value": {
+                "type": "observations",
+                "datatype": "double",
+                "measure": "http://gss-data.org.uk/def/measure/percentage-of-responses",
+                "unit": "http://gss-data.org.uk/def/concept/measurement-units/percent"
+            },
+            "Lower Estimate": {
+                "type" : "attribute", 
+                "new" : {
+                    "comment": "Lower and upper estimates in this table are using 95% confidence level",
+                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/percent",
+                    "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                    "literalValuesDataType": "double"        
+                }
+
+            },
+            "Upper Estimate": {
+                "type" : "attribute", 
+                "new" : {
+                    "comment": "Lower and upper estimates in this table are using 95% confidence level",
+                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/percent",
+                    "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                    "literalValuesDataType": "double"        
+                }
+
+            },
+            "No. of respondents": {
+                "type" : "attribute", 
+                "new" : {
+                    "comment": "2021/22 No. of respondents",
+                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/count",
+                    "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                    "literalValuesDataType": "integer"        
+                }
+
+            },
+            "Base": {
+                "type" : "attribute", 
+                "new" : {
+                    "comment": "Base counts are all respondents who gave a valid answer to the question",
+                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/count",
+                    "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                    "literalValuesDataType": "integer"        
+                }
+
+            }
+        }
     },
     "sizingNotes": "Simple table structure with straight forward dimensions across multiple tabs, footnotes in the notes tab",
     "notes": ""
