@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[103]:
+# In[125]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[104]:
+# In[126]:
 
 
 def cell_to_string(cell):
@@ -41,14 +41,14 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-# In[105]:
+# In[127]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[106]:
+# In[128]:
 
 
 for i in scraper.distributions:
@@ -57,7 +57,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[107]:
+# In[129]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -66,7 +66,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[108]:
+# In[130]:
 
 
 tidied_sheets = []
@@ -136,7 +136,7 @@ for tab in tabs:
 df
 
 
-# In[109]:
+# In[131]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -190,7 +190,7 @@ df = df.rename(columns= {'Response' : 'Response Breakdown'})
 df
 
 
-# In[110]:
+# In[132]:
 
 
 info = open('info.json')
@@ -202,7 +202,7 @@ info.close()
 data
 
 
-# In[111]:
+# In[133]:
 
 
 for i in df['Survey Topic'].unique().tolist():
@@ -219,7 +219,7 @@ for i in df['Survey Topic'].unique().tolist():
         json.dump(data, outfile, indent=4)
 
 
-# In[112]:
+# In[134]:
 
 
 from IPython.core.display import HTML
