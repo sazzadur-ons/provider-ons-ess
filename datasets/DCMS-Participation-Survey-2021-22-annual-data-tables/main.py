@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[72]:
+# In[103]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[73]:
+# In[104]:
 
 
 def cell_to_string(cell):
@@ -41,14 +41,14 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-# In[74]:
+# In[105]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[75]:
+# In[106]:
 
 
 for i in scraper.distributions:
@@ -57,7 +57,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[76]:
+# In[107]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -66,7 +66,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[77]:
+# In[108]:
 
 
 tidied_sheets = []
@@ -136,7 +136,7 @@ for tab in tabs:
 df
 
 
-# In[78]:
+# In[109]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -148,12 +148,6 @@ df = df.replace({'Lower Estimate' : {'x' : ''},
 df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else ' ', axis = 1)               
 
 df = df.rename(columns={'DATAMARKER' : 'Marker', 'OBS' : 'Value'})
-
-df['Response'] = df.apply(lambda x: x['Question'].split(' - ')[1] + ' - ' + x['Response'] if 'Ethnicity' in x['Question'] else x['Response'], axis = 1)
-
-df['Question'] = df.apply(lambda x: x['Question'].split(' - ')[0]if 'Ethnicity' in x['Question'] else x['Question'], axis = 1)
-
-df['Question'] = df.apply(lambda x: 'Region' if 'Region' in x['Question'] else x['Question'], axis = 1)
 
 df['Period'] = df.apply(lambda x: 'gregorian-interval/' + x['Period'].split()[1] + '-' + x['Period'].split()[0] + '-' + '01' + 'T00:00:00/P' + str(x['Period Range']) + 'M', axis = 1)
 
@@ -196,7 +190,7 @@ df = df.rename(columns= {'Response' : 'Response Breakdown'})
 df
 
 
-# In[79]:
+# In[110]:
 
 
 info = open('info.json')
@@ -208,7 +202,7 @@ info.close()
 data
 
 
-# In[80]:
+# In[111]:
 
 
 for i in df['Survey Topic'].unique().tolist():
@@ -225,7 +219,7 @@ for i in df['Survey Topic'].unique().tolist():
         json.dump(data, outfile, indent=4)
 
 
-# In[81]:
+# In[112]:
 
 
 from IPython.core.display import HTML
