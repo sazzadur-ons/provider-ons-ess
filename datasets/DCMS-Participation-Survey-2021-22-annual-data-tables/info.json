@@ -32,13 +32,13 @@
             "Question": {
                 "type": "dimension",
                 "new": {
-                  "codelist": "./codelists/eligible.csv-metadata.json"
+                  "codelist": "./codelists/question.csv-metadata.json"
                 }
             },
             "Response Breakdown": {
                 "type": "dimension",
                 "new": {
-                  "codelist": "./codelists/eligible.csv-metadata.json"
+                  "codelist": "./codelists/response-breakdown.csv-metadata.json"
                 }
             },
             "Value": {
