@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[98]:
+# In[72]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[99]:
+# In[73]:
 
 
 def cell_to_string(cell):
@@ -41,14 +41,14 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-# In[100]:
+# In[74]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[101]:
+# In[75]:
 
 
 for i in scraper.distributions:
@@ -57,7 +57,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[102]:
+# In[76]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -66,7 +66,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[103]:
+# In[77]:
 
 
 tidied_sheets = []
@@ -136,7 +136,7 @@ for tab in tabs:
 df
 
 
-# In[104]:
+# In[78]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -157,6 +157,8 @@ df['Question'] = df.apply(lambda x: 'Region' if 'Region' in x['Question'] else x
 
 df['Period'] = df.apply(lambda x: 'gregorian-interval/' + x['Period'].split()[1] + '-' + x['Period'].split()[0] + '-' + '01' + 'T00:00:00/P' + str(x['Period Range']) + 'M', axis = 1)
 
+df = df.drop(columns=['Period Range'])
+
 df['Value'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Value'], axis = 1)
 df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Lower Estimate'], axis = 1)
 df['Upper Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Upper Estimate'], axis = 1)
@@ -170,6 +172,20 @@ for col in df.columns.values.tolist():
 
 df['Response'] = df['Response'].str.replace('\[Note 4\]', '').str.strip()
 
+df = df.replace({'Question' : {'Reasons for visiting ' : 'Reasons for visiting',
+                               'Taken a holiday in England in the last 12 months ' : 'Taken a holiday in England in the last 12 months'},
+                 'Response' : {"I don’t know what is available" : "I don't know what is available" }})
+
+COLUMNS_TO_NOT_PATHIFY = ['Period', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'Value']
+
+for col in df.columns.values.tolist():
+	if col in COLUMNS_TO_NOT_PATHIFY:
+		continue
+	try:
+		df[col] = df[col].apply(pathify)
+	except Exception as err:
+		raise Exception('Failed to pathify column "{}".'.format(col)) from err
+
 df['Measure Type'] = 'percentage-of-respondents'
 df['Unit'] = 'percent'
 
@@ -180,7 +196,7 @@ df = df.rename(columns= {'Response' : 'Response Breakdown'})
 df
 
 
-# In[105]:
+# In[79]:
 
 
 info = open('info.json')
@@ -192,7 +208,7 @@ info.close()
 data
 
 
-# In[106]:
+# In[80]:
 
 
 for i in df['Survey Topic'].unique().tolist():
@@ -209,7 +225,7 @@ for i in df['Survey Topic'].unique().tolist():
         json.dump(data, outfile, indent=4)
 
 
-# In[107]:
+# In[81]:
 
 
 from IPython.core.display import HTML
@@ -218,19 +234,4 @@ for col in df:
         df[col] = df[col].astype('category')
         display(HTML(f"<h2>{col}</h2>"))
         display(df[col].cat.categories)
-
-
-# In[108]:
-
-
-df.to_csv('observations.csv', index=False)
-
-catalog_metadata = scraper.as_csvqb_catalog_metadata()
-catalog_metadata.to_json_file('catalog-metadata.json')
-
-
-# In[109]:
-
-
-"""1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
 

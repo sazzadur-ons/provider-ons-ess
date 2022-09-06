@@ -30,10 +30,16 @@
             "value": "https://reference.data.gov.uk/id/{+period}"
             },
             "Question": {
-                "type": "dimension"
+                "type": "dimension",
+                "new": {
+                  "codelist": "./codelists/question.csv-metadata.json"
+                }
             },
             "Response Breakdown": {
-                "type": "dimension"
+                "type": "dimension",
+                "new": {
+                  "codelist": "./codelists/response-breakdown.csv-metadata.json"
+                }
             },
             "Value": {
                 "type": "observations",
