@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[151]:
+# In[161]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[152]:
+# In[162]:
 
 
 def cell_to_string(cell):
@@ -41,14 +41,14 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-# In[153]:
+# In[163]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[154]:
+# In[164]:
 
 
 for i in scraper.distributions:
@@ -57,7 +57,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[155]:
+# In[165]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -66,7 +66,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[156]:
+# In[166]:
 
 
 tidied_sheets = []
@@ -136,7 +136,7 @@ for tab in tabs:
 df
 
 
-# In[157]:
+# In[167]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -145,7 +145,7 @@ df = df.replace({'Lower Estimate' : {'x' : ''},
                  'Upper Estimate' : {'x' : ''},
                  'No. of Respondents' : {'x' : ''}})
 
-df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else ' ', axis = 1)               
+df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else x['DATAMARKER'], axis = 1)               
 
 df = df.rename(columns={'DATAMARKER' : 'Marker', 'OBS' : 'Value'})
 
@@ -194,7 +194,7 @@ df = df.drop(df[(df['Question'] == 'devices-personally-owned-and-used-at-home') 
 df
 
 
-# In[158]:
+# In[168]:
 
 
 info = open('info.json')
@@ -206,7 +206,7 @@ info.close()
 data
 
 
-# In[159]:
+# In[169]:
 
 
 for i in df['Survey Topic'].unique().tolist():
@@ -223,7 +223,7 @@ for i in df['Survey Topic'].unique().tolist():
         json.dump(data, outfile, indent=4)
 
 
-# In[160]:
+# In[170]:
 
 
 from IPython.core.display import HTML
