@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[161]:
+# In[184]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[162]:
+# In[185]:
 
 
 def cell_to_string(cell):
@@ -41,14 +41,14 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-# In[163]:
+# In[186]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[164]:
+# In[187]:
 
 
 for i in scraper.distributions:
@@ -57,7 +57,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[165]:
+# In[188]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -66,7 +66,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[166]:
+# In[189]:
 
 
 tidied_sheets = []
@@ -136,7 +136,7 @@ for tab in tabs:
 df
 
 
-# In[167]:
+# In[190]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -170,7 +170,7 @@ df = df.replace({'Question' : {'Reasons for visiting ' : 'Reasons for visiting',
                                'Taken a holiday in England in the last 12 months ' : 'Taken a holiday in England in the last 12 months'},
                  'Response' : {"I don’t know what is available" : "I don't know what is available" }})
 
-COLUMNS_TO_NOT_PATHIFY = ['Period', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'Value']
+COLUMNS_TO_NOT_PATHIFY = ['Period', 'Survey Topic', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'Value']
 
 for col in df.columns.values.tolist():
 	if col in COLUMNS_TO_NOT_PATHIFY:
@@ -194,7 +194,7 @@ df = df.drop(df[(df['Question'] == 'devices-personally-owned-and-used-at-home') 
 df
 
 
-# In[168]:
+# In[191]:
 
 
 info = open('info.json')
@@ -206,7 +206,7 @@ info.close()
 data
 
 
-# In[169]:
+# In[192]:
 
 
 for i in df['Survey Topic'].unique().tolist():
@@ -217,13 +217,14 @@ for i in df['Survey Topic'].unique().tolist():
     frame.to_csv(pathify(i.replace('/', '-')) + '-observations.csv', index=False)
 
     catalog_metadata = scraper.as_csvqb_catalog_metadata()
+    catalog_metadata.title = i.replace('/', '-')
     catalog_metadata.to_json_file(pathify(i.replace('/', '-')) + '-catalog-metadata.json')
 
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 
 
-# In[170]:
+# In[193]:
 
 
 from IPython.core.display import HTML
