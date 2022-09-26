@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[144]:
+# In[158]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[145]:
+# In[159]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[146]:
+# In[160]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[147]:
+# In[161]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[148]:
+# In[162]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[149]:
+# In[163]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[150]:
+# In[164]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -173,12 +173,14 @@ df['Unit'] = 'percent'
 df['Base'] = df['Base'].astype(float).astype(int)
 df['No. of Respondents'] = df['No. of Respondents'].astype(float).astype(int)
 
+df['Marker'] = df['Marker'].apply(pathify)
+
 df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[151]:
+# In[165]:
 
 
 from IPython.core.display import HTML
@@ -189,7 +191,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[152]:
+# In[166]:
 
 
 info = open('info.json')
@@ -227,7 +229,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[153]:
+# In[167]:
 
 
 info = open('info.json')
@@ -265,7 +267,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[154]:
+# In[168]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -274,7 +276,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[155]:
+# In[169]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
