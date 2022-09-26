@@ -39,7 +39,10 @@
                 "type": "dimension"
             },
             "Response": {
-                "type": "dimension"
+                "type": "dimension",
+                "new": {
+                  "codelist": "./codelists/response.csv-metadata.json"
+                }
             },
             "Value": {
                 "type": "observations",

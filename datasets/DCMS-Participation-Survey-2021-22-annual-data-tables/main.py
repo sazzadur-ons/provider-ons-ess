@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[215]:
+# In[334]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[216]:
+# In[335]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[217]:
+# In[336]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[218]:
+# In[337]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[219]:
+# In[338]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[220]:
+# In[339]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[221]:
+# In[340]:
 
 
 import numpy as np
@@ -175,12 +175,19 @@ df['Unit'] = 'percent'
 df['Base'] = df['Base'].astype(float).astype(int)
 df['No. of Respondents'] = df['No. of Respondents'].astype(float).astype(int)
 
+df = df.replace({'Question' : {'Reasons for visiting ' : 'Reasons for Visiting', 'Reasons for visiting' : 'Reasons for Visiting',
+                               'Taken a holiday in England in the last 12 months ' : 'Taken a holiday in England in the last 12 months'}})
+
+df['Response'] = df['Response'].str.replace(r"[\"\'\’,]", "'")
+
+df['Response'] = df['Response'].apply(pathify)
+
 df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[222]:
+# In[342]:
 
 
 from IPython.core.display import HTML
@@ -191,7 +198,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[223]:
+# In[343]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -227,10 +234,15 @@ for i in sepDf['Question'].unique().tolist():
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 
+
+#sepDf.to_csv('Question-observations.csv', index=False)
+#catalog_metadata = scraper.as_csvqb_catalog_metadata()
+#catalog_metadata.to_json_file('Question-catalog-metadata.json')
+
 frame
 
 
-# In[224]:
+# In[344]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -266,10 +278,14 @@ for i in sepDf['Survey Topic'].unique().tolist():
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 
+#sepDf.to_csv('Survey-observations.csv', index=False)
+#catalog_metadata = scraper.as_csvqb_catalog_metadata()
+#catalog_metadata.to_json_file('Survey-catalog-metadata.json')
+
 frame
 
 
-# In[225]:
+# In[345]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -278,7 +294,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[226]:
+# In[346]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
