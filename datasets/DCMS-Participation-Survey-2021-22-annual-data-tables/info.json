@@ -67,7 +67,7 @@
                 }
 
             },
-            "No. of respondents": {
+            "No. of Respondents": {
                 "type" : "attribute", 
                 "new" : {
                     "comment": "2021/22 No. of respondents",
