@@ -1,5 +1,6 @@
 {
-    "id": "dcms-participation-survey-2021-22-annual-data-tables",
+    "$schema": "http://gss-cogs.github.io/family-schemas/dataset-schema-1.1.0.json",
+    "id": "participation-survey-2021-22-annual-data-tables",
     "title": "Participation Survey 2021-22 annual data tables",
     "publisher": "Department for Digital, Culture, Media & Sport",
     "description": "The results of the Participation Survey, covering the period from October 2021 to March 2022.",
@@ -20,6 +21,8 @@
             "To Do"
         ],
         "airtable": "recDdwVz4gfcRc0bB",
+        "main_issue": 1,
+        "csvcubed_uri_style": "WithoutFileExtensions",
         "columns": {
             "Period": {
             "type": "dimension",
@@ -27,19 +30,16 @@
                 "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
                 "codelist": false
             },
-            "value": "https://reference.data.gov.uk/id/{+period}"
+            "value": "http://reference.data.gov.uk/id/{+period}"
+            },
+            "Survey Topic": {
+                "type": "dimension"
             },
             "Question": {
-                "type": "dimension",
-                "new": {
-                  "codelist": "./codelists/question.csv-metadata.json"
-                }
+                "type": "dimension"
             },
-            "Response Breakdown": {
-                "type": "dimension",
-                "new": {
-                  "codelist": "./codelists/response-breakdown.csv-metadata.json"
-                }
+            "Response": {
+                "type": "dimension"
             },
             "Value": {
                 "type": "observations",
@@ -67,7 +67,7 @@
                 }
 
             },
-            "No. of Respondents": {
+            "No. of respondents": {
                 "type" : "attribute", 
                 "new" : {
                     "comment": "2021/22 No. of respondents",
@@ -86,14 +86,9 @@
                     "literalValuesDataType": "integer"        
                 }
 
-            },
-            "Marker": {
-                "type": "attribute",
-                "uri": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
-                "value": "http://gss-data.org.uk/def/concept/cogs-markers/{+marker}"
             }
         }
     },
-    "sizingNotes": "Simple table structure with straight forward dimensions across multiple tabs, footnotes in the notes tab",
-    "notes": ""
+    "sizingNotes": "",
+    "notes": "Simple table structure with straight forward dimensions across multiple tabs, footnotes in the notes tab"
 }
