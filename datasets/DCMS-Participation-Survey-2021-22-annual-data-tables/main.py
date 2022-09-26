@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[60]:
+# In[113]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[61]:
+# In[114]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[62]:
+# In[115]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[63]:
+# In[116]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[64]:
+# In[117]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[65]:
+# In[118]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[66]:
+# In[119]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -175,7 +175,7 @@ df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estim
 df
 
 
-# In[67]:
+# In[120]:
 
 
 from IPython.core.display import HTML
@@ -186,7 +186,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[68]:
+# In[121]:
 
 
 info = open('info.json')
@@ -195,26 +195,7 @@ data = json.load(info)
 
 info.close()
 
-data
-
-
-# In[69]:
-
-
-dataQuestion = data
-dataSurveyTopic = data
-
-for i in dataQuestion['transform']['columns']:
-    if dataQuestion['transform']['columns'] == 'Question':
-        dataQuestion.pop(i)
-
-for i in dataSurveyTopic['transform']['columns']:
-    if dataSurveyTopic['transform']['columns'] == 'Survey Topic':
-        dataSurveyTopic.pop(i)
-
-
-# In[70]:
-
+data['transform']['columns'].pop('Question')
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
 
@@ -243,8 +224,16 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[71]:
+# In[122]:
 
+
+info = open('info.json')
+  
+data = json.load(info)
+
+info.close()
+
+data['transform']['columns'].pop('Survey Topic')
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
 
@@ -273,7 +262,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[72]:
+# In[123]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -282,7 +271,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[73]:
+# In[124]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
