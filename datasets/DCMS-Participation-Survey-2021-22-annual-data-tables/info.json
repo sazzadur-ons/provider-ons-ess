@@ -73,7 +73,7 @@
                     "comment": "2021/22 No. of respondents",
                     "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/count",
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
-                    "literalValuesDataType": "double"        
+                    "literalValuesDataType": "integer"        
                 }
 
             },

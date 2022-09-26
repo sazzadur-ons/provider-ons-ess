@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[113]:
+# In[144]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[114]:
+# In[145]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[115]:
+# In[146]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[116]:
+# In[147]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[117]:
+# In[148]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[118]:
+# In[149]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[126]:
+# In[150]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -159,7 +159,7 @@ df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else 
 df['Upper Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Upper Estimate'], axis = 1)
 df['No. of Respondents'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['No. of Respondents'], axis = 1)
 
-ROUNDCOL = ['Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents']
+ROUNDCOL = ['Value', 'Lower Estimate', 'Upper Estimate']
 
 for col in df.columns.values.tolist():
 	if col in ROUNDCOL:
@@ -170,12 +170,15 @@ df['Response'] = df['Response'].str.replace('\[Note 4\]', '').str.strip()
 df['Measure Type'] = 'percentage-of-respondents'
 df['Unit'] = 'percent'
 
+df['Base'] = df['Base'].astype(float).astype(int)
+df['No. of Respondents'] = df['No. of Respondents'].astype(float).astype(int)
+
 df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[120]:
+# In[151]:
 
 
 from IPython.core.display import HTML
@@ -186,7 +189,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[129]:
+# In[152]:
 
 
 info = open('info.json')
@@ -224,7 +227,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[130]:
+# In[153]:
 
 
 info = open('info.json')
@@ -262,7 +265,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[123]:
+# In[154]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -271,7 +274,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[124]:
+# In[155]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
