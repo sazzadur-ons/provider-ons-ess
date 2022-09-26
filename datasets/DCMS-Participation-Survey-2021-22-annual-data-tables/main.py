@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[92]:
+# In[60]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[93]:
+# In[61]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[94]:
+# In[62]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[95]:
+# In[63]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[96]:
+# In[64]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[97]:
+# In[65]:
 
 
 tidied_sheets = []
@@ -133,15 +133,16 @@ for tab in tabs:
 df
 
 
-# In[98]:
+# In[66]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
 
-df = df.replace({'DATAMARKER' : {'x' : 'suppressed'},
-                 'Lower Estimate' : {'x' : ''},
+df = df.replace({'Lower Estimate' : {'x' : ''},
                  'Upper Estimate' : {'x' : ''},
                  'No. of Respondents' : {'x' : ''}})
+
+df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else x['DATAMARKER'], axis = 1)
 
 df = df.rename(columns={'DATAMARKER' : 'Marker', 'OBS' : 'Value'})
 
@@ -174,7 +175,7 @@ df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estim
 df
 
 
-# In[99]:
+# In[67]:
 
 
 from IPython.core.display import HTML
@@ -185,7 +186,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[100]:
+# In[68]:
 
 
 info = open('info.json')
@@ -197,7 +198,7 @@ info.close()
 data
 
 
-# In[101]:
+# In[69]:
 
 
 dataQuestion = data
@@ -212,7 +213,7 @@ for i in dataSurveyTopic['transform']['columns']:
         dataSurveyTopic.pop(i)
 
 
-# In[102]:
+# In[70]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -224,6 +225,9 @@ sepFrames = {}
 for i in sepDf['Question'].unique().tolist():
     frame = sepDf[ sepDf['Question'] == i]
     frame = frame.drop(columns=['Question'])
+
+    if 'suppressed' not in frame.values:
+        frame = frame.drop(columns=['Marker'])
 
     scraper.dataset.title = "Participation Survey by " + i.replace('/', '-')
 
@@ -239,7 +243,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[103]:
+# In[71]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -251,6 +255,9 @@ sepFrames = {}
 for i in sepDf['Survey Topic'].unique().tolist():
     frame = sepDf[ sepDf['Survey Topic'] == i ]
     frame = frame.drop(columns=['Survey Topic'])
+
+    if 'suppressed' not in frame.values:
+        frame = frame.drop(columns=['Marker'])
 
     scraper.dataset.title = "Participation Survey by " + i.replace('/', '-')
     
@@ -266,7 +273,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[104]:
+# In[72]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -275,7 +282,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[105]:
+# In[73]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
