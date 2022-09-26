@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[158]:
+# In[180]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[159]:
+# In[181]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[160]:
+# In[182]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[161]:
+# In[183]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[162]:
+# In[184]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[163]:
+# In[185]:
 
 
 tidied_sheets = []
@@ -133,8 +133,10 @@ for tab in tabs:
 df
 
 
-# In[164]:
+# In[186]:
 
+
+import numpy as np
 
 df = pd.concat(tidied_sheets).fillna('')
 
@@ -142,7 +144,7 @@ df = df.replace({'Lower Estimate' : {'x' : ''},
                  'Upper Estimate' : {'x' : ''},
                  'No. of Respondents' : {'x' : ''}})
 
-df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else x['DATAMARKER'], axis = 1)
+df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else np.nan, axis = 1)
 
 df = df.rename(columns={'DATAMARKER' : 'Marker', 'OBS' : 'Value'})
 
@@ -154,10 +156,10 @@ df['Question'] = df.apply(lambda x: 'Region' if 'Region' in x['Question'] else x
 
 df['Period'] = df.apply(lambda x: 'gregorian-interval/' + x['Period'].split()[1] + '-' + x['Period'].split()[0] + '-' + '31' + 'T00:00:00/P' + str(x['Period Range']) + 'D', axis = 1)
 
-df['Value'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Value'], axis = 1)
-df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Lower Estimate'], axis = 1)
-df['Upper Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Upper Estimate'], axis = 1)
-df['No. of Respondents'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['No. of Respondents'], axis = 1)
+df['Value'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Value'], axis = 1)
+df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Lower Estimate'], axis = 1)
+df['Upper Estimate'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Upper Estimate'], axis = 1)
+df['No. of Respondents'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['No. of Respondents'], axis = 1)
 
 ROUNDCOL = ['Value', 'Lower Estimate', 'Upper Estimate']
 
@@ -173,14 +175,12 @@ df['Unit'] = 'percent'
 df['Base'] = df['Base'].astype(float).astype(int)
 df['No. of Respondents'] = df['No. of Respondents'].astype(float).astype(int)
 
-df['Marker'] = df['Marker'].apply(pathify)
-
 df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[165]:
+# In[187]:
 
 
 from IPython.core.display import HTML
@@ -191,7 +191,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[166]:
+# In[188]:
 
 
 info = open('info.json')
@@ -229,7 +229,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[167]:
+# In[189]:
 
 
 info = open('info.json')
@@ -267,7 +267,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[168]:
+# In[190]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -276,7 +276,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[169]:
+# In[191]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
