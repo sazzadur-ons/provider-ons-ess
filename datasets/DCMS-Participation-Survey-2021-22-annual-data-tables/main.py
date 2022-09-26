@@ -186,7 +186,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[121]:
+# In[129]:
 
 
 info = open('info.json')
@@ -224,7 +224,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[122]:
+# In[130]:
 
 
 info = open('info.json')
