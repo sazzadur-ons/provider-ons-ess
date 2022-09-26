@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[180]:
+# In[215]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[181]:
+# In[216]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[182]:
+# In[217]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[183]:
+# In[218]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[184]:
+# In[219]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[185]:
+# In[220]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[186]:
+# In[221]:
 
 
 import numpy as np
@@ -180,7 +180,7 @@ df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estim
 df
 
 
-# In[187]:
+# In[222]:
 
 
 from IPython.core.display import HTML
@@ -191,16 +191,8 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[188]:
+# In[223]:
 
-
-info = open('info.json')
-  
-data = json.load(info)
-
-info.close()
-
-data['transform']['columns'].pop('Question')
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
 
@@ -212,8 +204,15 @@ for i in sepDf['Question'].unique().tolist():
     frame = sepDf[ sepDf['Question'] == i]
     frame = frame.drop(columns=['Question'])
 
+    info = open('info.json')
+
+    data = json.load(info)
+
+    data['transform']['columns'].pop('Question')
+
     if 'suppressed' not in frame.values:
         frame = frame.drop(columns=['Marker'])
+        data['transform']['columns'].pop('Marker')
 
     scraper.dataset.title = "Participation Survey by " + i.replace('/', '-')
 
@@ -223,22 +222,16 @@ for i in sepDf['Question'].unique().tolist():
     catalog_metadata.title = scraper.dataset.title
     catalog_metadata.to_json_file(pathify(i.replace('/', '-')) + '-catalog-metadata.json')
 
+    info.close()
+
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 
 frame
 
 
-# In[189]:
+# In[224]:
 
-
-info = open('info.json')
-  
-data = json.load(info)
-
-info.close()
-
-data['transform']['columns'].pop('Survey Topic')
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
 
@@ -250,8 +243,15 @@ for i in sepDf['Survey Topic'].unique().tolist():
     frame = sepDf[ sepDf['Survey Topic'] == i ]
     frame = frame.drop(columns=['Survey Topic'])
 
+    info = open('info.json')
+
+    data = json.load(info)
+
+    data['transform']['columns'].pop('Survey Topic')
+
     if 'suppressed' not in frame.values:
         frame = frame.drop(columns=['Marker'])
+        data['transform']['columns'].pop('Marker')
 
     scraper.dataset.title = "Participation Survey by " + i.replace('/', '-')
     
@@ -261,13 +261,15 @@ for i in sepDf['Survey Topic'].unique().tolist():
     catalog_metadata.title = scraper.dataset.title
     catalog_metadata.to_json_file(pathify(i.replace('/', '-')) + '-catalog-metadata.json')
 
+    info.close()
+
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
         json.dump(data, outfile, indent=4)
 
 frame
 
 
-# In[190]:
+# In[225]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -276,7 +278,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[191]:
+# In[226]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""

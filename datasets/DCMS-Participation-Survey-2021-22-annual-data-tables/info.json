@@ -55,7 +55,6 @@
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "double"        
                 }
-
             },
             "Upper Estimate": {
                 "type" : "attribute", 
@@ -65,7 +64,6 @@
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "double"        
                 }
-
             },
             "No. of Respondents": {
                 "type" : "attribute", 
@@ -75,7 +73,6 @@
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "integer"        
                 }
-
             },
             "Base": {
                 "type" : "attribute", 
@@ -85,8 +82,13 @@
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "integer"        
                 }
-
+            },
+            "Marker": {
+                "type": "attribute",
+                "uri": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+                "value": "http://gss-data.org.uk/def/concept/cogs-markers/{+marker}"
             }
+            
         }
     },
     "sizingNotes": "",
