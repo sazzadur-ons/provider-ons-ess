@@ -219,7 +219,7 @@ for i in sepDf['Question'].unique().tolist():
     catalog_metadata.to_json_file(pathify(i.replace('/', '-')) + '-catalog-metadata.json')
 
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
-        json.dump(dataQuestion, outfile, indent=4)
+        json.dump(data, outfile, indent=4)
 
 frame
 
@@ -257,7 +257,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
     catalog_metadata.to_json_file(pathify(i.replace('/', '-')) + '-catalog-metadata.json')
 
     with open(pathify(i.replace('/', '-')) + "-info.json", "w") as outfile:
-        json.dump(dataSurveyTopic, outfile, indent=4)
+        json.dump(data, outfile, indent=4)
 
 frame
 
