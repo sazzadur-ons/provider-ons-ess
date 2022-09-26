@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[119]:
+# In[126]:
 
 
 df = pd.concat(tidied_sheets).fillna('')
@@ -159,7 +159,7 @@ df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else 
 df['Upper Estimate'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['Upper Estimate'], axis = 1)
 df['No. of Respondents'] = df.apply(lambda x: 0 if 'suppressed' in x['Marker'] else x['No. of Respondents'], axis = 1)
 
-ROUNDCOL = ['Value', 'Lower Estimate', 'Upper Estimate']
+ROUNDCOL = ['Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents']
 
 for col in df.columns.values.tolist():
 	if col in ROUNDCOL:
