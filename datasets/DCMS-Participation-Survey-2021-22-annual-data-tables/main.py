@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[378]:
+# In[504]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[379]:
+# In[505]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[380]:
+# In[506]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[381]:
+# In[507]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[382]:
+# In[508]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[383]:
+# In[509]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[384]:
+# In[510]:
 
 
 import numpy as np
@@ -151,6 +151,8 @@ df = df.rename(columns={'DATAMARKER' : 'Marker', 'OBS' : 'Value'})
 df['Response'] = df.apply(lambda x: x['Question'].split(' - ')[1] + ' - ' + x['Response'] if 'Ethnicity' in x['Question'] else x['Response'], axis = 1)
 
 df['Question'] = df.apply(lambda x: x['Question'].split(' - ')[0]if 'Ethnicity' in x['Question'] else x['Question'], axis = 1)
+
+df['Region Temp'] = df['Question']
 
 df['Question'] = df.apply(lambda x: 'Region' if 'Region' in x['Question'] else x['Question'], axis = 1)
 
@@ -184,12 +186,12 @@ df['Response'] = df['Response'].apply(pathify)
 df['Question'] = df['Question'].apply(pathify)
 df['Survey Topic'] = df['Survey Topic'].apply(pathify)
 
-df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
+df = df[['Period', 'Survey Topic', 'Question', 'Region Temp', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[385]:
+# In[511]:
 
 
 from IPython.core.display import HTML
@@ -200,7 +202,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[386]:
+# In[520]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -211,7 +213,11 @@ sepFrames = {}
 
 for i in sepDf['Question'].unique().tolist():
     frame = sepDf[ sepDf['Question'] == i]
-    frame = frame.drop(columns=['Question'])
+
+    if 'region' in pathify(i):
+        frame['Response'] = frame.apply(lambda x: pathify(x['Region Temp']) + '-' + x['Response'] if 'ITL' in x['Region Temp'] else x['Response'], axis = 1)
+        
+    frame = frame.drop(columns=['Question', 'Region Temp'])
 
     info = open('info.json')
 
@@ -244,7 +250,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[387]:
+# In[513]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -255,7 +261,7 @@ sepFrames = {}
 
 for i in sepDf['Survey Topic'].unique().tolist():
     frame = sepDf[ sepDf['Survey Topic'] == i ]
-    frame = frame.drop(columns=['Survey Topic'])
+    frame = frame.drop(columns=['Survey Topic', 'Region Temp'])
 
     info = open('info.json')
 
@@ -266,6 +272,12 @@ for i in sepDf['Survey Topic'].unique().tolist():
     if 'suppressed' not in frame.values:
         frame = frame.drop(columns=['Marker'])
         data['transform']['columns'].pop('Marker')
+
+    if 'adults-use-of-the-internet-smart-devices' in pathify(i):
+        indexNames = frame[ frame['Response'] == 'none-of-these' ].index
+        frame.drop(indexNames, inplace = True)
+
+        #if this isnt fixed in the next release fix this properly
 
     scraper.dataset.title = "Participation Survey by " + i.replace('/', '-')
     
@@ -287,7 +299,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[388]:
+# In[514]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -296,7 +308,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[389]:
+# In[515]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
