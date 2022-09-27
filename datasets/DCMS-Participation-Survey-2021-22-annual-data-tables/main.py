@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[334]:
+# In[378]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[335]:
+# In[379]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[336]:
+# In[380]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[337]:
+# In[381]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[338]:
+# In[382]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[339]:
+# In[383]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[340]:
+# In[384]:
 
 
 import numpy as np
@@ -181,13 +181,15 @@ df = df.replace({'Question' : {'Reasons for visiting ' : 'Reasons for Visiting',
 df['Response'] = df['Response'].str.replace(r"[\"\'\’,]", "'")
 
 df['Response'] = df['Response'].apply(pathify)
+df['Question'] = df['Question'].apply(pathify)
+df['Survey Topic'] = df['Survey Topic'].apply(pathify)
 
 df = df[['Period', 'Survey Topic', 'Question', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[342]:
+# In[385]:
 
 
 from IPython.core.display import HTML
@@ -198,7 +200,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[343]:
+# In[386]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -242,7 +244,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[344]:
+# In[387]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -285,7 +287,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[345]:
+# In[388]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -294,7 +296,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[346]:
+# In[389]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
