@@ -33,10 +33,16 @@
             "value": "http://reference.data.gov.uk/id/{+period}"
             },
             "Survey Topic": {
-                "type": "dimension"
+                "type": "dimension",
+                "new": {
+                  "codelist": "./codelists/survey-topic.csv-metadata.json"
+                }
             },
             "Question": {
-                "type": "dimension"
+                "type": "dimension",
+                "new": {
+                  "codelist": "./codelists/question.csv-metadata.json"
+                }
             },
             "Response": {
                 "type": "dimension",
