@@ -1,390 +1,731 @@
-Label,Notation,Parent Notation,Sort Priority,Description
-1 activity,1-activity,,0,
-1-2 nights,1-2-nights,,1,
-12 months or less,12-months-or-less,,2,
-2 activities,2-activities,,3,
-2021-06-03,2021-06-03,,4,
-2021-10-07,2021-10-07,,5,
-3+ activities,3-activities,,6,
-4 hours or more,4-hours-or-more,,7,
-5 years or more,5-years-or-more,,8,
-A Wi-Fi router or internet hub (A router is a device that communicates between the internet and the devices in your home that connect to the internet),a-wi-fi-router-or-internet-hub-a-router-is-a-device-that-communicates-between-the-internet-and-the-devices-in-your-home-that-connect-to-the-internet,,9,
-A few of them,a-few-of-them,,10,
-A historic place or building,a-historic-place-or-building,,11,
-A library,a-library,,12,
-A mobile phone network provider (such as O2' EE),a-mobile-phone-network-provider-such-as-o2-ee,,13,
-A museum or gallery,a-museum-or-gallery,,14,
-Access and use public services online' including filling in forms (such as Vehicle tax' Voting registration' medical visits or prescriptions),access-and-use-public-services-online-including-filling-in-forms-such-as-vehicle-tax-voting-registration-medical-visits-or-prescriptions,,15,
-Access content using a log-in belonging to someone NOT in my household,access-content-using-a-log-in-belonging-to-someone-not-in-my-household,,16,
-Access free content,access-free-content,,17,
-Access paid content for free' using other methods,access-paid-content-for-free-using-other-methods,,18,
-Accessed online resources such as e-books' magazines or journals,accessed-online-resources-such-as-e-books-magazines-or-journals,,19,
-Accessed online services via library membership such as journals or family history sites,accessed-online-services-via-library-membership-such-as-journals-or-family-history-sites,,20,
-Accessed some other library service online (type in) *Open,accessed-some-other-library-service-online-type-in-open,,21,
-Accessing benefits,accessing-benefits,,22,
-Accompanying children,accompanying-children,,23,
-Activate pop-up blockers on my web browser,activate-pop-up-blockers-on-my-web-browser,,24,
-Agree,agree,,25,
-All of them,all-of-them,,26,
-Allow computer systems and security software to be updated when prompted,allow-computer-systems-and-security-software-to-be-updated-when-prompted,,27,
-Always,always,,28,
-Around half of them,around-half-of-them,,29,
-Art displays or exhibitions (excluding museums),art-displays-or-exhibitions-excluding-museums,,30,
-Arts,arts,,31,
-As a participant in a commercial rally,as-a-participant-in-a-commercial-rally,,32,
-As an individual or part of a social group,as-an-individual-or-part-of-a-social-group,,33,
-As part of an organised archaeological survey in a volunteer role,as-part-of-an-organised-archaeological-survey-in-a-volunteer-role,,34,
-As part of an organised group or tour,as-part-of-an-organised-group-or-tour,,35,
-At least 2 hours but less than 4 hours,at-least-2-hours-but-less-than-4-hours,,36,
-At least 2 years but less than 3 years,at-least-2-years-but-less-than-3-years,,37,
-At least 3 years but less than 4 years,at-least-3-years-but-less-than-4-years,,38,
-At least 30 minutes but less than an hour,at-least-30-minutes-but-less-than-an-hour,,39,
-At least 4 years but less than 5 years,at-least-4-years-but-less-than-5-years,,40,
-At least an hour but less than 2 hours,at-least-an-hour-but-less-than-2-hours,,41,
-At least once a week,at-least-once-a-week,,42,
-Athletics,athletics,,43,
-Attending a local event,attending-a-local-event,,44,
-Attending a local event [Note 5],attending-a-local-event-note-5,,45,
-Attending a national event,attending-a-national-event,,46,
-Attending a national event [Note 5],attending-a-national-event-note-5,,47,
-Attending an digital or online event,attending-an-digital-or-online-event,,48,
-Attending an digital or online event [Note 5],attending-an-digital-or-online-event-note-5,,49,
-Avoid suspicious links in email' websites' social media messages and pop ups,avoid-suspicious-links-in-email-websites-social-media-messages-and-pop-ups,,50,
-Back up my information or content frequently by storing a copy either in the cloud or on an external storage device,back-up-my-information-or-content-frequently-by-storing-a-copy-either-in-the-cloud-or-on-an-external-storage-device,,51,
-Because there were amenities or free facilities (for example toilets' communal space' restaurants' cafés' shops),because-there-were-amenities-or-free-facilities-for-example-toilets-communal-space-restaurants-cafes-shops,,52,
-Because you were told by a healthcare professional (for example GP or Carer) that it may help your health or result in improved outcomes,because-you-were-told-by-a-healthcare-professional-for-example-gp-or-carer-that-it-may-help-your-health-or-result-in-improved-outcomes,,53,
-Between £10 and £15,between-ps10-and-ps15,,54,
-Between £2 and £5,between-ps2-and-ps5,,55,
-Between £5 and £7.5,between-ps5-and-ps7-5,,56,
-Between £7.5 and £10,between-ps7-5-and-ps10,,57,
-Birmingham Commonwealth Games 2022,birmingham-commonwealth-games-2022,,58,
-Borrowed digital or online resources such as e-books' e-audio or e-magazines but without visiting the library,borrowed-digital-or-online-resources-such-as-e-books-e-audio-or-e-magazines-but-without-visiting-the-library,,59,
-Borrowed' browsed or returned books' newspapers' music' CDs' DVDs or audiobooks,borrowed-browsed-or-returned-books-newspapers-music-cds-dvds-or-audiobooks,,60,
-Buying age restricted products like alcohol,buying-age-restricted-products-like-alcohol,,61,
-Buying or renting a house,buying-or-renting-a-house,,62,
-By telephone,by-telephone,,63,
-Changed the password of my Wi-Fi router at least every 12 months,changed-the-password-of-my-wi-fi-router-at-least-every-12-months,,64,
-Checked information online about the library such as opening hours' available facilities or services offered,checked-information-online-about-the-library-such-as-opening-hours-available-facilities-or-services-offered,,65,
-City or large town,city-or-large-town,,66,
-Communicate with others by e-mail or other messaging apps (such as WhatsApp),communicate-with-others-by-e-mail-or-other-messaging-apps-such-as-whatsapp,,67,
-Communicate with others using video tools (such as Facetime' Teams' Skype),communicate-with-others-using-video-tools-such-as-facetime-teams-skype,,68,
-Consider the security standards of the internet provider when considering a new provider,consider-the-security-standards-of-the-internet-provider-when-considering-a-new-provider,,69,
-Consumed content,consumed-content,,70,
-Content is paid for through TV license fee (all live TV and BBC iPlayer),content-is-paid-for-through-tv-license-fee-all-live-tv-and-bbc-iplayer,,71,
-Countryside or village,countryside-or-village,,72,
-Coventry City of Culture,coventry-city-of-culture,,73,
-Create strong passwords that are not easily to guess or related to me' for example using a mix of letters' numbers and symbols,create-strong-passwords-that-are-not-easily-to-guess-or-related-to-me-for-example-using-a-mix-of-letters-numbers-and-symbols,,74,
-Created content,created-content,,75,
-Cricket,cricket,,76,
-Desktop PC,desktop-pc,,77,
-Desktop PCl,desktop-pcl,,78,
-Did something else,did-something-else,,79,
-Disagree,disagree,,80,
-Don't know,don-t-know,,81,
-Don't know [Note 5],don-t-know-note-5,,82,
-Due to COVID-19 restrictions or concerns,due-to-covid-19-restrictions-or-concerns,,83,
-Engineering,engineering,,84,
-English Heritage,english-heritage,,85,
-Every time,every-time,,86,
-Fairly comfortable,fairly-comfortable,,87,
-Fairly important,fairly-important,,88,
-Fairly strongly,fairly-strongly,,89,
-Fairly uncomfortable,fairly-uncomfortable,,90,
-Fitness band or smart wristband (such as FitBit' Jawbone Up),fitness-band-or-smart-wristband-such-as-fitbit-jawbone-up,,91,
-Following coverage on TV or radio (includes watching the event and or news about the event),following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event,,92,
-Following coverage on TV or radio (includes watching the event and or news about the event) [Note 5],following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event-note-5,,93,
-Following on social media,following-on-social-media,,94,
-Following on social media [Note 5],following-on-social-media-note-5,,95,
-Football,football,,96,
-For an event' activity or workshop,for-an-event-activity-or-workshop,,97,
-Games Console (such as an Xbox or Playstation),games-console-such-as-an-xbox-or-playstation,,98,
-Games Console (such as an Xbox or Playstation)l,games-console-such-as-an-xbox-or-playstation-l,,99,
-General interest in the subject,general-interest-in-the-subject,,100,
-General interest in the subject of the museum or collection,general-interest-in-the-subject-of-the-museum-or-collection,,101,
-Gift or passed on from family or friends,gift-or-passed-on-from-family-or-friends,,102,
-Give to a secondhand or charity shop,give-to-a-secondhand-or-charity-shop,,103,
-Given information or advice about cyber careers to someone else,given-information-or-advice-about-cyber-careers-to-someone-else,,104,
-Golf,golf,,105,
-Gymnastics,gymnastics,,106,
-Hardly ever,hardly-ever,,107,
-Help to apply for a government or council service,help-to-apply-for-a-government-or-council-service,,108,
-Help to apply for a job or setting up or growing your business,help-to-apply-for-a-job-or-setting-up-or-growing-your-business,,109,
-Her Majesty the Queen's Platinum Jubilee,her-majesty-the-queen-s-platinum-jubilee,,110,
-I am happy with my current mobile internet speed so I would NOT be willing to pay more for 5G,i-am-happy-with-my-current-mobile-internet-speed-so-i-would-not-be-willing-to-pay-more-for-5g,,111,
-I am not interested in participating in this event,i-am-not-interested-in-participating-in-this-event,,112,
-I am not interested in participating in this event [Note 5],i-am-not-interested-in-participating-in-this-event-note-5,,113,
-I can protect and secure my personal data through privacy settings,i-can-protect-and-secure-my-personal-data-through-privacy-settings,,114,
-I did not pay a one-off fee as I pay a subscription,i-did-not-pay-a-one-off-fee-as-i-pay-a-subscription,,115,
-I do none of these things,i-do-none-of-these-things,,116,
-I do not currently have a mobile subscription or data plan,i-do-not-currently-have-a-mobile-subscription-or-data-plan,,117,
-I don't have access to an online device such as a smartphone' laptop or tablet,i-don-t-have-access-to-an-online-device-such-as-a-smartphone-laptop-or-tablet,,118,
-I don't have access to the internet,i-don-t-have-access-to-the-internet,,119,
-I don't have anyone to go with,i-don-t-have-anyone-to-go-with,,120,
-I don't have time,i-don-t-have-time,,121,
-I don't know how to access these types of event online,i-don-t-know-how-to-access-these-types-of-event-online,,122,
-I don't know how to access these types of events online,i-don-t-know-how-to-access-these-types-of-events-online,,123,
-I don't know what is available,i-don-t-know-what-is-available,,124,
-I hadn't heard of it before now,i-hadn-t-heard-of-it-before-now,,125,
-I have a health problem or disability,i-have-a-health-problem-or-disability,,126,
-I have always been able to prove my identify or something about myself,i-have-always-been-able-to-prove-my-identify-or-something-about-myself,,127,
-I have heard of it but am not sure what it is,i-have-heard-of-it-but-am-not-sure-what-it-is,,128,
-I have never replaced my smartphone,i-have-never-replaced-my-smartphone,,129,
-I have not been able to access services for any other reason.,i-have-not-been-able-to-access-services-for-any-other-reason,,130,
-I have not been successful as I did not have the document in the required format,i-have-not-been-successful-as-i-did-not-have-the-document-in-the-required-format,,131,
-I have not been successful because the method is difficult to use,i-have-not-been-successful-because-the-method-is-difficult-to-use,,132,
-I have not visited any of these heritage sites in the last 12 months,i-have-not-visited-any-of-these-heritage-sites-in-the-last-12-months,,133,
-I haven't been successful because I chose not to prove my identity,i-haven-t-been-successful-because-i-chose-not-to-prove-my-identity,,134,
-I trust the person or organisation that originally published the content,i-trust-the-person-or-organisation-that-originally-published-the-content,,135,
-I trust the person or organisation that shared it with me,i-trust-the-person-or-organisation-that-shared-it-with-me,,136,
-I understand what it is and am interested in getting it in the near future,i-understand-what-it-is-and-am-interested-in-getting-it-in-the-near-future,,137,
-I understand what it is but am not interested in getting it in the near future,i-understand-what-it-is-but-am-not-interested-in-getting-it-in-the-near-future,,138,
-I would feel out of place,i-would-feel-out-of-place,,139,
-I would get 5G if it were free,i-would-get-5g-if-it-were-free,,140,
-I would never get 5G regardless of what it cost,i-would-never-get-5g-regardless-of-what-it-cost,,141,
-I would not be willing to pay any more for a 5G data plan,i-would-not-be-willing-to-pay-any-more-for-a-5g-data-plan,,142,
-I would pay more for 5G if I really thought it would benefit me,i-would-pay-more-for-5g-if-i-really-thought-it-would-benefit-me,,143,
-I'm not interested,i-m-not-interested,,144,
-Identify secure websites by looking for the padlock and https in the address bar,identify-secure-websites-by-looking-for-the-padlock-and-https-in-the-address-bar,,145,
-In person from a high street or retail park,in-person-from-a-high-street-or-retail-park,,146,
-In some other way,in-some-other-way,,147,
-It conflicts with my personal views,it-conflicts-with-my-personal-views,,148,
-It doesn't feel very  important,it-doesn-t-feel-very-important,,149,
-It has been verified as true by a fact checking organisation,it-has-been-verified-as-true-by-a-fact-checking-organisation,,150,
-It is funny or amusing,it-is-funny-or-amusing,,151,
-It is important but I don't have enough information to choose between providers based on their security standards,it-is-important-but-i-don-t-have-enough-information-to-choose-between-providers-based-on-their-security-standards,,152,
-It is interesting,it-is-interesting,,153,
-It is well-researched,it-is-well-researched,,154,
-It may be important but I don't have enough information about what happens when security standards are not high enough,it-may-be-important-but-i-don-t-have-enough-information-about-what-happens-when-security-standards-are-not-high-enough,,155,
-It reflects my personal views,it-reflects-my-personal-views,,156,
-It was in the area,it-was-in-the-area,,157,
-It was low cost or free,it-was-low-cost-or-free,,158,
-It was recommended (for example by a friend or guide book),it-was-recommended-for-example-by-a-friend-or-guide-book,,159,
-It was recommended (for example by a friend' website or guidebook),it-was-recommended-for-example-by-a-friend-website-or-guidebook,,160,
-Joined video calls with family' friends (for example Microsoft Teams' Zoom' FaceTime),joined-video-calls-with-family-friends-for-example-microsoft-teams-zoom-facetime,,161,
-Keep as a spare,keep-as-a-spare,,162,
-Laptop computer,laptop-computer,,163,
-Laptop computerl,laptop-computerl,,164,
-Less often than once a month but at least 3 or 4 times a year,less-often-than-once-a-month-but-at-least-3-or-4-times-a-year,,165,
-Less often than once a week but at least once a month,less-often-than-once-a-week-but-at-least-once-a-month,,166,
-Less than 30 minutes,less-than-30-minutes,,167,
-Listened to a podcast,listened-to-a-podcast,,168,
-Listened to an audiobook,listened-to-an-audiobook,,169,
-Listened to downloaded music,listened-to-downloaded-music,,170,
-Listened to live radio online through a computer' laptop' tablet or phone,listened-to-live-radio-online-through-a-computer-laptop-tablet-or-phone,,171,
-Listened to streamed music (for example' through iTunes' Spotify),listened-to-streamed-music-for-example-through-itunes-spotify,,172,
-Live arts event including theatre' visual arts or literature,live-arts-event-including-theatre-visual-arts-or-literature,,173,
-Live music or dance event' watched as it was happening,live-music-or-dance-event-watched-as-it-was-happening,,174,
-Looked for information or advice on cyber careers (such as security engineer' security architect or security analyst),looked-for-information-or-advice-on-cyber-careers-such-as-security-engineer-security-architect-or-security-analyst,,175,
-Maths,maths,,176,
-Monitor privacy settings on my social media and other accounts to improve security,monitor-privacy-settings-on-my-social-media-and-other-accounts-to-improve-security,,177,
-More than 10,more-than-10,,178,
-More than 12 months but less than 2 years,more-than-12-months-but-less-than-2-years,,179,
-More than £15,more-than-ps15,,180,
-Most of the time,most-of-the-time,,181,
-Most of them,most-of-them,,182,
-Mountains or hills,mountains-or-hills,,183,
-Music performances,music-performances,,184,
-My online activity can be used by others both now and in the future,my-online-activity-can-be-used-by-others-both-now-and-in-the-future,,185,
-My online activity produces a permanent record,my-online-activity-produces-a-permanent-record,,186,
-National Trust,national-trust,,187,
-Neither agree or disagree,neither-agree-or-disagree,,188,
-Neither satisfied nor dissatisfied,neither-satisfied-nor-dissatisfied,,189,
-Neither strongly or not strongly,neither-strongly-or-not-strongly,,190,
-Never,never,,191,
-No,no,,192,
-No activities,no-activities,,193,
-No particular reason,no-particular-reason,,194,
-No reason in particular,no-reason-in-particular,,195,
-No' I prefer to upskill myself,no-i-prefer-to-upskill-myself,,196,
-No' not at all,no-not-at-all,,197,
-None of the above,none-of-the-above,,198,
-None of them,none-of-them,,199,
-None of these,none-of-these,,200,
-Not at all important,not-at-all-important,,201,
-Not at all strongly,not-at-all-strongly,,202,
-Not very important,not-very-important,,203,
-Not very often,not-very-often,,204,
-Not very strongly,not-very-strongly,,205,
-Once in the last 12 months,once-in-the-last-12-months,,206,
-Online marketplace (such as eBay' Facebook),online-marketplace-such-as-ebay-facebook,,207,
-Online shop (such as Amazon),online-shop-such-as-amazon,,208,
-Opening a bank account,opening-a-bank-account,,209,
-Other,other,,210,
-Other art events or festivals,other-art-events-or-festivals,,211,
-Others that I don't know can capture and use the data I post online,others-that-i-don-t-know-can-capture-and-use-the-data-i-post-online,,212,
-Part of a metal-detecting club,part-of-a-metal-detecting-club,,213,
-Pass onto family or friend,pass-onto-family-or-friend,,214,
-Pay a monthly or annual subscription,pay-a-monthly-or-annual-subscription,,215,
-Pay a one-time fee,pay-a-one-time-fee,,216,
-Post content such as messages' photographs or videos on social media (such as Facebook' Instagram' Snapchat),post-content-such-as-messages-photographs-or-videos-on-social-media-such-as-facebook-instagram-snapchat,,217,
-Pre-recorded arts event including theatre' visual arts or literature,pre-recorded-arts-event-including-theatre-visual-arts-or-literature,,218,
-Pre-recorded music or dance event,pre-recorded-music-or-dance-event,,219,
-Provided personal information such as my passport number online as identification,provided-personal-information-such-as-my-passport-number-online-as-identification,,220,
-Quite often,quite-often,,221,
-Read an e-book or e-magazine (for example' on a Kindle),read-an-e-book-or-e-magazine-for-example-on-a-kindle,,222,
-Recognise what information or content may' or may not' be trustworthy on websites or apps,recognise-what-information-or-content-may-or-may-not-be-trustworthy-on-websites-or-apps,,223,
-Recycle (such as using a local E-waste recycling centre),recycle-such-as-using-a-local-e-waste-recycling-centre,,224,
-Reserved or renewed books or paid a fine,reserved-or-renewed-books-or-paid-a-fine,,225,
-Respond to legitimate requests for authentication for my online accounts or email,respond-to-legitimate-requests-for-authentication-for-my-online-accounts-or-email,,226,
-Return to the company or producer to be recycled,return-to-the-company-or-producer-to-be-recycled,,227,
-Rugby,rugby,,228,
-Rural coastline or coastal village,rural-coastline-or-coastal-village,,229,
-Save passwords in my browser,save-passwords-in-my-browser,,230,
-Science,science,,231,
-Searched online catalogues or dictionaries or made an enquiry,searched-online-catalogues-or-dictionaries-or-made-an-enquiry,,232,
-Second hand or charity shop,second-hand-or-charity-shop,,233,
-Sell at a secondhand shop,sell-at-a-secondhand-shop,,234,
-Sell online (such as eBay' Facebook' Music Magpie),sell-online-such-as-ebay-facebook-music-magpie,,235,
-Set automatic updates for my computer operating system and security software,set-automatic-updates-for-my-computer-operating-system-and-security-software,,236,
-Shared a photo of your documents (such as a passport or qualification),shared-a-photo-of-your-documents-such-as-a-passport-or-qualification,,237,
-Showed documents to someone through a webcam (for example' Zoom' MS Teams),showed-documents-to-someone-through-a-webcam-for-example-zoom-ms-teams,,238,
-Smart TV,smart-tv,,239,
-Smart TVl,smart-tvl,,240,
-Smart energy device (smart meter' bulb or plug) or thermostat,smart-energy-device-smart-meter-bulb-or-plug-or-thermostat,,241,
-Smart home security (such as internet-connected or smartphone controlled security' smart door lock),smart-home-security-such-as-internet-connected-or-smartphone-controlled-security-smart-door-lock,,242,
-Smart kitchen appliance (such as a smart fridge),smart-kitchen-appliance-such-as-a-smart-fridge,,243,
-Smart toy or baby monitor for children,smart-toy-or-baby-monitor-for-children,,244,
-Smartphone,smartphone,,245,
-Smartphonel,smartphonel,,246,
-Smartwatch (such as Apple Watch' Samsung Galaxy Gear),smartwatch-such-as-apple-watch-samsung-galaxy-gear,,247,
-Snooker,snooker,,248,
-Software should be used to prevent viruses,software-should-be-used-to-prevent-viruses,,249,
-Some of the time,some-of-the-time,,250,
-Some other form of help or training (type in) *Open,some-other-form-of-help-or-training-type-in-open,,251,
-Some other heritage site,some-other-heritage-site,,252,
-Some other heritage site or historic place (Please type in),some-other-heritage-site-or-historic-place-please-type-in,,253,
-Some other reason,some-other-reason,,254,
-Some other reason (type in),some-other-reason-type-in,,255,
-Some other smart device for the home,some-other-smart-device-for-the-home,,256,
-Some other type of sport,some-other-type-of-sport,,257,
-Sometimes,sometimes,,258,
-Somewhat dissatisfied,somewhat-dissatisfied,,259,
-Somewhat satisfied,somewhat-satisfied,,260,
-Somewhere else,somewhere-else,,261,
-Sought information related to your or someone else's health,sought-information-related-to-your-or-someone-else-s-health,,262,
-Starting a new job,starting-a-new-job,,263,
-Store information online and access content from a different device (such as using the cloud),store-information-online-and-access-content-from-a-different-device-such-as-using-the-cloud,,264,
-Store it somewhere (not as a spare),store-it-somewhere-not-as-a-spare,,265,
-Strongly agree,strongly-agree,,266,
-Strongly disagree,strongly-disagree,,267,
-Swimming,swimming,,268,
-Tablet,tablet,,269,
-Tabletl,tabletl,,270,
-Taken part in a online security training course,taken-part-in-a-online-security-training-course,,271,
-Taking part in a professional capacity,taking-part-in-a-professional-capacity,,272,
-Taking part in a professional capacity [Note 5],taking-part-in-a-professional-capacity-note-5,,273,
-Taking part in a voluntary capacity,taking-part-in-a-voluntary-capacity,,274,
-Taking part in a voluntary capacity [Note 5],taking-part-in-a-voluntary-capacity-note-5,,275,
-Taking part in some other way,taking-part-in-some-other-way,,276,
-Taking part in some other way [Note 5],taking-part-in-some-other-way-note-5,,277,
-Technology,technology,,278,
-Tennis,tennis,,279,
-The opening hours are inconvenient,the-opening-hours-are-inconvenient,,280,
-Theatrical or dance performances,theatrical-or-dance-performances,,281,
-There were amenities  or free facilities such as toilets' communal space' restaurants' cafés' shops,there-were-amenities-or-free-facilities-such-as-toilets-communal-space-restaurants-cafes-shops,,282,
-They are difficult to get to,they-are-difficult-to-get-to,,283,
-They are too expensive,they-are-too-expensive,,284,
-Through YouTube,through-youtube,,285,
-Through a library website,through-a-library-website,,286,
-Through social media,through-social-media,,287,
-Throw it away,throw-it-away,,288,
-To attend a live performance,to-attend-a-live-performance,,289,
-To attend art exhibitions,to-attend-art-exhibitions,,290,
-To be the Supreme Governor of the Church of England,to-be-the-supreme-governor-of-the-church-of-england,,291,
-To participate in dance' music or other creative arts activities,to-participate-in-dance-music-or-other-creative-arts-activities,,292,
-To promote the UK abroad,to-promote-the-uk-abroad,,293,
-To provide a sense of continuity and act as a focus for national identity' unity and pride,to-provide-a-sense-of-continuity-and-act-as-a-focus-for-national-identity-unity-and-pride,,294,
-To recognise and support the armed forces,to-recognise-and-support-the-armed-forces,,295,
-To recognise exceptional achievement by issuing honours (such as MBEs' OBEs),to-recognise-exceptional-achievement-by-issuing-honours-such-as-mbes-obes,,296,
-To see a specific exhibition or display,to-see-a-specific-exhibition-or-display,,297,
-To spend time with family or friends,to-spend-time-with-family-or-friends,,298,
-To support and encourage public service and charitable sectors,to-support-and-encourage-public-service-and-charitable-sectors,,299,
-To undertake a constitutional role as Head of State (such as opening each new session of Parliament),to-undertake-a-constitutional-role-as-head-of-state-such-as-opening-each-new-session-of-parliament,,300,
-To visit heritage sites,to-visit-heritage-sites,,301,
-To visit museums,to-visit-museums,,302,
-Took a child to an event,took-a-child-to-an-event,,303,
-Took part in an event (for example a reading group' film screening or author visit),took-part-in-an-event-for-example-a-reading-group-film-screening-or-author-visit,,304,
-Total,total,,305,
-Trade in for another device,trade-in-for-another-device,,306,
-Traditional coastal or seaside town,traditional-coastal-or-seaside-town,,307,
-Training or help to improve your digital or online skills,training-or-help-to-improve-your-digital-or-online-skills,,308,
-Travelling,travelling,,309,
-Twice in the last 12 months,twice-in-the-last-12-months,,310,
-UNBOXED: Creativity in the UK,unboxed-creativity-in-the-uk,,311,
-UNESCO site,unesco-site,,312,
-Up to £2,up-to-ps2,,313,
-Upgraded the security of someone else's' devices (such as a friend or relative),upgraded-the-security-of-someone-else-s-devices-such-as-a-friend-or-relative,,314,
-Upgraded the security of your own devices,upgraded-the-security-of-your-own-devices,,315,
-Uploaded a document (qualification' identification document) to a digital or online platform,uploaded-a-document-qualification-identification-document-to-a-digital-or-online-platform,,316,
-Use different passwords for my online accounts and email,use-different-passwords-for-my-online-accounts-and-email,,317,
-Use dual factor authentication to access my accounts or websites through a code sent to my smartphone or other device,use-dual-factor-authentication-to-access-my-accounts-or-websites-through-a-code-sent-to-my-smartphone-or-other-device,,318,
-Use online banking and online transactions,use-online-banking-and-online-transactions,,319,
-Use online tutorials' web chat' FAQs and forums to improve my skills in using the internet and digital Apps or  products or services,use-online-tutorials-web-chat-faqs-and-forums-to-improve-my-skills-in-using-the-internet-and-digital-apps-or-products-or-services,,320,
-Use search engines to find the information I'm looking for (such as searching for news using a browser such as Chrome' Internet Explorer or Safari),use-search-engines-to-find-the-information-i-m-looking-for-such-as-searching-for-news-using-a-browser-such-as-chrome-internet-explorer-or-safari,,321,
-Used free Wi-Fi' computer or printing facilities,used-free-wi-fi-computer-or-printing-facilities,,322,
-Used the space to study or work,used-the-space-to-study-or-work,,323,
-Using a library app,using-a-library-app,,324,
-Verified my identity online in some other way,verified-my-identity-online-in-some-other-way,,325,
-Very comfortable,very-comfortable,,326,
-Very dissatisfied,very-dissatisfied,,327,
-Very important,very-important,,328,
-Very often,very-often,,329,
-Very rarely,very-rarely,,330,
-Very satisfied,very-satisfied,,331,
-Very strongly,very-strongly,,332,
-Very uncomfortable,very-uncomfortable,,333,
-Viewed or participated in an online event or activity organised by the library,viewed-or-participated-in-an-online-event-or-activity-organised-by-the-library,,334,
-Viruses can damage my computer security,viruses-can-damage-my-computer-security,,335,
-Visited the library café or met up with someone,visited-the-library-cafe-or-met-up-with-someone,,336,
-Voice-activated personal assistant or smart speaker device (such as Amazon Echo' Alexa' Google Home),voice-activated-personal-assistant-or-smart-speaker-device-such-as-amazon-echo-alexa-google-home,,337,
-Watched TV at the time it was broadcast,watched-tv-at-the-time-it-was-broadcast,,338,
-Watched TV shows or films on-demand for regular TV channels (for example BBC iPlayer' ITV hub),watched-tv-shows-or-films-on-demand-for-regular-tv-channels-for-example-bbc-iplayer-itv-hub,,339,
-Watched TV shows or films using a streaming service (for example Netflix or Amazon Prime),watched-tv-shows-or-films-using-a-streaming-service-for-example-netflix-or-amazon-prime,,340,
-Yes,yes,,341,
-Yes - Arts,yes-arts,,342,
-Yes - Engineering,yes-engineering,,343,
-Yes - Maths,yes-maths,,344,
-Yes - Science,yes-science,,345,
-Yes - Technology,yes-technology,,346,
-Yes and I would be willing to pay for it,yes-and-i-would-be-willing-to-pay-for-it,,347,
-Yes' but only if I didn't have to pay for it,yes-but-only-if-i-didn-t-have-to-pay-for-it,,348,
-You were told by a healthcare professional (GP or Carer) that it may help your health or result in improved outcomes,you-were-told-by-a-healthcare-professional-gp-or-carer-that-it-may-help-your-health-or-result-in-improved-outcomes,,349,
-a cinema screening of a film or movie,a-cinema-screening-of-a-film-or-movie,,350,
-a city or town with celebrated historic nature,a-city-or-town-with-celebrated-historic-nature,,351,
-a comedy event,a-comedy-event,,352,
-a craft exhibition (not a crafts market; crafts include for example textiles' woodworking),a-craft-exhibition-not-a-crafts-market-crafts-include-for-example-textiles-woodworking,,353,
-a fashion show,a-fashion-show,,354,
-a festival and or carnival (music' food' culture),a-festival-and-or-carnival-music-food-culture,,355,
-a historic building open to the public (non-religious),a-historic-building-open-to-the-public-non-religious,,356,
-a historic landscape or habitat (such as coastline' countryside),a-historic-landscape-or-habitat-such-as-coastline-countryside,,357,
-a historic place of worship attended as a visitor (not to worship),a-historic-place-of-worship-attended-as-a-visitor-not-to-worship,,358,
-a live dance event,a-live-dance-event,,359,
-a live music event,a-live-music-event,,360,
-a park or garden open to the public with historic or artistic features,a-park-or-garden-open-to-the-public-with-historic-or-artistic-features,,361,
-a place connected with industrial history (such as an old factory' mine or railway),a-place-connected-with-industrial-history-such-as-an-old-factory-mine-or-railway,,362,
-a play' drama' musical' Pantomime' Ballet' Opera,a-play-drama-musical-pantomime-ballet-opera,,363,
-a site connected with maritime or underwater heritage (such as shipwrecks),a-site-connected-with-maritime-or-underwater-heritage-such-as-shipwrecks,,364,
-a site connected with sports heritage NOT visited for the purposes of watching sport (such as Wimbledon or Wembley stadium),a-site-connected-with-sports-heritage-not-visited-for-the-purposes-of-watching-sport-such-as-wimbledon-or-wembley-stadium,,365,
-a street art event,a-street-art-event,,366,
-an ancient monument or archaeological site (such as a castle' fort' burial site),an-ancient-monument-or-archaeological-site-such-as-a-castle-fort-burial-site,,367,
-an event connected with books' reading' or writing,an-event-connected-with-books-reading-or-writing,,368,
-an exhibition of art' photography or sculptures,an-exhibition-of-art-photography-or-sculptures,,369,
-choreographed or performed a drama or dance routine,choreographed-or-performed-a-drama-or-dance-routine,,370,
-crafts (textile' ceramic' sculpting' carving' woodwork),crafts-textile-ceramic-sculpting-carving-woodwork,,371,
-designed or programmed video games including on a smartphone or tablet,designed-or-programmed-video-games-including-on-a-smartphone-or-tablet,,372,
-engaged with text' image' audio' video' or animation' games' or podcast content from heritage sites in England,engaged-with-text-image-audio-video-or-animation-games-or-podcast-content-from-heritage-sites-in-england,,373,
-engaged with text' image' audio' video' or animation' games' or podcast content from museums in England,engaged-with-text-image-audio-video-or-animation-games-or-podcast-content-from-museums-in-england,,374,
-made films or videos as a hobby including original animations,made-films-or-videos-as-a-hobby-including-original-animations,,375,
-other arts' crafts' or creative activities at home,other-arts-crafts-or-creative-activities-at-home,,376,
-painting' drawing' printmaking' calligraphy,painting-drawing-printmaking-calligraphy,,377,
-photography as a hobby,photography-as-a-hobby,,378,
-played video games including on a smartphone or tablet,played-video-games-including-on-a-smartphone-or-tablet,,379,
-read books or magazines,read-books-or-magazines,,380,
-researched items from a museum or gallery collection in England online,researched-items-from-a-museum-or-gallery-collection-in-england-online,,381,
-researched your local history online,researched-your-local-history-online,,382,
-some other cultural event in England,some-other-cultural-event-in-england,,383,
-taken a virtual tour of a museum or gallery in England,taken-a-virtual-tour-of-a-museum-or-gallery-in-england,,384,
-taken a virtual walking tour of a historic town or city' heritage site' castle or monument in England (Not including drone flights),taken-a-virtual-walking-tour-of-a-historic-town-or-city-heritage-site-castle-or-monument-in-england-not-including-drone-flights,,385,
-viewed documents from an archive in England online,viewed-documents-from-an-archive-in-england-online,,386,
-written or performed music,written-or-performed-music,,387,
-written stories' plays' or poetry,written-stories-plays-or-poetry,,388,
+Label,Notation,Parent Notation,Sort Priority
+Affluent achievers,affluent-achievers,,0
+Rising prosperity,rising-prosperity,,1
+Comfortable communities,comfortable-communities,,2
+Financially stretched,financially-stretched,,3
+Urban adversity,urban-adversity,,4
+Not private households,not-private-households,,5
+Yes but only if i didn t have to pay for it,yes-but-only-if-i-didn-t-have-to-pay-for-it,,6
+Yes and i would be willing to pay for it,yes-and-i-would-be-willing-to-pay-for-it,,7
+No i prefer to upskill myself,no-i-prefer-to-upskill-myself,,8
+No not at all,no-not-at-all,,9
+Very important,very-important,,10
+Fairly important,fairly-important,,11
+Not very important,not-very-important,,12
+Not at all important,not-at-all-important,,13
+Communicate with others by e mail or other messaging apps such as whatsapp,communicate-with-others-by-e-mail-or-other-messaging-apps-such-as-whatsapp,,14
+Communicate with others using video tools such as facetime teams skype,communicate-with-others-using-video-tools-such-as-facetime-teams-skype,,15
+Post content such as messages photographs or videos on social media such as facebook instagram snapchat,post-content-such-as-messages-photographs-or-videos-on-social-media-such-as-facebook-instagram-snapchat,,16
+Recognise what information or content may or may not be trustworthy on websites or apps,recognise-what-information-or-content-may-or-may-not-be-trustworthy-on-websites-or-apps,,17
+Use search engines to find the information i m looking for such as searching for news using a browser such as chrome internet explorer or safari,use-search-engines-to-find-the-information-i-m-looking-for-such-as-searching-for-news-using-a-browser-such-as-chrome-internet-explorer-or-safari,,18
+Store information online and access content from a different device such as using the cloud,store-information-online-and-access-content-from-a-different-device-such-as-using-the-cloud,,19
+Access and use public services online including filling in forms such as vehicle tax voting registration medical visits or prescriptions,access-and-use-public-services-online-including-filling-in-forms-such-as-vehicle-tax-voting-registration-medical-visits-or-prescriptions,,20
+Use online banking and online transactions,use-online-banking-and-online-transactions,,21
+Use online tutorials web chat faqs and forums to improve my skills in using the internet and digital apps or products or services,use-online-tutorials-web-chat-faqs-and-forums-to-improve-my-skills-in-using-the-internet-and-digital-apps-or-products-or-services,,22
+Total,total,,23
+At least once a week,at-least-once-a-week,,24
+Less often than once a week but at least once a month,less-often-than-once-a-week-but-at-least-once-a-month,,25
+Less often than once a month but at least 3 or 4 times a year,less-often-than-once-a-month-but-at-least-3-or-4-times-a-year,,26
+Twice in the last 12 months,twice-in-the-last-12-months,,27
+Once in the last 12 months,once-in-the-last-12-months,,28
+Taken a virtual tour of a museum or gallery in england,taken-a-virtual-tour-of-a-museum-or-gallery-in-england,,29
+Taken a virtual walking tour of a historic town or city heritage site castle or monument in england not including drone flights,taken-a-virtual-walking-tour-of-a-historic-town-or-city-heritage-site-castle-or-monument-in-england-not-including-drone-flights,,30
+Researched your local history online,researched-your-local-history-online,,31
+Researched items from a museum or gallery collection in england online,researched-items-from-a-museum-or-gallery-collection-in-england-online,,32
+Viewed documents from an archive in england online,viewed-documents-from-an-archive-in-england-online,,33
+Engaged with text image audio video or animation games or podcast content from heritage sites in england,engaged-with-text-image-audio-video-or-animation-games-or-podcast-content-from-heritage-sites-in-england,,34
+Engaged with text image audio video or animation games or podcast content from museums in england,engaged-with-text-image-audio-video-or-animation-games-or-podcast-content-from-museums-in-england,,35
+None of these,none-of-these,,36
+Pay a one time fee,pay-a-one-time-fee,,37
+Pay a monthly or annual subscription,pay-a-monthly-or-annual-subscription,,38
+Content is paid for through tv license fee all live tv and bbc iplayer,content-is-paid-for-through-tv-license-fee-all-live-tv-and-bbc-iplayer,,39
+Access free content,access-free-content,,40
+Access content using a log in belonging to someone not in my household,access-content-using-a-log-in-belonging-to-someone-not-in-my-household,,41
+Access paid content for free using other methods,access-paid-content-for-free-using-other-methods,,42
+They are too expensive,they-are-too-expensive,,43
+I m not interested,i-m-not-interested,,44
+I don t have time,i-don-t-have-time,,45
+I have a health problem or disability,i-have-a-health-problem-or-disability,,46
+I don t have access to the internet,i-don-t-have-access-to-the-internet,,47
+I don t have access to an online device such as a smartphone laptop or tablet,i-don-t-have-access-to-an-online-device-such-as-a-smartphone-laptop-or-tablet,,48
+I don t know how to access these types of events online,i-don-t-know-how-to-access-these-types-of-events-online,,49
+I don t know what is available,i-don-t-know-what-is-available,,50
+Some other reason,some-other-reason,,51
+No reason in particular,no-reason-in-particular,,52
+A city or town with celebrated historic nature,a-city-or-town-with-celebrated-historic-nature,,53
+A historic building open to the public non religious,a-historic-building-open-to-the-public-non-religious,,54
+A historic place of worship attended as a visitor not to worship,a-historic-place-of-worship-attended-as-a-visitor-not-to-worship,,55
+A park or garden open to the public with historic or artistic features,a-park-or-garden-open-to-the-public-with-historic-or-artistic-features,,56
+A place connected with industrial history such as an old factory mine or railway,a-place-connected-with-industrial-history-such-as-an-old-factory-mine-or-railway,,57
+An ancient monument or archaeological site such as a castle fort burial site,an-ancient-monument-or-archaeological-site-such-as-a-castle-fort-burial-site,,58
+A site connected with sports heritage not visited for the purposes of watching sport such as wimbledon or wembley stadium,a-site-connected-with-sports-heritage-not-visited-for-the-purposes-of-watching-sport-such-as-wimbledon-or-wembley-stadium,,59
+A site connected with maritime or underwater heritage such as shipwrecks,a-site-connected-with-maritime-or-underwater-heritage-such-as-shipwrecks,,60
+A historic landscape or habitat such as coastline countryside,a-historic-landscape-or-habitat-such-as-coastline-countryside,,61
+Some other heritage site or historic place please type in,some-other-heritage-site-or-historic-place-please-type-in,,62
+General interest in the subject,general-interest-in-the-subject,,63
+To spend time with family or friends,to-spend-time-with-family-or-friends,,64
+To see a specific exhibition or display,to-see-a-specific-exhibition-or-display,,65
+It was in the area,it-was-in-the-area,,66
+Accompanying children,accompanying-children,,67
+It was low cost or free,it-was-low-cost-or-free,,68
+It was recommended for example by a friend website or guidebook,it-was-recommended-for-example-by-a-friend-website-or-guidebook,,69
+For an event activity or workshop,for-an-event-activity-or-workshop,,70
+As part of an organised group or tour,as-part-of-an-organised-group-or-tour,,71
+There were amenities or free facilities such as toilets communal space restaurants cafes shops,there-were-amenities-or-free-facilities-such-as-toilets-communal-space-restaurants-cafes-shops,,72
+You were told by a healthcare professional gp or carer that it may help your health or result in improved outcomes,you-were-told-by-a-healthcare-professional-gp-or-carer-that-it-may-help-your-health-or-result-in-improved-outcomes,,73
+Some other reason type in,some-other-reason-type-in,,74
+No particular reason,no-particular-reason,,75
+Yes,yes,,76
+No,no,,77
+Less than 30 minutes,less-than-30-minutes,,78
+At least 30 minutes but less than an hour,at-least-30-minutes-but-less-than-an-hour,,79
+At least an hour but less than 2 hours,at-least-an-hour-but-less-than-2-hours,,80
+At least 2 hours but less than 4 hours,at-least-2-hours-but-less-than-4-hours,,81
+4 hours or more,4-hours-or-more,,82
+Unesco site,unesco-site,,83
+National trust,national-trust,,84
+English heritage,english-heritage,,85
+Some other heritage site,some-other-heritage-site,,86
+I have not visited any of these heritage sites in the last 12 months,i-have-not-visited-any-of-these-heritage-sites-in-the-last-12-months,,87
+They are difficult to get to,they-are-difficult-to-get-to,,88
+I would feel out of place,i-would-feel-out-of-place,,89
+I don t have anyone to go with,i-don-t-have-anyone-to-go-with,,90
+The opening hours are inconvenient,the-opening-hours-are-inconvenient,,91
+Due to covid 19 restrictions or concerns,due-to-covid-19-restrictions-or-concerns,,92
+As an individual or part of a social group,as-an-individual-or-part-of-a-social-group,,93
+Part of a metal detecting club,part-of-a-metal-detecting-club,,94
+As part of an organised archaeological survey in a volunteer role,as-part-of-an-organised-archaeological-survey-in-a-volunteer-role,,95
+As a participant in a commercial rally,as-a-participant-in-a-commercial-rally,,96
+In some other way,in-some-other-way,,97
+Reserved or renewed books or paid a fine,reserved-or-renewed-books-or-paid-a-fine,,98
+Searched online catalogues or dictionaries or made an enquiry,searched-online-catalogues-or-dictionaries-or-made-an-enquiry,,99
+Borrowed digital or online resources such as e books e audio or e magazines but without visiting the library,borrowed-digital-or-online-resources-such-as-e-books-e-audio-or-e-magazines-but-without-visiting-the-library,,100
+Viewed or participated in an online event or activity organised by the library,viewed-or-participated-in-an-online-event-or-activity-organised-by-the-library,,101
+Checked information online about the library such as opening hours available facilities or services offered,checked-information-online-about-the-library-such-as-opening-hours-available-facilities-or-services-offered,,102
+Accessed online services via library membership such as journals or family history sites,accessed-online-services-via-library-membership-such-as-journals-or-family-history-sites,,103
+Accessed some other library service online type in open,accessed-some-other-library-service-online-type-in-open,,104
+Very satisfied,very-satisfied,,105
+Somewhat satisfied,somewhat-satisfied,,106
+Neither satisfied nor dissatisfied,neither-satisfied-nor-dissatisfied,,107
+Somewhat dissatisfied,somewhat-dissatisfied,,108
+Very dissatisfied,very-dissatisfied,,109
+Through a library website,through-a-library-website,,110
+Using a library app,using-a-library-app,,111
+Through social media,through-social-media,,112
+Through youtube,through-youtube,,113
+By telephone,by-telephone,,114
+I don t know how to access these types of event online,i-don-t-know-how-to-access-these-types-of-event-online,,115
+Help to apply for a government or council service,help-to-apply-for-a-government-or-council-service,,116
+Training or help to improve your digital or online skills,training-or-help-to-improve-your-digital-or-online-skills,,117
+Help to apply for a job or setting up or growing your business,help-to-apply-for-a-job-or-setting-up-or-growing-your-business,,118
+Some other form of help or training type in open,some-other-form-of-help-or-training-type-in-open,,119
+Borrowed browsed or returned books newspapers music cds dvds or audiobooks,borrowed-browsed-or-returned-books-newspapers-music-cds-dvds-or-audiobooks,,120
+Accessed online resources such as e books magazines or journals,accessed-online-resources-such-as-e-books-magazines-or-journals,,121
+Used free wi fi computer or printing facilities,used-free-wi-fi-computer-or-printing-facilities,,122
+Sought information related to your or someone else s health,sought-information-related-to-your-or-someone-else-s-health,,123
+Used the space to study or work,used-the-space-to-study-or-work,,124
+Took part in an event for example a reading group film screening or author visit,took-part-in-an-event-for-example-a-reading-group-film-screening-or-author-visit,,125
+Took a child to an event,took-a-child-to-an-event,,126
+Visited the library cafe or met up with someone,visited-the-library-cafe-or-met-up-with-someone,,127
+Did something else,did-something-else,,128
+Football,football,,129
+Rugby,rugby,,130
+Tennis,tennis,,131
+Cricket,cricket,,132
+Athletics,athletics,,133
+Snooker,snooker,,134
+Swimming,swimming,,135
+Gymnastics,gymnastics,,136
+Golf,golf,,137
+Some other type of sport,some-other-type-of-sport,,138
+All of them,all-of-them,,139
+Most of them,most-of-them,,140
+Around half of them,around-half-of-them,,141
+A few of them,a-few-of-them,,142
+None of them,none-of-them,,143
+Don t know,don-t-know,,144
+Every time,every-time,,145
+Most of the time,most-of-the-time,,146
+Some of the time,some-of-the-time,,147
+Very rarely,very-rarely,,148
+Her majesty the queen s platinum jubilee,her-majesty-the-queen-s-platinum-jubilee,,149
+Unboxed creativity in the uk,unboxed-creativity-in-the-uk,,150
+Birmingham commonwealth games 2022,birmingham-commonwealth-games-2022,,151
+Coventry city of culture,coventry-city-of-culture,,152
+Attending a national event,attending-a-national-event,,153
+Attending a local event,attending-a-local-event,,154
+Attending an digital or online event,attending-an-digital-or-online-event,,155
+Following coverage on tv or radio includes watching the event and or news about the event,following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event,,156
+Following on social media,following-on-social-media,,157
+Taking part in a voluntary capacity,taking-part-in-a-voluntary-capacity,,158
+Taking part in a professional capacity,taking-part-in-a-professional-capacity,,159
+Taking part in some other way,taking-part-in-some-other-way,,160
+I am not interested in participating in this event,i-am-not-interested-in-participating-in-this-event,,161
+Attending a national event note 5,attending-a-national-event-note-5,,162
+Attending a local event note 5,attending-a-local-event-note-5,,163
+Attending an digital or online event note 5,attending-an-digital-or-online-event-note-5,,164
+Following coverage on tv or radio includes watching the event and or news about the event note 5,following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event-note-5,,165
+Following on social media note 5,following-on-social-media-note-5,,166
+Taking part in a voluntary capacity note 5,taking-part-in-a-voluntary-capacity-note-5,,167
+Taking part in a professional capacity note 5,taking-part-in-a-professional-capacity-note-5,,168
+Taking part in some other way note 5,taking-part-in-some-other-way-note-5,,169
+Don t know note 5,don-t-know-note-5,,170
+I am not interested in participating in this event note 5,i-am-not-interested-in-participating-in-this-event-note-5,,171
+Very strongly,very-strongly,,172
+Fairly strongly,fairly-strongly,,173
+Neither strongly or not strongly,neither-strongly-or-not-strongly,,174
+Not very strongly,not-very-strongly,,175
+Not at all strongly,not-at-all-strongly,,176
+To undertake a constitutional role as head of state such as opening each new session of parliament,to-undertake-a-constitutional-role-as-head-of-state-such-as-opening-each-new-session-of-parliament,,177
+To support and encourage public service and charitable sectors,to-support-and-encourage-public-service-and-charitable-sectors,,178
+To recognise and support the armed forces,to-recognise-and-support-the-armed-forces,,179
+To be the supreme governor of the church of england,to-be-the-supreme-governor-of-the-church-of-england,,180
+To provide a sense of continuity and act as a focus for national identity unity and pride,to-provide-a-sense-of-continuity-and-act-as-a-focus-for-national-identity-unity-and-pride,,181
+To promote the uk abroad,to-promote-the-uk-abroad,,182
+To recognise exceptional achievement by issuing honours such as mbes obes,to-recognise-exceptional-achievement-by-issuing-honours-such-as-mbes-obes,,183
+Other,other,,184
+General interest in the subject of the museum or collection,general-interest-in-the-subject-of-the-museum-or-collection,,185
+It was recommended for example by a friend or guide book,it-was-recommended-for-example-by-a-friend-or-guide-book,,186
+Because there were amenities or free facilities for example toilets communal space restaurants cafes shops,because-there-were-amenities-or-free-facilities-for-example-toilets-communal-space-restaurants-cafes-shops,,187
+Because you were told by a healthcare professional for example gp or carer that it may help your health or result in improved outcomes,because-you-were-told-by-a-healthcare-professional-for-example-gp-or-carer-that-it-may-help-your-health-or-result-in-improved-outcomes,,188
+I did not pay a one off fee as i pay a subscription,i-did-not-pay-a-one-off-fee-as-i-pay-a-subscription,,189
+Theatrical or dance performances,theatrical-or-dance-performances,,190
+Music performances,music-performances,,191
+Art displays or exhibitions excluding museums,art-displays-or-exhibitions-excluding-museums,,192
+A museum or gallery,a-museum-or-gallery,,193
+Other art events or festivals,other-art-events-or-festivals,,194
+A historic place or building,a-historic-place-or-building,,195
+A library,a-library,,196
+Read an e book or e magazine for example on a kindle,read-an-e-book-or-e-magazine-for-example-on-a-kindle,,197
+Joined video calls with family friends for example microsoft teams zoom facetime,joined-video-calls-with-family-friends-for-example-microsoft-teams-zoom-facetime,,198
+Watched tv at the time it was broadcast,watched-tv-at-the-time-it-was-broadcast,,199
+Watched tv shows or films on demand for regular tv channels for example bbc iplayer itv hub,watched-tv-shows-or-films-on-demand-for-regular-tv-channels-for-example-bbc-iplayer-itv-hub,,200
+Watched tv shows or films using a streaming service for example netflix or amazon prime,watched-tv-shows-or-films-using-a-streaming-service-for-example-netflix-or-amazon-prime,,201
+Listened to live radio online through a computer laptop tablet or phone,listened-to-live-radio-online-through-a-computer-laptop-tablet-or-phone,,202
+Listened to streamed music for example through itunes spotify,listened-to-streamed-music-for-example-through-itunes-spotify,,203
+Listened to downloaded music,listened-to-downloaded-music,,204
+Listened to an audiobook,listened-to-an-audiobook,,205
+Listened to a podcast,listened-to-a-podcast,,206
+Live arts event including theatre visual arts or literature,live-arts-event-including-theatre-visual-arts-or-literature,,207
+Pre recorded arts event including theatre visual arts or literature,pre-recorded-arts-event-including-theatre-visual-arts-or-literature,,208
+Live music or dance event watched as it was happening,live-music-or-dance-event-watched-as-it-was-happening,,209
+Pre recorded music or dance event,pre-recorded-music-or-dance-event,,210
+Science,science,,211
+Technology,technology,,212
+Engineering,engineering,,213
+Arts,arts,,214
+Maths,maths,,215
+None of the above,none-of-the-above,,216
+Yes science,yes-science,,217
+Yes technology,yes-technology,,218
+Yes engineering,yes-engineering,,219
+Yes arts,yes-arts,,220
+Yes maths,yes-maths,,221
+No activities,no-activities,,222
+1 activity,1-activity,,223
+2 activities,2-activities,,224
+3 activities,3-activities,,225
+An exhibition of art photography or sculptures,an-exhibition-of-art-photography-or-sculptures,,226
+A play drama musical pantomime ballet opera,a-play-drama-musical-pantomime-ballet-opera,,227
+An event connected with books reading or writing,an-event-connected-with-books-reading-or-writing,,228
+A cinema screening of a film or movie,a-cinema-screening-of-a-film-or-movie,,229
+A craft exhibition not a crafts market crafts include for example textiles woodworking,a-craft-exhibition-not-a-crafts-market-crafts-include-for-example-textiles-woodworking,,230
+A live music event,a-live-music-event,,231
+A festival and or carnival music food culture,a-festival-and-or-carnival-music-food-culture,,232
+A street art event,a-street-art-event,,233
+A live dance event,a-live-dance-event,,234
+A fashion show,a-fashion-show,,235
+A comedy event,a-comedy-event,,236
+Some other cultural event in england,some-other-cultural-event-in-england,,237
+Written stories plays or poetry,written-stories-plays-or-poetry,,238
+Read books or magazines,read-books-or-magazines,,239
+Written or performed music,written-or-performed-music,,240
+Painting drawing printmaking calligraphy,painting-drawing-printmaking-calligraphy,,241
+Crafts textile ceramic sculpting carving woodwork,crafts-textile-ceramic-sculpting-carving-woodwork,,242
+Choreographed or performed a drama or dance routine,choreographed-or-performed-a-drama-or-dance-routine,,243
+Designed or programmed video games including on a smartphone or tablet,designed-or-programmed-video-games-including-on-a-smartphone-or-tablet,,244
+Played video games including on a smartphone or tablet,played-video-games-including-on-a-smartphone-or-tablet,,245
+Made films or videos as a hobby including original animations,made-films-or-videos-as-a-hobby-including-original-animations,,246
+Photography as a hobby,photography-as-a-hobby,,247
+Other arts crafts or creative activities at home,other-arts-crafts-or-creative-activities-at-home,,248
+Created content,created-content,,249
+Consumed content,consumed-content,,250
+City or large town,city-or-large-town,,251
+Countryside or village,countryside-or-village,,252
+Traditional coastal or seaside town,traditional-coastal-or-seaside-town,,253
+Rural coastline or coastal village,rural-coastline-or-coastal-village,,254
+Mountains or hills,mountains-or-hills,,255
+Somewhere else,somewhere-else,,256
+1 2 nights,1-2-nights,,257
+2021 06 03,2021-06-03,,258
+2021 10 07,2021-10-07,,259
+More than 10,more-than-10,,260
+To visit museums,to-visit-museums,,261
+To attend art exhibitions,to-attend-art-exhibitions,,262
+To visit heritage sites,to-visit-heritage-sites,,263
+To attend a live performance,to-attend-a-live-performance,,264
+To participate in dance music or other creative arts activities,to-participate-in-dance-music-or-other-creative-arts-activities,,265
+I hadn t heard of it before now,i-hadn-t-heard-of-it-before-now,,266
+I have heard of it but am not sure what it is,i-have-heard-of-it-but-am-not-sure-what-it-is,,267
+I understand what it is but am not interested in getting it in the near future,i-understand-what-it-is-but-am-not-interested-in-getting-it-in-the-near-future,,268
+I understand what it is and am interested in getting it in the near future,i-understand-what-it-is-and-am-interested-in-getting-it-in-the-near-future,,269
+I would get 5g if it were free,i-would-get-5g-if-it-were-free,,270
+I would pay more for 5g if i really thought it would benefit me,i-would-pay-more-for-5g-if-i-really-thought-it-would-benefit-me,,271
+I am happy with my current mobile internet speed so i would not be willing to pay more for 5g,i-am-happy-with-my-current-mobile-internet-speed-so-i-would-not-be-willing-to-pay-more-for-5g,,272
+I would never get 5g regardless of what it cost,i-would-never-get-5g-regardless-of-what-it-cost,,273
+Up to ps2,up-to-ps2,,274
+Between ps2 and ps5,between-ps2-and-ps5,,275
+Between ps5 and ps7 5,between-ps5-and-ps7-5,,276
+Between ps7 5 and ps10,between-ps7-5-and-ps10,,277
+Between ps10 and ps15,between-ps10-and-ps15,,278
+More than ps15,more-than-ps15,,279
+I would not be willing to pay any more for a 5g data plan,i-would-not-be-willing-to-pay-any-more-for-a-5g-data-plan,,280
+I do not currently have a mobile subscription or data plan,i-do-not-currently-have-a-mobile-subscription-or-data-plan,,281
+Smartphone,smartphone,,282
+Laptop computer,laptop-computer,,283
+Tablet,tablet,,284
+Desktop pc,desktop-pc,,285
+Games console such as an xbox or playstation,games-console-such-as-an-xbox-or-playstation,,286
+Smart tv,smart-tv,,287
+A wi fi router or internet hub a router is a device that communicates between the internet and the devices in your home that connect to the internet,a-wi-fi-router-or-internet-hub-a-router-is-a-device-that-communicates-between-the-internet-and-the-devices-in-your-home-that-connect-to-the-internet,,288
+Smartwatch such as apple watch samsung galaxy gear,smartwatch-such-as-apple-watch-samsung-galaxy-gear,,289
+Fitness band or smart wristband such as fitbit jawbone up,fitness-band-or-smart-wristband-such-as-fitbit-jawbone-up,,290
+Voice activated personal assistant or smart speaker device such as amazon echo alexa google home,voice-activated-personal-assistant-or-smart-speaker-device-such-as-amazon-echo-alexa-google-home,,291
+Smart home security such as internet connected or smartphone controlled security smart door lock,smart-home-security-such-as-internet-connected-or-smartphone-controlled-security-smart-door-lock,,292
+Smart energy device smart meter bulb or plug or thermostat,smart-energy-device-smart-meter-bulb-or-plug-or-thermostat,,293
+Smart kitchen appliance such as a smart fridge,smart-kitchen-appliance-such-as-a-smart-fridge,,294
+Smart toy or baby monitor for children,smart-toy-or-baby-monitor-for-children,,295
+Some other smart device for the home,some-other-smart-device-for-the-home,,296
+Smartphonel,smartphonel,,297
+Laptop computerl,laptop-computerl,,298
+Tabletl,tabletl,,299
+Desktop pcl,desktop-pcl,,300
+Games console such as an xbox or playstation l,games-console-such-as-an-xbox-or-playstation-l,,301
+Smart tvl,smart-tvl,,302
+12 months or less,12-months-or-less,,303
+More than 12 months but less than 2 years,more-than-12-months-but-less-than-2-years,,304
+At least 2 years but less than 3 years,at-least-2-years-but-less-than-3-years,,305
+At least 3 years but less than 4 years,at-least-3-years-but-less-than-4-years,,306
+At least 4 years but less than 5 years,at-least-4-years-but-less-than-5-years,,307
+5 years or more,5-years-or-more,,308
+I have never replaced my smartphone,i-have-never-replaced-my-smartphone,,309
+Online shop such as amazon,online-shop-such-as-amazon,,310
+Online marketplace such as ebay facebook,online-marketplace-such-as-ebay-facebook,,311
+A mobile phone network provider such as o2 ee,a-mobile-phone-network-provider-such-as-o2-ee,,312
+In person from a high street or retail park,in-person-from-a-high-street-or-retail-park,,313
+Second hand or charity shop,second-hand-or-charity-shop,,314
+Gift or passed on from family or friends,gift-or-passed-on-from-family-or-friends,,315
+Trade in for another device,trade-in-for-another-device,,316
+Return to the company or producer to be recycled,return-to-the-company-or-producer-to-be-recycled,,317
+Recycle such as using a local e waste recycling centre,recycle-such-as-using-a-local-e-waste-recycling-centre,,318
+Pass onto family or friend,pass-onto-family-or-friend,,319
+Sell online such as ebay facebook music magpie,sell-online-such-as-ebay-facebook-music-magpie,,320
+Sell at a secondhand shop,sell-at-a-secondhand-shop,,321
+Give to a secondhand or charity shop,give-to-a-secondhand-or-charity-shop,,322
+Keep as a spare,keep-as-a-spare,,323
+Store it somewhere not as a spare,store-it-somewhere-not-as-a-spare,,324
+Throw it away,throw-it-away,,325
+16 to 19,16-to-19,,326
+20 to 24,20-to-24,,327
+25 to 29,25-to-29,,328
+30 to 34,30-to-34,,329
+35 to 39,35-to-39,,330
+40 to 44,40-to-44,,331
+45 to 49,45-to-49,,332
+50 to 54,50-to-54,,333
+55 to 59,55-to-59,,334
+60 to 64,60-to-64,,335
+65 to 69,65-to-69,,336
+70 to 74,70-to-74,,337
+75 to 79,75-to-79,,338
+80 to 84,80-to-84,,339
+85 or over,85-or-over,,340
+Up to 2mbps,up-to-2mbps,,341
+More than 2mbps up to 10mbps,more-than-2mbps-up-to-10mbps,,342
+More than 10mbps up to 24mbps also known as adsl,more-than-10mbps-up-to-24mbps-also-known-as-adsl,,343
+More than 24mbps up to 100mbps also known as superfast speeds,more-than-24mbps-up-to-100mbps-also-known-as-superfast-speeds,,344
+More than 100mbps less than 1000mbps also known as full fibre connections,more-than-100mbps-less-than-1000mbps-also-known-as-full-fibre-connections,,345
+1000mbps or above 1gbps,1000mbps-or-above-1gbps,,346
+I do not have broadband at home,i-do-not-have-broadband-at-home,,347
+Respond to legitimate requests for authentication for my online accounts or email,respond-to-legitimate-requests-for-authentication-for-my-online-accounts-or-email,,348
+Use different passwords for my online accounts and email,use-different-passwords-for-my-online-accounts-and-email,,349
+Monitor privacy settings on my social media and other accounts to improve security,monitor-privacy-settings-on-my-social-media-and-other-accounts-to-improve-security,,350
+Identify secure websites by looking for the padlock and https in the address bar,identify-secure-websites-by-looking-for-the-padlock-and-https-in-the-address-bar,,351
+Avoid suspicious links in email websites social media messages and pop ups,avoid-suspicious-links-in-email-websites-social-media-messages-and-pop-ups,,352
+Use dual factor authentication to access my accounts or websites through a code sent to my smartphone or other device,use-dual-factor-authentication-to-access-my-accounts-or-websites-through-a-code-sent-to-my-smartphone-or-other-device,,353
+Activate pop up blockers on my web browser,activate-pop-up-blockers-on-my-web-browser,,354
+Save passwords in my browser,save-passwords-in-my-browser,,355
+I do none of these things,i-do-none-of-these-things,,356
+Back up my information or content frequently by storing a copy either in the cloud or on an external storage device,back-up-my-information-or-content-frequently-by-storing-a-copy-either-in-the-cloud-or-on-an-external-storage-device,,357
+Create strong passwords that are not easily to guess or related to me for example using a mix of letters numbers and symbols,create-strong-passwords-that-are-not-easily-to-guess-or-related-to-me-for-example-using-a-mix-of-letters-numbers-and-symbols,,358
+Set automatic updates for my computer operating system and security software,set-automatic-updates-for-my-computer-operating-system-and-security-software,,359
+Allow computer systems and security software to be updated when prompted,allow-computer-systems-and-security-software-to-be-updated-when-prompted,,360
+Changed the password of my wi fi router at least every 12 months,changed-the-password-of-my-wi-fi-router-at-least-every-12-months,,361
+Consider the security standards of the internet provider when considering a new provider,consider-the-security-standards-of-the-internet-provider-when-considering-a-new-provider,,362
+It doesn t feel very important,it-doesn-t-feel-very-important,,363
+It may be important but i don t have enough information about what happens when security standards are not high enough,it-may-be-important-but-i-don-t-have-enough-information-about-what-happens-when-security-standards-are-not-high-enough,,364
+It is important but i don t have enough information to choose between providers based on their security standards,it-is-important-but-i-don-t-have-enough-information-to-choose-between-providers-based-on-their-security-standards,,365
+Viruses can damage my computer security,viruses-can-damage-my-computer-security,,366
+Software should be used to prevent viruses,software-should-be-used-to-prevent-viruses,,367
+My online activity produces a permanent record,my-online-activity-produces-a-permanent-record,,368
+My online activity can be used by others both now and in the future,my-online-activity-can-be-used-by-others-both-now-and-in-the-future,,369
+Others that i don t know can capture and use the data i post online,others-that-i-don-t-know-can-capture-and-use-the-data-i-post-online,,370
+I can protect and secure my personal data through privacy settings,i-can-protect-and-secure-my-personal-data-through-privacy-settings,,371
+Taken part in a online security training course,taken-part-in-a-online-security-training-course,,372
+Upgraded the security of your own devices,upgraded-the-security-of-your-own-devices,,373
+Upgraded the security of someone else s devices such as a friend or relative,upgraded-the-security-of-someone-else-s-devices-such-as-a-friend-or-relative,,374
+Looked for information or advice on cyber careers such as security engineer security architect or security analyst,looked-for-information-or-advice-on-cyber-careers-such-as-security-engineer-security-architect-or-security-analyst,,375
+Given information or advice about cyber careers to someone else,given-information-or-advice-about-cyber-careers-to-someone-else,,376
+Very often,very-often,,377
+Quite often,quite-often,,378
+Not very often,not-very-often,,379
+Never,never,,380
+It is interesting,it-is-interesting,,381
+It is well researched,it-is-well-researched,,382
+It has been verified as true by a fact checking organisation,it-has-been-verified-as-true-by-a-fact-checking-organisation,,383
+It reflects my personal views,it-reflects-my-personal-views,,384
+It conflicts with my personal views,it-conflicts-with-my-personal-views,,385
+I trust the person or organisation that originally published the content,i-trust-the-person-or-organisation-that-originally-published-the-content,,386
+I trust the person or organisation that shared it with me,i-trust-the-person-or-organisation-that-shared-it-with-me,,387
+It is funny or amusing,it-is-funny-or-amusing,,388
+Always,always,,389
+Sometimes,sometimes,,390
+Hardly ever,hardly-ever,,391
+Provided personal information such as my passport number online as identification,provided-personal-information-such-as-my-passport-number-online-as-identification,,392
+Uploaded a document qualification identification document to a digital or online platform,uploaded-a-document-qualification-identification-document-to-a-digital-or-online-platform,,393
+Showed documents to someone through a webcam for example zoom ms teams,showed-documents-to-someone-through-a-webcam-for-example-zoom-ms-teams,,394
+Shared a photo of your documents such as a passport or qualification,shared-a-photo-of-your-documents-such-as-a-passport-or-qualification,,395
+Verified my identity online in some other way,verified-my-identity-online-in-some-other-way,,396
+I have always been able to prove my identify or something about myself,i-have-always-been-able-to-prove-my-identify-or-something-about-myself,,397
+I have not been successful because the method is difficult to use,i-have-not-been-successful-because-the-method-is-difficult-to-use,,398
+I have not been successful as i did not have the document in the required format,i-have-not-been-successful-as-i-did-not-have-the-document-in-the-required-format,,399
+I haven t been successful because i chose not to prove my identity,i-haven-t-been-successful-because-i-chose-not-to-prove-my-identity,,400
+I have not been able to access services for any other reason,i-have-not-been-able-to-access-services-for-any-other-reason,,401
+Opening a bank account,opening-a-bank-account,,402
+Buying age restricted products like alcohol,buying-age-restricted-products-like-alcohol,,403
+Accessing benefits,accessing-benefits,,404
+Travelling,travelling,,405
+Starting a new job,starting-a-new-job,,406
+Buying or renting a house,buying-or-renting-a-house,,407
+Not working,not-working,,408
+Working,working,,409
+Asian/asian british bangladeshi,asian/asian-british-bangladeshi,,410
+Asian/asian british chinese,asian/asian-british-chinese,,411
+Asian/asian british indian,asian/asian-british-indian,,412
+Asian/asian british pakistani,asian/asian-british-pakistani,,413
+Asian/asian british any other asian background,asian/asian-british-any-other-asian-background,,414
+Asian/asian british total,asian/asian-british-total,,415
+Black/african/caribbean/black british african,black/african/caribbean/black-british-african,,416
+Black/african/caribbean/black british caribbean,black/african/caribbean/black-british-caribbean,,417
+Black/african/caribbean/black british any other black/african/caribbean background,black/african/caribbean/black-british-any-other-black/african/caribbean-background,,418
+Black/african/caribbean/black british total,black/african/caribbean/black-british-total,,419
+Mixed/multiple ethnic groups white and asian,mixed/multiple-ethnic-groups-white-and-asian,,420
+Mixed/multiple ethnic groups white and black african,mixed/multiple-ethnic-groups-white-and-black-african,,421
+Mixed/multiple ethnic groups white and black caribbean,mixed/multiple-ethnic-groups-white-and-black-caribbean,,422
+Mixed/multiple ethnic groups any other mixed/multiple ethnic background,mixed/multiple-ethnic-groups-any-other-mixed/multiple-ethnic-background,,423
+Mixed/multiple ethnic groups total,mixed/multiple-ethnic-groups-total,,424
+Other ethnic group arab,other-ethnic-group-arab,,425
+Other ethnic group any other ethnic group,other-ethnic-group-any-other-ethnic-group,,426
+Other ethnic group total,other-ethnic-group-total,,427
+White english/welsh/scottish/northern irish/british,white-english/welsh/scottish/northern-irish/british,,428
+White gypsy traveller or irish traveller,white-gypsy-traveller-or-irish-traveller,,429
+White irish,white-irish,,430
+White any other white background,white-any-other-white-background,,431
+White total,white-total,,432
+Almost all the time,almost-all-the-time,,433
+Several times a day,several-times-a-day,,434
+About once a day,about-once-a-day,,435
+Several times a week,several-times-a-week,,436
+Less often,less-often,,437
+Female,female,,438
+Male,male,,439
+Prefer not to say,prefer-not-to-say,,440
+Self describe,self-describe,,441
+Degree level or above,degree-level-or-above,,442
+Another kind of qualification,another-kind-of-qualification,,443
+Dont know,dont-know,,444
+Up to ps20,up-to-ps20,,445
+Ps21 to ps30,ps21-to-ps30,,446
+Ps31 to ps40,ps31-to-ps40,,447
+Ps41 to ps50,ps41-to-ps50,,448
+Ps50 to ps60,ps50-to-ps60,,449
+More than ps60,more-than-ps60,,450
+Up to ps5,up-to-ps5,,451
+Ps6 to ps10,ps6-to-ps10,,452
+Ps11 to ps15,ps11-to-ps15,,453
+Ps16 to ps25,ps16-to-ps25,,454
+Ps26 to ps35,ps26-to-ps35,,455
+More than ps35,more-than-ps35,,456
+I would not be willing to pay any more per month for 1gbps 1000mbps speeds,i-would-not-be-willing-to-pay-any-more-per-month-for-1gbps-1000mbps-speeds,,457
+I would not be willing to pay any more to double my broadband speed,i-would-not-be-willing-to-pay-any-more-to-double-my-broadband-speed,,458
+1 most deprived,1-most-deprived,,459
+2 0,2-0,,460
+3 0,3-0,,461
+4 0,4-0,,462
+5 0,5-0,,463
+6 0,6-0,,464
+7 0,7-0,,465
+8 0,8-0,,466
+9 0,9-0,,467
+10 least deprived,10-least-deprived,,468
+Managerial administrative and professional occupations,managerial-administrative-and-professional-occupations,,469
+Intermediate occupations,intermediate-occupations,,470
+Small employers and own account workers,small-employers-and-own-account-workers,,471
+Lower supervisory and technical occupations,lower-supervisory-and-technical-occupations,,472
+Semi routine and routine occupations,semi-routine-and-routine-occupations,,473
+Never worked and long term unemployed,never-worked-and-long-term-unemployed,,474
+East midlands,east-midlands,,475
+East of england,east-of-england,,476
+London,london,,477
+North east,north-east,,478
+North west,north-west,,479
+South east,south-east,,480
+South west,south-west,,481
+West midlands,west-midlands,,482
+Yorkshire and the humber,yorkshire-and-the-humber,,483
+Bedfordshire and hertfordshire,bedfordshire-and-hertfordshire,,484
+Berkshire buckinghamshire and oxfordshire,berkshire-buckinghamshire-and-oxfordshire,,485
+Cheshire,cheshire,,486
+Cornwall and isles of scilly,cornwall-and-isles-of-scilly,,487
+Cumbria,cumbria,,488
+Derbyshire and nottinghamshire,derbyshire-and-nottinghamshire,,489
+Devon,devon,,490
+Dorset and somerset,dorset-and-somerset,,491
+East anglia,east-anglia,,492
+East yorkshire and northern lincolnshire,east-yorkshire-and-northern-lincolnshire,,493
+Essex,essex,,494
+Gloucestershire wiltshire and bath/bristol area,gloucestershire-wiltshire-and-bath/bristol-area,,495
+Greater manchester,greater-manchester,,496
+Hampshire and isle of wight,hampshire-and-isle-of-wight,,497
+Herefordshire worcestershire and warwickshire,herefordshire-worcestershire-and-warwickshire,,498
+Inner london east,inner-london-east,,499
+Inner london west,inner-london-west,,500
+Kent,kent,,501
+Lancashire,lancashire,,502
+Leicestershire rutland and northamptonshire,leicestershire-rutland-and-northamptonshire,,503
+Lincolnshire,lincolnshire,,504
+Merseyside,merseyside,,505
+North yorkshire,north-yorkshire,,506
+Northumberland and tyne and wear,northumberland-and-tyne-and-wear,,507
+Outer london east and north east,outer-london-east-and-north-east,,508
+Outer london south,outer-london-south,,509
+Outer london west and north west,outer-london-west-and-north-west,,510
+Shropshire and staffordshire,shropshire-and-staffordshire,,511
+South yorkshire,south-yorkshire,,512
+Surrey east and west sussex,surrey-east-and-west-sussex,,513
+Tees valley and durham,tees-valley-and-durham,,514
+West yorkshire,west-yorkshire,,515
+Rural,rural,,516
+Urban,urban,,517
+Owners,owners,,518
+Private rented sector,private-rented-sector,,519
+Social rented sector,social-rented-sector,,520
+Buddhist,buddhist,,521
+Christian including church of england catholic protestant and all other christian denominations,christian-including-church-of-england-catholic-protestant-and-all-other-christian-denominations,,522
+Hindu,hindu,,523
+Jewish,jewish,,524
+Muslim,muslim,,525
+Sikh,sikh,,526
+Any other religion,any-other-religion,,527
+No religion,no-religion,,528
+Very comfortable,very-comfortable,,529
+Fairly comfortable,fairly-comfortable,,530
+Fairly uncomfortable,fairly-uncomfortable,,531
+Very uncomfortable,very-uncomfortable,,532
+Strongly agree,strongly-agree,,533
+Agree,agree,,534
+Neither agree or disagree,neither-agree-or-disagree,,535
+Disagree,disagree,,536
+Strongly disagree,strongly-disagree,,537
+1  most deprived,1-most-deprived,,538
+2.0,2-0,,539
+3.0,3-0,,540
+4.0,4-0,,541
+5.0,5-0,,542
+6.0,6-0,,543
+7.0,7-0,,544
+8.0,8-0,,545
+9.0,9-0,,546
+10  least deprived,10-least-deprived,,547
+"Berkshire, buckinghamshire and oxfordshire",berkshire-buckinghamshire-and-oxfordshire,,548
+"Gloucestershire, wiltshire and bath/bristol area",gloucestershire-wiltshire-and-bath/bristol-area,,549
+"Herefordshire, worcestershire and warwickshire",herefordshire-worcestershire-and-warwickshire,,550
+Inner london   east,inner-london-east,,551
+Inner london   west,inner-london-west,,552
+"Leicestershire, rutland and northamptonshire",leicestershire-rutland-and-northamptonshire,,553
+"Northumberland, and tyne and wear",northumberland-and-tyne-and-wear,,554
+Outer london   east and north east,outer-london-east-and-north-east,,555
+Outer london   south,outer-london-south,,556
+Outer london   west and north west,outer-london-west-and-north-west,,557
+"Surrey, east and west sussex",surrey-east-and-west-sussex,,558
+"Managerial, administrative and professional occupations",managerial-administrative-and-professional-occupations,,559
+Asian/asian british   bangladeshi,asian/asian-british-bangladeshi,,560
+Asian/asian british   chinese,asian/asian-british-chinese,,561
+Asian/asian british   indian,asian/asian-british-indian,,562
+Asian/asian british   pakistani,asian/asian-british-pakistani,,563
+Asian/asian british   any other asian background,asian/asian-british-any-other-asian-background,,564
+Asian/asian british   total,asian/asian-british-total,,565
+Black/african/caribbean/black british   african,black/african/caribbean/black-british-african,,566
+Black/african/caribbean/black british   caribbean,black/african/caribbean/black-british-caribbean,,567
+Black/african/caribbean/black british   any other black/african/caribbean background,black/african/caribbean/black-british-any-other-black/african/caribbean-background,,568
+Black/african/caribbean/black british   total,black/african/caribbean/black-british-total,,569
+Mixed/multiple ethnic groups   white and asian,mixed/multiple-ethnic-groups-white-and-asian,,570
+Mixed/multiple ethnic groups   white and black african,mixed/multiple-ethnic-groups-white-and-black-african,,571
+Mixed/multiple ethnic groups   white and black caribbean,mixed/multiple-ethnic-groups-white-and-black-caribbean,,572
+Mixed/multiple ethnic groups   any other mixed/multiple ethnic background,mixed/multiple-ethnic-groups-any-other-mixed/multiple-ethnic-background,,573
+Mixed/multiple ethnic groups   total,mixed/multiple-ethnic-groups-total,,574
+Other ethnic group   arab,other-ethnic-group-arab,,575
+Other ethnic group   any other ethnic group,other-ethnic-group-any-other-ethnic-group,,576
+Other ethnic group   total,other-ethnic-group-total,,577
+White   english/welsh/scottish/northern irish/british,white-english/welsh/scottish/northern-irish/british,,578
+"White   gypsy, traveller or irish traveller",white-gypsy-traveller-or-irish-traveller,,579
+White   irish,white-irish,,580
+White   any other white background,white-any-other-white-background,,581
+White   total,white-total,,582
+"Christian (including church of england, catholic, protestant, and all other christian denominations)",christian-including-church-of-england-catholic-protestant-and-all-other-christian-denominations,,583
+"More than 2mbps, up to 10mbps",more-than-2mbps-up-to-10mbps,,584
+"More than 10mbps, up to 24mbps (also known as adsl)",more-than-10mbps-up-to-24mbps-also-known-as-adsl,,585
+"More than 24mbps, up to 100mbps ( also known as ""superfast speeds"")",more-than-24mbps-up-to-100mbps-also-known-as-superfast-speeds,,586
+"More than 100mbps, less than 1000mbps (also known as ""full fibre"" connections)",more-than-100mbps-less-than-1000mbps-also-known-as-full-fibre-connections,,587
+1000mbps or above (1gbps),1000mbps-or-above-1gbps,,588
+Up to £20,up-to-ps20,,589
+£21 to £30,ps21-to-ps30,,590
+£31 to £40,ps31-to-ps40,,591
+£41 to £50,ps41-to-ps50,,592
+£50 to £60,ps50-to-ps60,,593
+More than £60,more-than-ps60,,594
+Up to £2,up-to-ps2,,595
+Between £2 and £5,between-ps2-and-ps5,,596
+Between £5 and £7.5,between-ps5-and-ps7-5,,597
+Between £7.5 and £10,between-ps7-5-and-ps10,,598
+Between £10 and £15,between-ps10-and-ps15,,599
+More than £15,more-than-ps15,,600
+Up to £5,up-to-ps5,,601
+£6 to £10,ps6-to-ps10,,602
+£11 to £15,ps11-to-ps15,,603
+£16 to £25,ps16-to-ps25,,604
+£26 to £35,ps26-to-ps35,,605
+More than £35,more-than-ps35,,606
+I would not be willing to pay any more per month for 1gbps (1000mbps) speeds,i-would-not-be-willing-to-pay-any-more-per-month-for-1gbps-1000mbps-speeds,,607
+I hadn't heard of it before now,i-hadn-t-heard-of-it-before-now,,608
+3+ activities,3-activities,,609
+An exhibition of art' photography or sculptures,an-exhibition-of-art-photography-or-sculptures,,610
+A play' drama' musical' pantomime' ballet' opera,a-play-drama-musical-pantomime-ballet-opera,,611
+An event connected with books' reading' or writing,an-event-connected-with-books-reading-or-writing,,612
+A craft exhibition (not a crafts market; crafts include for example textiles' woodworking),a-craft-exhibition-not-a-crafts-market-crafts-include-for-example-textiles-woodworking,,613
+A festival and or carnival (music' food' culture),a-festival-and-or-carnival-music-food-culture,,614
+Written stories' plays' or poetry,written-stories-plays-or-poetry,,615
+Painting' drawing' printmaking' calligraphy,painting-drawing-printmaking-calligraphy,,616
+Crafts (textile' ceramic' sculpting' carving' woodwork),crafts-textile-ceramic-sculpting-carving-woodwork,,617
+Other arts' crafts' or creative activities at home,other-arts-crafts-or-creative-activities-at-home,,618
+I'm not interested,i-m-not-interested,,619
+I don't have time,i-don-t-have-time,,620
+I don't know what is available,i-don-t-know-what-is-available,,621
+I don't have anyone to go with,i-don-t-have-anyone-to-go-with,,622
+Read an e book or e magazine (for example' on a kindle),read-an-e-book-or-e-magazine-for-example-on-a-kindle,,623
+Joined video calls with family' friends (for example microsoft teams' zoom' facetime),joined-video-calls-with-family-friends-for-example-microsoft-teams-zoom-facetime,,624
+Watched tv shows or films on demand for regular tv channels (for example bbc iplayer' itv hub),watched-tv-shows-or-films-on-demand-for-regular-tv-channels-for-example-bbc-iplayer-itv-hub,,625
+Watched tv shows or films using a streaming service (for example netflix or amazon prime),watched-tv-shows-or-films-using-a-streaming-service-for-example-netflix-or-amazon-prime,,626
+Listened to live radio online through a computer' laptop' tablet or phone,listened-to-live-radio-online-through-a-computer-laptop-tablet-or-phone,,627
+Listened to streamed music (for example' through itunes' spotify),listened-to-streamed-music-for-example-through-itunes-spotify,,628
+Content is paid for through tv license fee (all live tv and bbc iplayer),content-is-paid-for-through-tv-license-fee-all-live-tv-and-bbc-iplayer,,629
+Access paid content for free' using other methods,access-paid-content-for-free-using-other-methods,,630
+Don't know,don-t-know,,631
+Live arts event including theatre' visual arts or literature,live-arts-event-including-theatre-visual-arts-or-literature,,632
+Pre recorded arts event including theatre' visual arts or literature,pre-recorded-arts-event-including-theatre-visual-arts-or-literature,,633
+Live music or dance event' watched as it was happening,live-music-or-dance-event-watched-as-it-was-happening,,634
+Yes   science,yes-science,,635
+Yes   technology,yes-technology,,636
+Yes   engineering,yes-engineering,,637
+Yes   arts,yes-arts,,638
+Yes   maths,yes-maths,,639
+I don't have access to the internet,i-don-t-have-access-to-the-internet,,640
+I don't have access to an online device such as a smartphone' laptop or tablet,i-don-t-have-access-to-an-online-device-such-as-a-smartphone-laptop-or-tablet,,641
+I don't know how to access these types of events online,i-don-t-know-how-to-access-these-types-of-events-online,,642
+Some other form of help or training (type in) *open,some-other-form-of-help-or-training-type-in-open,,643
+Borrowed' browsed or returned books' newspapers' music' cds' dvds or audiobooks,borrowed-browsed-or-returned-books-newspapers-music-cds-dvds-or-audiobooks,,644
+Accessed online resources such as e books' magazines or journals,accessed-online-resources-such-as-e-books-magazines-or-journals,,645
+Used free wi fi' computer or printing facilities,used-free-wi-fi-computer-or-printing-facilities,,646
+Sought information related to your or someone else's health,sought-information-related-to-your-or-someone-else-s-health,,647
+Took part in an event (for example a reading group' film screening or author visit),took-part-in-an-event-for-example-a-reading-group-film-screening-or-author-visit,,648
+Visited the library café or met up with someone,visited-the-library-cafe-or-met-up-with-someone,,649
+Borrowed digital or online resources such as e books' e audio or e magazines but without visiting the library,borrowed-digital-or-online-resources-such-as-e-books-e-audio-or-e-magazines-but-without-visiting-the-library,,650
+Checked information online about the library such as opening hours' available facilities or services offered,checked-information-online-about-the-library-such-as-opening-hours-available-facilities-or-services-offered,,651
+Accessed some other library service online (type in) *open,accessed-some-other-library-service-online-type-in-open,,652
+I don't know how to access these types of event online,i-don-t-know-how-to-access-these-types-of-event-online,,653
+A historic building open to the public (non religious),a-historic-building-open-to-the-public-non-religious,,654
+A historic place of worship attended as a visitor (not to worship),a-historic-place-of-worship-attended-as-a-visitor-not-to-worship,,655
+A place connected with industrial history (such as an old factory' mine or railway),a-place-connected-with-industrial-history-such-as-an-old-factory-mine-or-railway,,656
+An ancient monument or archaeological site (such as a castle' fort' burial site),an-ancient-monument-or-archaeological-site-such-as-a-castle-fort-burial-site,,657
+A site connected with sports heritage not visited for the purposes of watching sport (such as wimbledon or wembley stadium),a-site-connected-with-sports-heritage-not-visited-for-the-purposes-of-watching-sport-such-as-wimbledon-or-wembley-stadium,,658
+A site connected with maritime or underwater heritage (such as shipwrecks),a-site-connected-with-maritime-or-underwater-heritage-such-as-shipwrecks,,659
+A historic landscape or habitat (such as coastline' countryside),a-historic-landscape-or-habitat-such-as-coastline-countryside,,660
+Some other heritage site or historic place (please type in),some-other-heritage-site-or-historic-place-please-type-in,,661
+It was recommended (for example by a friend' website or guidebook),it-was-recommended-for-example-by-a-friend-website-or-guidebook,,662
+For an event' activity or workshop,for-an-event-activity-or-workshop,,663
+There were amenities  or free facilities such as toilets' communal space' restaurants' cafés' shops,there-were-amenities-or-free-facilities-such-as-toilets-communal-space-restaurants-cafes-shops,,664
+You were told by a healthcare professional (gp or carer) that it may help your health or result in improved outcomes,you-were-told-by-a-healthcare-professional-gp-or-carer-that-it-may-help-your-health-or-result-in-improved-outcomes,,665
+Some other reason (type in),some-other-reason-type-in,,666
+Taken a virtual walking tour of a historic town or city' heritage site' castle or monument in england (not including drone flights),taken-a-virtual-walking-tour-of-a-historic-town-or-city-heritage-site-castle-or-monument-in-england-not-including-drone-flights,,667
+Engaged with text' image' audio' video' or animation' games' or podcast content from heritage sites in england,engaged-with-text-image-audio-video-or-animation-games-or-podcast-content-from-heritage-sites-in-england,,668
+Engaged with text' image' audio' video' or animation' games' or podcast content from museums in england,engaged-with-text-image-audio-video-or-animation-games-or-podcast-content-from-museums-in-england,,669
+It was recommended (for example by a friend or guide book),it-was-recommended-for-example-by-a-friend-or-guide-book,,670
+Because there were amenities or free facilities (for example toilets' communal space' restaurants' cafés' shops),because-there-were-amenities-or-free-facilities-for-example-toilets-communal-space-restaurants-cafes-shops,,671
+Because you were told by a healthcare professional (for example gp or carer) that it may help your health or result in improved outcomes,because-you-were-told-by-a-healthcare-professional-for-example-gp-or-carer-that-it-may-help-your-health-or-result-in-improved-outcomes,,672
+Art displays or exhibitions (excluding museums),art-displays-or-exhibitions-excluding-museums,,673
+To participate in dance' music or other creative arts activities,to-participate-in-dance-music-or-other-creative-arts-activities,,674
+Her majesty the queen's platinum jubilee,her-majesty-the-queen-s-platinum-jubilee,,675
+Unboxed: creativity in the uk,unboxed-creativity-in-the-uk,,676
+Following coverage on tv or radio (includes watching the event and or news about the event),following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event,,677
+Attending a national event [note 5],attending-a-national-event-note-5,,678
+Attending a local event [note 5],attending-a-local-event-note-5,,679
+Attending an digital or online event [note 5],attending-an-digital-or-online-event-note-5,,680
+Following coverage on tv or radio (includes watching the event and or news about the event) [note 5],following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event-note-5,,681
+Following on social media [note 5],following-on-social-media-note-5,,682
+Taking part in a voluntary capacity [note 5],taking-part-in-a-voluntary-capacity-note-5,,683
+Taking part in a professional capacity [note 5],taking-part-in-a-professional-capacity-note-5,,684
+Taking part in some other way [note 5],taking-part-in-some-other-way-note-5,,685
+Don't know [note 5],don-t-know-note-5,,686
+I am not interested in participating in this event [note 5],i-am-not-interested-in-participating-in-this-event-note-5,,687
+To undertake a constitutional role as head of state (such as opening each new session of parliament),to-undertake-a-constitutional-role-as-head-of-state-such-as-opening-each-new-session-of-parliament,,688
+To provide a sense of continuity and act as a focus for national identity' unity and pride,to-provide-a-sense-of-continuity-and-act-as-a-focus-for-national-identity-unity-and-pride,,689
+To recognise exceptional achievement by issuing honours (such as mbes' obes),to-recognise-exceptional-achievement-by-issuing-honours-such-as-mbes-obes,,690
+Games console (such as an xbox or playstation),games-console-such-as-an-xbox-or-playstation,,691
+A wi fi router or internet hub (a router is a device that communicates between the internet and the devices in your home that connect to the internet),a-wi-fi-router-or-internet-hub-a-router-is-a-device-that-communicates-between-the-internet-and-the-devices-in-your-home-that-connect-to-the-internet,,692
+Smartwatch (such as apple watch' samsung galaxy gear),smartwatch-such-as-apple-watch-samsung-galaxy-gear,,693
+Fitness band or smart wristband (such as fitbit' jawbone up),fitness-band-or-smart-wristband-such-as-fitbit-jawbone-up,,694
+Voice activated personal assistant or smart speaker device (such as amazon echo' alexa' google home),voice-activated-personal-assistant-or-smart-speaker-device-such-as-amazon-echo-alexa-google-home,,695
+Smart home security (such as internet connected or smartphone controlled security' smart door lock),smart-home-security-such-as-internet-connected-or-smartphone-controlled-security-smart-door-lock,,696
+Smart energy device (smart meter' bulb or plug) or thermostat,smart-energy-device-smart-meter-bulb-or-plug-or-thermostat,,697
+Smart kitchen appliance (such as a smart fridge),smart-kitchen-appliance-such-as-a-smart-fridge,,698
+Games console (such as an xbox or playstation)l,games-console-such-as-an-xbox-or-playstation-l,,699
+Online shop (such as amazon),online-shop-such-as-amazon,,700
+Online marketplace (such as ebay' facebook),online-marketplace-such-as-ebay-facebook,,701
+A mobile phone network provider (such as o2' ee),a-mobile-phone-network-provider-such-as-o2-ee,,702
+Recycle (such as using a local e waste recycling centre),recycle-such-as-using-a-local-e-waste-recycling-centre,,703
+Sell online (such as ebay' facebook' music magpie),sell-online-such-as-ebay-facebook-music-magpie,,704
+Store it somewhere (not as a spare),store-it-somewhere-not-as-a-spare,,705
+Yes' but only if i didn't have to pay for it,yes-but-only-if-i-didn-t-have-to-pay-for-it,,706
+No' i prefer to upskill myself,no-i-prefer-to-upskill-myself,,707
+No' not at all,no-not-at-all,,708
+Communicate with others by e mail or other messaging apps (such as whatsapp),communicate-with-others-by-e-mail-or-other-messaging-apps-such-as-whatsapp,,709
+Communicate with others using video tools (such as facetime' teams' skype),communicate-with-others-using-video-tools-such-as-facetime-teams-skype,,710
+Post content such as messages' photographs or videos on social media (such as facebook' instagram' snapchat),post-content-such-as-messages-photographs-or-videos-on-social-media-such-as-facebook-instagram-snapchat,,711
+Recognise what information or content may' or may not' be trustworthy on websites or apps,recognise-what-information-or-content-may-or-may-not-be-trustworthy-on-websites-or-apps,,712
+Use search engines to find the information i'm looking for (such as searching for news using a browser such as chrome' internet explorer or safari),use-search-engines-to-find-the-information-i-m-looking-for-such-as-searching-for-news-using-a-browser-such-as-chrome-internet-explorer-or-safari,,713
+Store information online and access content from a different device (such as using the cloud),store-information-online-and-access-content-from-a-different-device-such-as-using-the-cloud,,714
+Access and use public services online' including filling in forms (such as vehicle tax' voting registration' medical visits or prescriptions),access-and-use-public-services-online-including-filling-in-forms-such-as-vehicle-tax-voting-registration-medical-visits-or-prescriptions,,715
+Use online tutorials' web chat' faqs and forums to improve my skills in using the internet and digital apps or  products or services,use-online-tutorials-web-chat-faqs-and-forums-to-improve-my-skills-in-using-the-internet-and-digital-apps-or-products-or-services,,716
+Avoid suspicious links in email' websites' social media messages and pop ups,avoid-suspicious-links-in-email-websites-social-media-messages-and-pop-ups,,717
+Create strong passwords that are not easily to guess or related to me' for example using a mix of letters' numbers and symbols,create-strong-passwords-that-are-not-easily-to-guess-or-related-to-me-for-example-using-a-mix-of-letters-numbers-and-symbols,,718
+It doesn't feel very  important,it-doesn-t-feel-very-important,,719
+It may be important but i don't have enough information about what happens when security standards are not high enough,it-may-be-important-but-i-don-t-have-enough-information-about-what-happens-when-security-standards-are-not-high-enough,,720
+It is important but i don't have enough information to choose between providers based on their security standards,it-is-important-but-i-don-t-have-enough-information-to-choose-between-providers-based-on-their-security-standards,,721
+Others that i don't know can capture and use the data i post online,others-that-i-don-t-know-can-capture-and-use-the-data-i-post-online,,722
+Upgraded the security of someone else's' devices (such as a friend or relative),upgraded-the-security-of-someone-else-s-devices-such-as-a-friend-or-relative,,723
+Looked for information or advice on cyber careers (such as security engineer' security architect or security analyst),looked-for-information-or-advice-on-cyber-careers-such-as-security-engineer-security-architect-or-security-analyst,,724
+Uploaded a document (qualification' identification document) to a digital or online platform,uploaded-a-document-qualification-identification-document-to-a-digital-or-online-platform,,725
+Showed documents to someone through a webcam (for example' zoom' ms teams),showed-documents-to-someone-through-a-webcam-for-example-zoom-ms-teams,,726
+Shared a photo of your documents (such as a passport or qualification),shared-a-photo-of-your-documents-such-as-a-passport-or-qualification,,727
+I haven't been successful because i chose not to prove my identity,i-haven-t-been-successful-because-i-chose-not-to-prove-my-identity,,728
+I have not been able to access services for any other reason.,i-have-not-been-able-to-access-services-for-any-other-reason,,729
