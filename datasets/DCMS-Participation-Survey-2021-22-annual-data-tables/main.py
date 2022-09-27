@@ -202,7 +202,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[520]:
+# In[521]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
