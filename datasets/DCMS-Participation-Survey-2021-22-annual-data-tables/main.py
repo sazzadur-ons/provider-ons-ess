@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[504]:
+# In[522]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[505]:
+# In[523]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[506]:
+# In[524]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[507]:
+# In[525]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[508]:
+# In[526]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[509]:
+# In[527]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[510]:
+# In[528]:
 
 
 import numpy as np
@@ -183,15 +183,13 @@ df = df.replace({'Question' : {'Reasons for visiting ' : 'Reasons for Visiting',
 df['Response'] = df['Response'].str.replace(r"[\"\'\’,]", "'")
 
 df['Response'] = df['Response'].apply(pathify)
-df['Question'] = df['Question'].apply(pathify)
-df['Survey Topic'] = df['Survey Topic'].apply(pathify)
 
 df = df[['Period', 'Survey Topic', 'Question', 'Region Temp', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[511]:
+# In[529]:
 
 
 from IPython.core.display import HTML
@@ -202,7 +200,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[521]:
+# In[530]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -213,6 +211,8 @@ sepFrames = {}
 
 for i in sepDf['Question'].unique().tolist():
     frame = sepDf[ sepDf['Question'] == i]
+
+    frame['Survey Topic'] = frame['Survey Topic'].apply(pathify)
 
     if 'region' in pathify(i):
         frame['Response'] = frame.apply(lambda x: pathify(x['Region Temp']) + '-' + x['Response'] if 'ITL' in x['Region Temp'] else x['Response'], axis = 1)
@@ -250,7 +250,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[513]:
+# In[535]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -261,6 +261,9 @@ sepFrames = {}
 
 for i in sepDf['Survey Topic'].unique().tolist():
     frame = sepDf[ sepDf['Survey Topic'] == i ]
+
+    frame['Question'] = frame['Question'].apply(pathify)
+
     frame = frame.drop(columns=['Survey Topic', 'Region Temp'])
 
     info = open('info.json')
@@ -299,7 +302,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[514]:
+# In[532]:
 
 
 #df.to_csv('observations.csv', index=False)
@@ -308,7 +311,7 @@ frame
 #catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[515]:
+# In[533]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
