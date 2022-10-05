@@ -6,14 +6,8 @@
 
 # Adults engagement in the arts by age 
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
@@ -32,14 +26,8 @@ ORDER BY ?response
 
 # Art Engagement Physical
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
@@ -58,14 +46,8 @@ ORDER BY ?response
 
 # Art Engagement - Digital 
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
@@ -84,14 +66,8 @@ ORDER BY ?response
 
 # Adults engagement in the arts by ethnicity
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
@@ -110,14 +86,8 @@ ORDER BY ?response
 
 # Barriers to engagement with the arts (physical)
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dimension/question>
@@ -136,14 +106,8 @@ ORDER BY ?response
 
 # Barriers to engagement with the arts (digital)
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dimension/question>
@@ -164,14 +128,8 @@ ORDER BY ?response
 
 # Physical Engagement with Libraries by type
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/question>
@@ -190,14 +148,8 @@ ORDER BY ?response
 
 # Digital engagement with libraries by type
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/question>
@@ -218,14 +170,8 @@ ORDER BY ?response
 
 # Libray Engagement - Physical 
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
@@ -242,14 +188,8 @@ FILTER(?survey = 'Adults engagement with libraries in the last 12 months by demo
 
 # Libray Engagement - Digital 
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
@@ -272,14 +212,8 @@ FILTER(?survey = 'Adults engagement with libraries in the last 12 months by demo
 
 # Digital Heritage Engagement by activity type
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/question>
@@ -300,14 +234,8 @@ ORDER BY ?response
 
 # Heritage engagement - physical 
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
@@ -326,14 +254,8 @@ ORDER BY ?response
 
 # Heritage engagement - digital
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
@@ -352,14 +274,8 @@ ORDER BY ?response
 
 # Physical Heritage Engagement by Index of Multiple Deprivation
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
@@ -378,14 +294,8 @@ ORDER BY ?response
 
 # Digital Heritage Engagement by Index of Multiple Deprivation
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
@@ -404,14 +314,8 @@ ORDER BY ?response
 
 # Heritage engagement by long standing illness or disability 
 
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
