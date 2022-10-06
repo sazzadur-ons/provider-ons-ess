@@ -286,7 +286,7 @@ for i in sepDf['Survey Topic'].unique().tolist():
 
     if scraper.dataset.title == 'Participation Survey by Adults engagement with tourism in the last 12 months (physical)':
         
-        df = df.replace({'Response' : {'2021-06-03' : '3-6', '2021-10-07' : '7-10'}})
+        frame = frame.replace({'Response' : {'2021-06-03' : '3-6', '2021-10-07' : '7-10'}})
 
     
     frame.to_csv(pathify(i.replace('/', '-')) + '-observations.csv', index=False)
