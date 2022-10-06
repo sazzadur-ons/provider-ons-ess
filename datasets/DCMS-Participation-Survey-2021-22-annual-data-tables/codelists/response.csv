@@ -44,12 +44,12 @@ Access content using a log in belonging to someone not in my household,access-co
 Access paid content for free using other methods,access-paid-content-for-free-using-other-methods,,42
 They are too expensive,they-are-too-expensive,,43
 I m not interested,i-m-not-interested,,44
-I don t have time,i-don-t-have-time,,45
+I don't have time,i-don-t-have-time,,45
 I have a health problem or disability,i-have-a-health-problem-or-disability,,46
-I don t have access to the internet,i-don-t-have-access-to-the-internet,,47
-I don t have access to an online device such as a smartphone laptop or tablet,i-don-t-have-access-to-an-online-device-such-as-a-smartphone-laptop-or-tablet,,48
-I don t know how to access these types of events online,i-don-t-know-how-to-access-these-types-of-events-online,,49
-I don t know what is available,i-don-t-know-what-is-available,,50
+I don't have access to the internet,i-don-t-have-access-to-the-internet,,47
+I don't have access to an online device such as a smartphone laptop or tablet,i-don-t-have-access-to-an-online-device-such-as-a-smartphone-laptop-or-tablet,,48
+I don't know how to access these types of events online,i-don-t-know-how-to-access-these-types-of-events-online,,49
+I don't know what is available,i-don-t-know-what-is-available,,50
 Some other reason,some-other-reason,,51
 No reason in particular,no-reason-in-particular,,52
 A city or town with celebrated historic nature,a-city-or-town-with-celebrated-historic-nature,,53
@@ -89,7 +89,7 @@ Some other heritage site,some-other-heritage-site,,86
 I have not visited any of these heritage sites in the last 12 months,i-have-not-visited-any-of-these-heritage-sites-in-the-last-12-months,,87
 They are difficult to get to,they-are-difficult-to-get-to,,88
 I would feel out of place,i-would-feel-out-of-place,,89
-I don t have anyone to go with,i-don-t-have-anyone-to-go-with,,90
+I don't have anyone to go with,i-don-t-have-anyone-to-go-with,,90
 The opening hours are inconvenient,the-opening-hours-are-inconvenient,,91
 Due to covid 19 restrictions or concerns,due-to-covid-19-restrictions-or-concerns,,92
 As an individual or part of a social group,as-an-individual-or-part-of-a-social-group,,93
@@ -114,7 +114,7 @@ Using a library app,using-a-library-app,,111
 Through social media,through-social-media,,112
 Through youtube,through-youtube,,113
 By telephone,by-telephone,,114
-I don t know how to access these types of event online,i-don-t-know-how-to-access-these-types-of-event-online,,115
+I don't know how to access these types of event online,i-don-t-know-how-to-access-these-types-of-event-online,,115
 Help to apply for a government or council service,help-to-apply-for-a-government-or-council-service,,116
 Training or help to improve your digital or online skills,training-or-help-to-improve-your-digital-or-online-skills,,117
 Help to apply for a job or setting up or growing your business,help-to-apply-for-a-job-or-setting-up-or-growing-your-business,,118
@@ -143,7 +143,7 @@ Most of them,most-of-them,,140
 Around half of them,around-half-of-them,,141
 A few of them,a-few-of-them,,142
 None of them,none-of-them,,143
-Don t know,don-t-know,,144
+Don't know,don-t-know,,144
 Every time,every-time,,145
 Most of the time,most-of-the-time,,146
 Some of the time,some-of-the-time,,147
@@ -161,16 +161,16 @@ Taking part in a voluntary capacity,taking-part-in-a-voluntary-capacity,,158
 Taking part in a professional capacity,taking-part-in-a-professional-capacity,,159
 Taking part in some other way,taking-part-in-some-other-way,,160
 I am not interested in participating in this event,i-am-not-interested-in-participating-in-this-event,,161
-Attending a national event note 5,attending-a-national-event-note-5,,162
-Attending a local event note 5,attending-a-local-event-note-5,,163
-Attending an digital or online event note 5,attending-an-digital-or-online-event-note-5,,164
-Following coverage on tv or radio includes watching the event and or news about the event note 5,following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event-note-5,,165
-Following on social media note 5,following-on-social-media-note-5,,166
-Taking part in a voluntary capacity note 5,taking-part-in-a-voluntary-capacity-note-5,,167
-Taking part in a professional capacity note 5,taking-part-in-a-professional-capacity-note-5,,168
-Taking part in some other way note 5,taking-part-in-some-other-way-note-5,,169
-Don t know note 5,don-t-know-note-5,,170
-I am not interested in participating in this event note 5,i-am-not-interested-in-participating-in-this-event-note-5,,171
+Attending a national event ,attending-a-national-event-note-5,,162
+Attending a local event ,attending-a-local-event-note-5,,163
+Attending an digital or online event ,attending-an-digital-or-online-event-note-5,,164
+Following coverage on tv or radio includes watching the event and or news about the event ,following-coverage-on-tv-or-radio-includes-watching-the-event-and-or-news-about-the-event-note-5,,165
+Following on social media ,following-on-social-media-note-5,,166
+Taking part in a voluntary capacity ,taking-part-in-a-voluntary-capacity-note-5,,167
+Taking part in a professional capacity ,taking-part-in-a-professional-capacity-note-5,,168
+Taking part in some other way ,taking-part-in-some-other-way-note-5,,169
+Don t know ,don-t-know-note-5,,170
+I am not interested in participating in this event ,i-am-not-interested-in-participating-in-this-event-note-5,,171
 Very strongly,very-strongly,,172
 Fairly strongly,fairly-strongly,,173
 Neither strongly or not strongly,neither-strongly-or-not-strongly,,174
@@ -256,9 +256,9 @@ Traditional coastal or seaside town,traditional-coastal-or-seaside-town,,253
 Rural coastline or coastal village,rural-coastline-or-coastal-village,,254
 Mountains or hills,mountains-or-hills,,255
 Somewhere else,somewhere-else,,256
-1 2 nights,1-2-nights,,257
-2021 06 03,2021-06-03,,258
-2021 10 07,2021-10-07,,259
+1-2 nights,1-2-nights,,257
+3-6,3-6,,258
+7-10,7-10,,259
 More than 10,more-than-10,,260
 To visit museums,to-visit-museums,,261
 To attend art exhibitions,to-attend-art-exhibitions,,262
@@ -356,13 +356,13 @@ Allow computer systems and security software to be updated when prompted,allow-c
 Changed the password of my wi fi router at least every 12 months,changed-the-password-of-my-wi-fi-router-at-least-every-12-months,,354
 Consider the security standards of the internet provider when considering a new provider,consider-the-security-standards-of-the-internet-provider-when-considering-a-new-provider,,355
 It doesn t feel very important,it-doesn-t-feel-very-important,,356
-It may be important but i don t have enough information about what happens when security standards are not high enough,it-may-be-important-but-i-don-t-have-enough-information-about-what-happens-when-security-standards-are-not-high-enough,,357
-It is important but i don t have enough information to choose between providers based on their security standards,it-is-important-but-i-don-t-have-enough-information-to-choose-between-providers-based-on-their-security-standards,,358
+It may be important but i don't have enough information about what happens when security standards are not high enough,it-may-be-important-but-i-don-t-have-enough-information-about-what-happens-when-security-standards-are-not-high-enough,,357
+It is important but i don't have enough information to choose between providers based on their security standards,it-is-important-but-i-don-t-have-enough-information-to-choose-between-providers-based-on-their-security-standards,,358
 Viruses can damage my computer security,viruses-can-damage-my-computer-security,,359
 Software should be used to prevent viruses,software-should-be-used-to-prevent-viruses,,360
 My online activity produces a permanent record,my-online-activity-produces-a-permanent-record,,361
 My online activity can be used by others both now and in the future,my-online-activity-can-be-used-by-others-both-now-and-in-the-future,,362
-Others that i don t know can capture and use the data i post online,others-that-i-don-t-know-can-capture-and-use-the-data-i-post-online,,363
+Others that i don't know can capture and use the data i post online,others-that-i-don-t-know-can-capture-and-use-the-data-i-post-online,,363
 I can protect and secure my personal data through privacy settings,i-can-protect-and-secure-my-personal-data-through-privacy-settings,,364
 Taken part in a online security training course,taken-part-in-a-online-security-training-course,,365
 Upgraded the security of your own devices,upgraded-the-security-of-your-own-devices,,366
@@ -507,7 +507,7 @@ Agree,agree,,504
 Neither agree or disagree,neither-agree-or-disagree,,505
 Disagree,disagree,,506
 Strongly disagree,strongly-disagree,,507
-1 most deprived,1-most-deprived,,508
+1.0 - most deprived,1-most-deprived,,508
 2.0,2-0,,509
 3.0,3-0,,510
 4.0,4-0,,511
@@ -516,7 +516,7 @@ Strongly disagree,strongly-disagree,,507
 7.0,7-0,,514
 8.0,8-0,,515
 9.0,9-0,,516
-10 least deprived,10-least-deprived,,517
+10.0 - least deprived,10-least-deprived,,517
 Up to £20,up-to-ps20,,518
 £21 to £30,ps21-to-ps30,,519
 £31 to £40,ps31-to-ps40,,520

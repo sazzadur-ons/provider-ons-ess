@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[522]:
+# In[18]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[523]:
+# In[19]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[524]:
+# In[20]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[525]:
+# In[21]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[526]:
+# In[22]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[527]:
+# In[23]:
 
 
 tidied_sheets = []
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[528]:
+# In[24]:
 
 
 import numpy as np
@@ -189,7 +189,7 @@ df = df[['Period', 'Survey Topic', 'Question', 'Region Temp', 'Response', 'Value
 df
 
 
-# In[529]:
+# In[25]:
 
 
 from IPython.core.display import HTML
@@ -200,7 +200,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[530]:
+# In[26]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -250,7 +250,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[535]:
+# In[27]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -283,6 +283,11 @@ for i in sepDf['Survey Topic'].unique().tolist():
         #if this isnt fixed in the next release fix this properly
 
     scraper.dataset.title = "Participation Survey by " + i.replace('/', '-')
+
+    if scraper.dataset.title == 'Participation Survey by Adults engagement with tourism in the last 12 months (physical)':
+        
+        df = df.replace({'Response' : {'2021-06-03' : '3-6', '2021-10-07' : '7-10'}})
+
     
     frame.to_csv(pathify(i.replace('/', '-')) + '-observations.csv', index=False)
 
@@ -302,16 +307,13 @@ for i in sepDf['Survey Topic'].unique().tolist():
 frame
 
 
-# In[532]:
+# In[ ]:
 
 
-#df.to_csv('observations.csv', index=False)
-
-#catalog_metadata = scraper.as_csvqb_catalog_metadata()
-#catalog_metadata.to_json_file('catalog-metadata.json')
 
 
-# In[533]:
+
+# In[28]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""
