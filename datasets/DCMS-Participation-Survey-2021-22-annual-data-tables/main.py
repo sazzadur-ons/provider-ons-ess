@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[18]:
+# In[20]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[19]:
+# In[21]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[20]:
+# In[22]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[21]:
+# In[23]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[22]:
+# In[24]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[23]:
+# In[25]:
 
 
 tidied_sheets = []
@@ -82,14 +82,14 @@ for tab in tabs:
 
     periodRange = period.split()
 
-    periodRange = [int(i) for i in periodRange if i.isnumeric() == True]
+    #periodRange = [int(i) for i in periodRange if i.isnumeric() == True]
 
-    a = date(periodRange[1],periodRange[0],1)
-    b = date(periodRange[3],periodRange[2],31)
+    #a = date(periodRange[1],periodRange[0],1)
+    #b = date(periodRange[3],periodRange[2],31)
 
     # Sheets only specify months, has been assumed to be start of first month to end of second
 
-    periodRange = -(a-b).days
+    #periodRange = -(a-b).days
 
     topic = cell_to_string(tab.excel_ref("A1")).split(',')[0].split(':')[1].strip()
 
@@ -133,7 +133,7 @@ for tab in tabs:
 df
 
 
-# In[24]:
+# In[26]:
 
 
 import numpy as np
@@ -156,7 +156,7 @@ df['Region Temp'] = df['Question']
 
 df['Question'] = df.apply(lambda x: 'Region' if 'Region' in x['Question'] else x['Question'], axis = 1)
 
-df['Period'] = df.apply(lambda x: 'gregorian-interval/' + x['Period'].split()[1] + '-' + x['Period'].split()[0] + '-' + '31' + 'T00:00:00/P' + str(x['Period Range']) + 'D', axis = 1)
+df['Period'] = df.apply(lambda x: 'government-half/' + x['Period'].split()[1] + '-' + x['Period'].split()[4] + '/h2', axis = 1)
 
 df['Value'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Value'], axis = 1)
 df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Lower Estimate'], axis = 1)
@@ -189,7 +189,7 @@ df = df[['Period', 'Survey Topic', 'Question', 'Region Temp', 'Response', 'Value
 df
 
 
-# In[25]:
+# In[27]:
 
 
 from IPython.core.display import HTML
@@ -200,7 +200,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[26]:
+# In[28]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -250,7 +250,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[27]:
+# In[29]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -313,7 +313,7 @@ frame
 
 
 
-# In[28]:
+# In[30]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""

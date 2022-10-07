@@ -53,14 +53,14 @@
             "Value": {
                 "type": "observations",
                 "datatype": "double",
-                "measure": "http://gss-data.org.uk/def/measure/percentage-of-responses",
-                "unit": "http://gss-data.org.uk/def/concept/measurement-units/percent"
+                "measure": "http://gss-data.org.uk/def/measure/responses-in-the-affirmative",
+                "unit": "http://qudt.org/vocab/unit/PERCENT"
             },
             "Lower Estimate": {
                 "type" : "attribute", 
                 "new" : {
                     "comment": "Lower and upper estimates in this table are using 95% confidence level",
-                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/percent",
+                    "isDefinedBy": "http://qudt.org/vocab/unit/PERCENT",
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "double"        
                 }
@@ -69,7 +69,7 @@
                 "type" : "attribute", 
                 "new" : {
                     "comment": "Lower and upper estimates in this table are using 95% confidence level",
-                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/percent",
+                    "isDefinedBy": "http://qudt.org/vocab/unit/PERCENT",
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "double"        
                 }
@@ -78,7 +78,7 @@
                 "type" : "attribute", 
                 "new" : {
                     "comment": "2021/22 No. of respondents",
-                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/count",
+                    "isDefinedBy": "http://qudt.org/vocab/unit/NUM",
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "integer"        
                 }
@@ -87,7 +87,7 @@
                 "type" : "attribute", 
                 "new" : {
                     "comment": "Base counts are all respondents who gave a valid answer to the question",
-                    "isDefinedBy": "http://gss-data.org.uk/def/concept/measurement-units/count",
+                    "isDefinedBy": "http://qudt.org/vocab/unit/NUM",
                     "subPropertyOf": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
                     "literalValuesDataType": "integer"        
                 }
