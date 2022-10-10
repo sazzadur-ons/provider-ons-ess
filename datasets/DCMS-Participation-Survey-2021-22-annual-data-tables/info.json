@@ -56,7 +56,7 @@
                 "measure": "http://gss-data.org.uk/def/measure/responses-in-the-affirmative",
                 "unit": "http://qudt.org/vocab/unit/PERCENT"
             },
-            "Lower Estimate": {
+            "Lower Confidence Interval": {
                 "type" : "attribute", 
                 "new" : {
                     "comment": "Lower and upper estimates in this table are using 95% confidence level",
@@ -65,7 +65,7 @@
                     "literalValuesDataType": "double"        
                 }
             },
-            "Upper Estimate": {
+            "Upper Confidence Interval": {
                 "type" : "attribute", 
                 "new" : {
                     "comment": "Lower and upper estimates in this table are using 95% confidence level",
