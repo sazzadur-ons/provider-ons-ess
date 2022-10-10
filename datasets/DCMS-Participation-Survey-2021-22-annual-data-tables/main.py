@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[20]:
+# In[7]:
 
 
 from gssutils import *
@@ -9,7 +9,7 @@ from datetime import date
 import json
 
 
-# In[21]:
+# In[8]:
 
 
 def cell_to_string(cell):
@@ -38,14 +38,14 @@ months = {'January' : '01',
           'December' : '12'}
 
 
-# In[22]:
+# In[9]:
 
 
 scraper = Scraper(seed="info.json")
 scraper
 
 
-# In[23]:
+# In[10]:
 
 
 for i in scraper.distributions:
@@ -54,7 +54,7 @@ for i in scraper.distributions:
         dist = i
 
 
-# In[24]:
+# In[11]:
 
 
 tabs = [tab for tab in dist.as_databaker() if 'Table' in tab.name]
@@ -63,7 +63,7 @@ for i in tabs:
     print(i.name)
 
 
-# In[25]:
+# In[12]:
 
 
 tidied_sheets = []
@@ -116,8 +116,8 @@ for tab in tabs:
         HDim(question, 'Question', DIRECTLY, LEFT),
         HDim(response, 'Response', DIRECTLY, LEFT),
         HDim(measure, 'Measure Type', DIRECTLY, ABOVE),
-        HDim(lower_es, 'Lower Estimate', DIRECTLY, RIGHT),
-        HDim(upper_es, 'Upper Estimate', DIRECTLY, RIGHT),
+        HDim(lower_es, 'Lower Confidence Interval', DIRECTLY, RIGHT),
+        HDim(upper_es, 'Upper Confidence Interval', DIRECTLY, RIGHT),
         HDim(respondents, 'No. of Respondents', DIRECTLY, RIGHT),
         HDim(base, 'Base', DIRECTLY, RIGHT),
         HDimConst('TabName', tab.name.replace('Table', ''))
@@ -133,15 +133,15 @@ for tab in tabs:
 df
 
 
-# In[26]:
+# In[13]:
 
 
 import numpy as np
 
 df = pd.concat(tidied_sheets).fillna('')
 
-df = df.replace({'Lower Estimate' : {'x' : ''},
-                 'Upper Estimate' : {'x' : ''},
+df = df.replace({'Lower Confidence Interval' : {'x' : ''},
+                 'Upper Confidence Interval' : {'x' : ''},
                  'No. of Respondents' : {'x' : ''}})
 
 df['DATAMARKER'] = df.apply(lambda x: 'suppressed' if 'x' in x['DATAMARKER'] else np.nan, axis = 1)
@@ -159,11 +159,11 @@ df['Question'] = df.apply(lambda x: 'Region' if 'Region' in x['Question'] else x
 df['Period'] = df.apply(lambda x: 'government-half/' + x['Period'].split()[1] + '-' + x['Period'].split()[4] + '/h2', axis = 1)
 
 df['Value'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Value'], axis = 1)
-df['Lower Estimate'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Lower Estimate'], axis = 1)
-df['Upper Estimate'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Upper Estimate'], axis = 1)
+df['Lower Confidence Interval'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Lower Confidence Interval'], axis = 1)
+df['Upper Confidence Interval'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['Upper Confidence Interval'], axis = 1)
 df['No. of Respondents'] = df.apply(lambda x: 0 if 'suppressed' in str(x['Marker']) else x['No. of Respondents'], axis = 1)
 
-ROUNDCOL = ['Value', 'Lower Estimate', 'Upper Estimate']
+ROUNDCOL = ['Value', 'Lower Confidence Interval', 'Upper Confidence Interval']
 
 for col in df.columns.values.tolist():
 	if col in ROUNDCOL:
@@ -184,12 +184,12 @@ df['Response'] = df['Response'].str.replace(r"[\"\'\’,]", "'")
 
 df['Response'] = df['Response'].apply(pathify)
 
-df = df[['Period', 'Survey Topic', 'Question', 'Region Temp', 'Response', 'Value', 'Lower Estimate', 'Upper Estimate', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
+df = df[['Period', 'Survey Topic', 'Question', 'Region Temp', 'Response', 'Value', 'Lower Confidence Interval', 'Upper Confidence Interval', 'No. of Respondents', 'Base', 'Marker', 'TabName']]#, 'Measure Type', 'Unit']]
 
 df
 
 
-# In[27]:
+# In[14]:
 
 
 from IPython.core.display import HTML
@@ -200,7 +200,7 @@ for col in df:
         display(df[col].cat.categories)
 
 
-# In[28]:
+# In[15]:
 
 
 sepDf = df[ df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -250,7 +250,7 @@ for i in sepDf['Question'].unique().tolist():
 frame
 
 
-# In[29]:
+# In[16]:
 
 
 sepDf = df[ ~df['TabName'].str.contains('1b|1d|2b|2d|3b|3d|4b|5b|6b|7b|7c|7d|7e|8a|8d|8e|8f|8g|8h') ]
@@ -313,7 +313,7 @@ frame
 
 
 
-# In[30]:
+# In[17]:
 
 
 """1b 1d 2b 2d 3b 3d 4b 5b 6b 7b 7c 7d 7e 8a 8d 8e 8f 8g 8h"""

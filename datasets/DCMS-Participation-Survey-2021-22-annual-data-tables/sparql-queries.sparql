@@ -8,9 +8,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -32,9 +32,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -58,9 +58,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -81,9 +81,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -104,9 +104,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -127,9 +127,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -152,9 +152,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -175,9 +175,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -200,9 +200,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -225,9 +225,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -248,9 +248,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -271,9 +271,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -294,9 +294,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -317,9 +317,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -342,9 +342,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -365,9 +365,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -388,9 +388,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -411,9 +411,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -434,9 +434,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -457,9 +457,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -482,9 +482,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -505,9 +505,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-the-arts-in-the-last-12-months-digital#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -527,14 +527,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX data1:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dataset>
 PREFIX ques1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/question>
 PREFIX res1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/response>
-PREFIX upper1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX upper1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 PREFIX data2:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dataset>
 PREFIX ques2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/question>
 PREFIX res2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/response>
-PREFIX upper2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/lower-estimate>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
+PREFIX upper2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/lower-confidence-interval>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
 
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE { 
@@ -567,9 +567,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -590,9 +590,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -615,9 +615,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -638,9 +638,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -661,9 +661,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -684,9 +684,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -707,9 +707,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -730,9 +730,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -755,9 +755,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -778,9 +778,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -803,9 +803,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -828,9 +828,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -851,9 +851,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -874,9 +874,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -897,9 +897,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -920,9 +920,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -945,9 +945,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -968,9 +968,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -991,9 +991,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1014,9 +1014,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1037,9 +1037,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1060,9 +1060,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1085,9 +1085,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1108,9 +1108,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-libraries-in-the-last-12-months-digital#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1130,14 +1130,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX data1:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dataset>
 PREFIX ques1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dimension/question>
 PREFIX res1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dimension/response>
-PREFIX upper1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX upper1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower1: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 PREFIX data2:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dataset>
 PREFIX ques2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/question>
 PREFIX res2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/response>
-PREFIX upper2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/lower-estimate>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
+PREFIX upper2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower2: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/lower-confidence-interval>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
 
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE { 
@@ -1169,9 +1169,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dimension/response>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/lower-estimate>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/lower-confidence-interval>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE { 
 		?obs qb:dataSet data: . 
@@ -1191,9 +1191,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/response>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/lower-estimate>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/lower-confidence-interval>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE { 
 		?obs qb:dataSet data: . 
@@ -1216,9 +1216,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1239,9 +1239,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1262,9 +1262,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1285,9 +1285,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1308,9 +1308,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1331,9 +1331,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1356,9 +1356,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1379,9 +1379,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1404,9 +1404,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1429,9 +1429,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1452,9 +1452,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1475,9 +1475,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1498,9 +1498,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1521,9 +1521,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1546,9 +1546,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1569,9 +1569,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1592,9 +1592,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1615,9 +1615,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1638,9 +1638,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1661,9 +1661,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
 PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
 SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1686,9 +1686,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-physical#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
@@ -1709,9 +1709,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dataset>
 PREFIX ques: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/question>
 PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#dimension/response>
-PREFIX measure: <http://gss-data.org.uk/def/measure/percentage-of-responses>
-PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/upper-estimate>
-PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/lower-estimate>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-heritage-sites-in-the-last-12-months-digital#attribute/lower-confidence-interval>
 SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
 WHERE {
        ?obs qb:dataSet data: . 
