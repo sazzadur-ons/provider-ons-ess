@@ -2990,3 +2990,1489 @@ FILTER(?question in ('Completed one of these tasks in the last 12 months')) .
       }       
 ORDER BY DESC(?percentage)
 
+Figure 11.1: Methods used to verify identity online, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Verified your own identity online')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 11.2: Preference of methods to verify identity, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-digital-methods-of-identification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Prefer to use online or digital tools for identification', 'Prefer to use hard copy documents for identification')) .	
+      }       
+ORDER BY (?question)
+
+Figure 12.1: How comfortable adults felt about the UK government or private companies using data, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-use-of-data#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-use-of-data#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-use-of-data#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-use-of-data#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-use-of-data#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('How comfortable you are with private companies using data to grow the economy and create jobs',
+'How comfortable you are with the uk government using data to understand and better serve society through improved public services',
+'How comfortable you are with charities using data to help vulnerable people in society',
+'How comfortable you are with the uk government using data to make public policies which help keep people safe',
+'How comfortable you are with private companies using data to develop technology to help people do things more efficiently',
+'How comfortable you are with data being used to develop services that help people save money, such as price comparison websites',
+'How comfortable you are with data being used by private companies to improve their services and products',
+'How comfortable you are with data being used by private companies to design services which help people connect with others, for example, to develop social media platforms',
+'How comfortable you are with researchers and scientists using data to increase our understanding and knowledge of the world, people, culture and society')) .	
+      }       
+ORDER BY (?question)
+
+Figure 13.1: Frequency of sharing online content, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('How often do you share content that you see online?')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 13.2: Reasons for sharing online content, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-data-sharing-and-viewing-content-online#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Why have you shared content online?')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 14.1: Interest in participating in for Her Majesty the Queen’s Platinum Jubilee, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Interested in participating in her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 14.2: Awareness for Her Majesty the Queen’s Platinum Jubilee, by age, Index of Multiple Deprivation [footnote 2], and socio-economic classification [footnote 3], England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+# 2 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?percentage
+
+# 3 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 14.3: Awareness for Her Majesty the Queen’s Platinum Jubilee, by disability status, gender, religion, and ethnicity, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+# 4
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+Figure 14.4: Awareness for Her Majesty the Queen’s Platinum Jubilee, by urban or rural area, home ownership status, and highest qualification, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with her majesty the queen’s platinum jubilee')) .	
+      }       
+ORDER BY ?response
+
+Figure 15.1: Interest in participating in UNBOXED: Creativity in the UK, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Interested in participating in unboxed: creativity in the uk')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 15.2: Awareness for UNBOXED: Creativity in the UK, by age, Index of Multiple Deprivation [footnote 2], and socio-economic classification [footnote 3], England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+# 2 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?percentage
+
+# 3 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 15.3: Awareness for UNBOXED: Creativity in the UK, by disability status, gender, religion, and ethnicity, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+# 4
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+Figure 15.4: Awareness for UNBOXED: Creativity in the UK, by urban or rural area, home ownership status, and highest qualification, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with unboxed')) .	
+      }       
+ORDER BY ?response
+
+Figure 16.1 Interest in participating in the Birmingham Commonwealth Games 2022, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Interested in participating in birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 16.2: Awareness for Birmingham Commonwealth Games 2022, by age, Index of Multiple Deprivation [footnote 2], and socio-economic classification [footnote 3], England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+# 2 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?percentage
+
+# 3 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 16.3: Awareness for Birmingham Commonwealth Games 2022, by disability status, gender, religion, and ethnicity, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+# 4
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+Figure 16.4: Awareness for Birmingham Commonwealth Games 2022, by county region, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey (REPLACE(SUBSTR(?alpharesponse, 15, 100), '  ', '') AS ?response) ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?alpharesponse ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022') && regex(?alpharesponse, "ITL")) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 16.5: Awareness for Birmingham Commonwealth Games 2022, by urban/rural classification, tenure type, and highest qualification, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with birmingham commonwealth games 2022')) .	
+      }       
+ORDER BY ?response
+
+Figure 17.1: Interest in participating in Coventry City of Culture, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-major-events#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('Interested in participating in coventry city of culture')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 17.2: Awareness for Coventry City of Culture, by age, Index of Multiple Deprivation[footnote 2], and socio-economic classification [footnote 3], England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+# 2 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?percentage
+
+# 3 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 17.3: Awareness for Coventry City of Culture, by disability status, gender, religion, and ethnicity, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+# 4
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+Figure 17.4: Awareness for Coventry City of Culture, by county and regions, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-region#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey (REPLACE(SUBSTR(?alpharesponse, 15, 100), '  ', '') AS ?response) ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?alpharesponse ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture') && regex(?alpharesponse, "ITL")) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 17.5: Awareness for Coventry City of Culture, by urban/rural classification, tenure type, and highest qualification, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with coventry city of culture')) .	
+      }       
+ORDER BY ?response
+
+Figure 18.1: Live sporting events watched in-person and on TV the previous 6 months, by sporting type, England: October 2021 to March 2022.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('What live sports have you watched in the last 6 months?', 'What live sports have you watched on tv?')) .	
+      }       
+ORDER BY ?response
+
+Figure 18.2: Engagement in betting during watching live sports in person and on TV, by frequency, England: October to December 2021.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#dimension/question>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-adults-engagement-with-live-sports-and-gambling-in-the-last-6-12-months-physical#attribute/lower-confidence-interval>
+SELECT DISTINCT ?question ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?question] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?question in ('How often have placed a bet during any sporting event you attended', 'How often have placed a bet during any sporting event you watched live on tv')) .	
+      }       
+ORDER BY DESC(?response)
+
+Figure 18.3: Attendance in live sporting events in the previous 6 months, by age, Index of Multiple Deprivation [footnote 2], and socio-economic classification [footnote 3], England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-age#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+# 2 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-index-of-multiple-deprivation#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?percentage
+
+# 3 
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ns-sec#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY DESC(?percentage)
+
+Figure 18.4: Attendance in live sporting events in the previous 6 months, by disability status, gender, religion, and ethnicity, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-long-standing-illness-or-disability#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-gender#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-religion#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+# 4
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-ethnicity#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+Figure 18.5: Attendance in live sporting events in the previous six months, by urban/rural classification, tenure type, and highest qualification, England: October 2021 to March 2022.
+
+# 1
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-urban-rural-classification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+# 2
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-tenure#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
+
+# 3
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX data:<http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dataset>
+PREFIX sr: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/survey-topic>
+PREFIX res: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#dimension/response>
+PREFIX measure: <http://gss-data.org.uk/def/measure/responses-in-the-affirmative>
+PREFIX upper: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/upper-confidence-interval>
+PREFIX lower: <http://gss-data.org.uk/data/participation-survey/dcms-participation-survey-2021-22-annual-data-tables/participation-survey-by-highest-qualification#attribute/lower-confidence-interval>
+SELECT DISTINCT ?survey ?response ?percentage ?upper ?lower
+WHERE {
+       ?obs qb:dataSet data: . 
+       ?obs sr: [ rdfs:label ?survey] .
+       ?obs res: [ rdfs:label ?response ] .	 
+       ?obs measure: ?percentage .	
+	   ?obs upper: ?upper .
+	   ?obs lower: ?lower .
+FILTER(?survey in ('Adults engagement with live sports in the last 6 months by demographics (physical)')) .	
+      }       
+ORDER BY ?response
