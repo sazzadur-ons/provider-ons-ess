@@ -1,0 +1,95 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Sub-Regional Data Indicators",
+    "summary": "Subnational indicators explorer: underlying publicly available datasets",
+    "description": "",
+    "license": "",
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "themes":"",
+    "columns": {
+        "AREACD": {
+            "label": "Geography",
+            "code_list": false,
+            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+areacd}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+        },
+        "AREANM": false,
+        "Geography": false,            
+        "Indicator": {
+            "type": "measures"
+        },
+        "Category": {
+            "type": "dimension"                
+        },
+        "Period": {
+            "code_list": false,
+            "cell_uri_template": "http://reference.data.gov.uk/id/{+period}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+        },
+        "Measure": false,
+        "Unit": {
+            "type": "units",
+            "values": [
+                {
+                    "label": "%",
+                    "from_existing": "http://qudt.org/vocab/unit/PERCENT"
+                },
+                {
+                    "label": "Minutes",
+                    "from_existing": "http://qudt.org/vocab/unit/MIN",
+                    "quantity_kind": "http://qudt.org/vocab/quantitykind/Time",
+                    "description": "time taken to travel a distance"
+                },
+                {
+                    "label": "Number",
+                    "from_existing": "http://qudt.org/vocab/unit/NUM"
+                },
+                {
+                    "label": "Score out of 10",
+                    "from_existing": "http://qudt.org/vocab/unit/NUM",
+                    "description": "happiness out of 10"
+                },
+                {
+                    "label": "per 100,000 population",
+                    "from_existing": "http://qudt.org/vocab/unit/NUM",
+                    "scaling_factor": 100000
+                },
+                {
+                    "label": "per million population",
+                    "from_existing": "http://qudt.org/vocab/unit/NUM",
+                    "scaling_factor": 1000000
+                },
+                {
+                    "label": "yrs",
+                    "from_existing": "http://qudt.org/vocab/unit/YR",
+                    "quantity_kind": "http://qudt.org/vocab/quantitykind/Time"
+                },
+                {
+                    "label": "£",
+                    "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
+                    "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency"
+                },
+                {
+                    "label": "£ million",
+                    "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
+                    "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency",
+                    "scaling_factor": 1000000,
+                    "description": "Millions of Pounds Sterling (£)."
+                }
+            ]
+        },
+        "Value": {
+            "type": "observations",
+            "data_type": "double"
+        },           
+        "MAD": {
+            "type": "attribute",
+            "label": "Median Absolute Deviation",
+            "data_type": "decimal"
+        },
+        "Marker": {
+            "type" : "attribute",
+            "from_template": "observation-status"
+        }
+    }
+}
