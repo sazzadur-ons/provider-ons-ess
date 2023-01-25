@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: csv-to-csvw
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  generate_csvw_from_csv_upload:
+    name: Generate CSV-W from csv upload # generate_csvw_from_csv_upload job
+    runs-on: ubuntu-latest
+    steps:
+    - name: csv-to-csvw action # csv-to-csvw action step
+      # csv-to-csvw action path. The latest version is always available at https://github.com/marketplace/actions/csv-to-csvw-action
+      uses: GSS-Cogs/csv-to-csvw-action@v0.0.31
