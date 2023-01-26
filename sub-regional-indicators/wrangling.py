@@ -8,7 +8,7 @@ from pathlib import Path
 @click.argument("input", type=click.Path(exists=True, path_type=Path))
 @click.option("--output", default=Path("./output.csv"), type=click.Path(path_type=Path))
 def wrangle(input: Path(), output: Path()) -> None:
-    df = pd.read_csv(input, encoding='ISO-8859-1', skiprows= 2)
+    df = pd.read_csv(input)
     
     df = df.replace({'Period' :{201821 : '2018-2021',
                                 201719 : '2017-2019', 
