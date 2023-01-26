@@ -4,8 +4,8 @@
 - The data cube has the following catalog metadata:
         - Title: Sub-Regional Data Indicators
         - Label: Sub-Regional Data Indicators
-        - Issued: 2023-01-26T13:15:49.257539
-        - Modified: 2023-01-26T13:15:49.257539
+        - Issued: 2023-01-26T13:27:08.374749
+        - Modified: 2023-01-26T13:27:08.374749
         - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
         - Creator: None
         - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
@@ -110,27 +110,45 @@ Period      Area                           Measure                              
 
 - The data cube has the following value counts:
         - Value counts broken-down by measure and unit (of measure):
-                                                                 Measure                   Unit  Count
-aged-19-years-and-over-further-education-and-skills-learner-achievements                 number    153
-       aged-19-years-and-over-further-education-and-skills-participation per-100-000-population    343
-                                                                 anxiety        score-out-of-10    419
-                                            apprenticeships-achievements per-100-000-population    343
-                                                  apprenticeships-starts per-100-000-population    343
-cardiovascular-mortality-considered-preventable-in-persons-aged-under-75 per-100-000-population    354
-                        cycle-to-employment-centre-with-500-to-4999-jobs                minutes    371
-                        drive-to-employment-centre-with-500-to-4999-jobs                minutes    371
-                                              feeling-life-is-worthwhile        score-out-of-10    419
-                                          female-healthy-life-expectancy                    yrs    254
-                              gross-disposable-household-income-per-head                     ps    390
-                                                 gross-median-weekly-pay                     ps    390
-                                       gross-value-added-per-hour-worked                     ps    377
-                                                               happiness        score-out-of-10    419
-                                                                homicide per-million-population     55
-                                    inward-foreign-direct-investment-fdi             ps-million     54
-                                                       life-satisfaction        score-out-of-10    419
-                                            male-healthy-life-expectancy                    yrs    254
-                                                              new-houses                 number    346
-                                   outward-foreign-direct-investment-fdi             ps-million     54
-     public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs                minutes    371
-                                               total-value-of-uk-exports             ps-million    222
+                                                                                            Measure                   Unit  Count
+                                                                                        4g-coverage                percent    374
+                                                aged-16-to-64-years-level-3-or-above-qualifications                percent    379
+                           aged-19-years-and-over-further-education-and-skills-learner-achievements                 number    153
+                                  aged-19-years-and-over-further-education-and-skills-participation per-100-000-population    343
+                                                                                            anxiety        score-out-of-10    419
+                                                                       apprenticeships-achievements per-100-000-population    343
+                                                                             apprenticeships-starts per-100-000-population    343
+                                                                  cancer-diagnosis-at-stage-1-and-2                percent    353
+                           cardiovascular-mortality-considered-preventable-in-persons-aged-under-75 per-100-000-population    354
+children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage                percent    163
+                  children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage                percent    163
+                     children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage                percent    163
+                                                                                  cigarette-smokers                percent    385
+                                                   cycle-to-employment-centre-with-500-to-4999-jobs                minutes    371
+                                                   drive-to-employment-centre-with-500-to-4999-jobs                minutes    371
+                                                             employment-rate-for-16-to-64-year-olds                percent    379
+                                                                         feeling-life-is-worthwhile        score-out-of-10    419
+                                                                     female-healthy-life-expectancy                    yrs    254
+                                                gcses-and-equivalent-in-english-and-maths-by-age-19                percent    342
+                                                                          gigabit-capable-broadband                percent    374
+                                                         gross-disposable-household-income-per-head                     ps    390
+                                                                            gross-median-weekly-pay                     ps    390
+                                                                  gross-value-added-per-hour-worked                     ps    377
+                                                                                          happiness        score-out-of-10    419
+                                                                                           homicide per-million-population     55
+                                                               inward-foreign-direct-investment-fdi             ps-million     54
+                                                                                  life-satisfaction        score-out-of-10    419
+                                                                       male-healthy-life-expectancy                    yrs    254
+                                                                                         new-houses                 number    346
+                                                              outward-foreign-direct-investment-fdi             ps-million     54
+                                                           overweight-adults-aged-18-years-and-over                percent    353
+                                       overweight-children-at-reception-age-aged-four-to-five-years                percent    359
+                                              overweight-children-at-year-6-age-aged-10-to-11-years                percent    359
+                                                                 persistent-absences-for-all-pupils                percent    163
+                                      persistent-absences-for-pupils-eligible-for-free-school-meals                percent    321
+                                   persistent-absences-for-pupils-looked-after-by-local-authorities                percent    163
+                                public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs                minutes    371
+                                              pupils-at-expected-standards-by-end-of-primary-school                percent    163
+                                              schools-and-nursery-schools-rated-good-or-outstanding                percent    162
+                                                                          total-value-of-uk-exports             ps-million    222
         
