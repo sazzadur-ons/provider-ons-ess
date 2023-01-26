@@ -191,7 +191,7 @@
             "type": "units",
             "values": [
                 {
-                    "label": "%",
+                    "label": "percent",
                     "from_existing": "http://qudt.org/vocab/unit/PERCENT"
                 },
                 {
