@@ -249,7 +249,6 @@
             "data_type": "decimal"
         },
         "Marker": {
-            "type" : "attribute",
             "from_template": "observation-status"
         }
     }
