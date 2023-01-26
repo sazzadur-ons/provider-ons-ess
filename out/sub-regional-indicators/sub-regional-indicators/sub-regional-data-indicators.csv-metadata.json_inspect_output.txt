@@ -1,0 +1,136 @@
+
+- This file is a data cube.
+
+- The data cube has the following catalog metadata:
+        - Title: Sub-Regional Data Indicators
+        - Label: Sub-Regional Data Indicators
+        - Issued: 2023-01-26T13:15:49.257539
+        - Modified: 2023-01-26T13:15:49.257539
+        - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+        - Creator: None
+        - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: None
+        - Contact Point: None
+        - Identifier: Sub-Regional Data Indicators
+        - Comment: Subnational indicators explorer: underlying publicly available datasets
+        - Description: All data included in this fourth iteration of the Subnational Indicators Explorer come from data sources which are already available to the public. All effort has been made to ensure that the data is as inclusive as possible within the delivery timescales.
+        
+
+- The data cube has the following data structure definition:
+        - Dataset Label: Sub-Regional Data Indicators
+        - Number of Components: 47
+        - Components:
+                                                                                                                                    Property                                                                                      Property Label Property Type Column Title Observation Value Column Titles  Required
+                                                                                           sub-regional-data-indicators.csv#dimension/period                                                                                              Period     Dimension       Period                                      True
+                                                                                             sub-regional-data-indicators.csv#dimension/area                                                                                                Area     Dimension         Area                                      True
+                                                                  sub-regional-data-indicators.csv#measure/gross-value-added-per-hour-worked                                                                   Gross Value Added per hour worked       Measure                                                   True
+                                                                            sub-regional-data-indicators.csv#measure/gross-median-weekly-pay                                                                             Gross median weekly pay       Measure                                                   True
+                                                             sub-regional-data-indicators.csv#measure/employment-rate-for-16-to-64-year-olds                                                              Employment rate for 16 to 64 year olds       Measure                                                   True
+                                                         sub-regional-data-indicators.csv#measure/gross-disposable-household-income-per-head                                                          Gross disposable household income per head       Measure                                                   True
+                                                                          sub-regional-data-indicators.csv#measure/total-value-of-uk-exports                                                                           Total value of UK exports       Measure                                                   True
+                                                               sub-regional-data-indicators.csv#measure/inward-foreign-direct-investment-fdi                                                              Inward foreign direct investment (FDI)       Measure                                                   True
+                                                              sub-regional-data-indicators.csv#measure/outward-foreign-direct-investment-fdi                                                             Outward foreign direct investment (FDI)       Measure                                                   True
+                                sub-regional-data-indicators.csv#measure/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs                                 Public transport or walk to employment centre with 500 to 4999 jobs       Measure                                                   True
+                                                   sub-regional-data-indicators.csv#measure/drive-to-employment-centre-with-500-to-4999-jobs                                                    Drive to employment centre with 500 to 4999 jobs       Measure                                                   True
+                                                   sub-regional-data-indicators.csv#measure/cycle-to-employment-centre-with-500-to-4999-jobs                                                    Cycle to employment centre with 500 to 4999 jobs       Measure                                                   True
+                                                                          sub-regional-data-indicators.csv#measure/gigabit-capable-broadband                                                                           Gigabit capable broadband       Measure                                                   True
+                                                                                        sub-regional-data-indicators.csv#measure/4g-coverage                                                                                         4G coverage       Measure                                                   True
+                                              sub-regional-data-indicators.csv#measure/pupils-at-expected-standards-by-end-of-primary-school                                               Pupils at expected standards by end of primary school       Measure                                                   True
+                                                sub-regional-data-indicators.csv#measure/gcses-and-equivalent-in-english-and-maths-by-age-19                                               GCSEs (and equivalent) in English and maths by age 19       Measure                                                   True
+                                              sub-regional-data-indicators.csv#measure/schools-and-nursery-schools-rated-good-or-outstanding                                               Schools and nursery schools rated good or outstanding       Measure                                                   True
+                                                                 sub-regional-data-indicators.csv#measure/persistent-absences-for-all-pupils                                                                  Persistent absences for all pupils       Measure                                                   True
+                                      sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-eligible-for-free-school-meals                                       Persistent absences for pupils eligible for free school meals       Measure                                                   True
+                                   sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-looked-after-by-local-authorities                                    Persistent absences for pupils looked after by local authorities       Measure                                                   True
+sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage Children at expected standard for communication and language by end of early years foundation stage       Measure                                                   True
+                  sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage                   Children at expected standard for literacy by end of early years foundation stage       Measure                                                   True
+                     sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage                      Children at expected standard for maths by end of early years foundation stage       Measure                                                   True
+                           sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-learner-achievements                            Aged 19 years and over further education and skills learner achievements       Measure                                                   True
+                                                                             sub-regional-data-indicators.csv#measure/apprenticeships-starts                                                                              Apprenticeships starts       Measure                                                   True
+                                                                       sub-regional-data-indicators.csv#measure/apprenticeships-achievements                                                                        Apprenticeships achievements       Measure                                                   True
+                                                sub-regional-data-indicators.csv#measure/aged-16-to-64-years-level-3-or-above-qualifications                                                 Aged 16 to 64 years level 3 or above qualifications       Measure                                                   True
+                                  sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-participation                                   Aged 19 years and over further education and skills participation       Measure                                                   True
+                                                                     sub-regional-data-indicators.csv#measure/female-healthy-life-expectancy                                                                      Female healthy life expectancy       Measure                                                   True
+                                                                       sub-regional-data-indicators.csv#measure/male-healthy-life-expectancy                                                                        Male healthy life expectancy       Measure                                                   True
+                                                                                  sub-regional-data-indicators.csv#measure/cigarette-smokers                                                                                   Cigarette smokers       Measure                                                   True
+                                       sub-regional-data-indicators.csv#measure/overweight-children-at-reception-age-aged-four-to-five-years                                      Overweight children at reception age (aged four to five years)       Measure                                                   True
+                                              sub-regional-data-indicators.csv#measure/overweight-children-at-year-6-age-aged-10-to-11-years                                             Overweight children at Year 6 age (aged 10 to 11 years)       Measure                                                   True
+                                                           sub-regional-data-indicators.csv#measure/overweight-adults-aged-18-years-and-over                                                          Overweight adults (aged 18 years and over)       Measure                                                   True
+                                                                  sub-regional-data-indicators.csv#measure/cancer-diagnosis-at-stage-1-and-2                                                                   Cancer diagnosis at stage 1 and 2       Measure                                                   True
+                           sub-regional-data-indicators.csv#measure/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75                            Cardiovascular mortality considered preventable in persons aged under 75       Measure                                                   True
+                                                                                  sub-regional-data-indicators.csv#measure/life-satisfaction                                                                                   Life satisfaction       Measure                                                   True
+                                                                         sub-regional-data-indicators.csv#measure/feeling-life-is-worthwhile                                                                          Feeling life is worthwhile       Measure                                                   True
+                                                                                          sub-regional-data-indicators.csv#measure/happiness                                                                                           Happiness       Measure                                                   True
+                                                                                            sub-regional-data-indicators.csv#measure/anxiety                                                                                             Anxiety       Measure                                                   True
+                                                                                         sub-regional-data-indicators.csv#measure/new-houses                                                                                          New houses       Measure                                                   True
+                                                                                           sub-regional-data-indicators.csv#measure/homicide                                                                                            Homicide       Measure                                                   True
+                                                                                         sub-regional-data-indicators.csv#dimension/category                                                                                            Category     Dimension     Category                                      True
+                                                                                 http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure                                                                                                         Attribute         Unit                                      True
+                                                                                                http://purl.org/linked-data/cube#measureType                                                                                                         Dimension      Measure                                      True
+                                                                        sub-regional-data-indicators.csv#attribute/median-absolute-deviation                                                                           Median Absolute Deviation     Attribute          MAD                                     False
+                                                                               sub-regional-data-indicators.csv#attribute/observation-status                                                                                  Observation Status     Attribute       Marker                                     False
+        - Columns where suppress output is true: 
+		-- Uri Identifier
+
+- The data cube has the following code list information:
+        - Number of Code Lists: 1
+        - Code Lists:
+             Code List Code List Label Columns Used In
+category.csv#code-list        Category        Category
+
+- The data cube has the following dataset information:
+        - Number of Observations: 11839
+        - Number of Duplicates: 0
+        - First 10 Observations: 
+Period      Area                           Measure                                                                          Category Unit  Value       MAD Marker
+  2020 E06000001 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  31.85 -0.368235    NaN
+  2020 E06000002 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  30.96 -0.530478    NaN
+  2020 E06000003 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  28.14 -1.044549    NaN
+  2020 E06000004 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  38.36  0.818504    NaN
+  2020 E06000005 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  31.87 -0.364590    NaN
+  2020 E06000006 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  40.56  1.219552    NaN
+  2020 E06000007 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  34.42  0.100262    NaN
+  2020 E06000008 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  28.71 -0.940641    NaN
+  2020 E06000009 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  28.59 -0.962517    NaN
+  2020 E06000010 gross-value-added-per-hour-worked boosting-productivity-pay-jobs-and-living-standards-by-growing-the-private-sector   ps  30.24 -0.661730    NaN
+        - Last 10 Observations: 
+   Period      Area  Measure                                                 Category                   Unit     Value  MAD Marker
+2018-2021 E23000037 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  8.371362  0.0    NaN
+2018-2021 E23000038 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  2.765961  0.0    NaN
+2018-2021 E23000039 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  6.026983  0.0    NaN
+2018-2021 E92000001 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population 10.804773  0.0    NaN
+2018-2021 K04000001 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population 10.674497  0.0    NaN
+2018-2021 W15000001 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  6.186679  0.0    NaN
+2018-2021 W15000002 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  6.728030  0.0    NaN
+2018-2021 W15000003 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  8.964827  0.0    NaN
+2018-2021 W15000004 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population 11.534543  0.0    NaN
+2018-2021 W92000004 homicide restoring-a-sense-of-community-local-pride-and-belonging per-million-population  8.349984  0.0    NaN
+        
+
+- The data cube has the following value counts:
+        - Value counts broken-down by measure and unit (of measure):
+                                                                 Measure                   Unit  Count
+aged-19-years-and-over-further-education-and-skills-learner-achievements                 number    153
+       aged-19-years-and-over-further-education-and-skills-participation per-100-000-population    343
+                                                                 anxiety        score-out-of-10    419
+                                            apprenticeships-achievements per-100-000-population    343
+                                                  apprenticeships-starts per-100-000-population    343
+cardiovascular-mortality-considered-preventable-in-persons-aged-under-75 per-100-000-population    354
+                        cycle-to-employment-centre-with-500-to-4999-jobs                minutes    371
+                        drive-to-employment-centre-with-500-to-4999-jobs                minutes    371
+                                              feeling-life-is-worthwhile        score-out-of-10    419
+                                          female-healthy-life-expectancy                    yrs    254
+                              gross-disposable-household-income-per-head                     ps    390
+                                                 gross-median-weekly-pay                     ps    390
+                                       gross-value-added-per-hour-worked                     ps    377
+                                                               happiness        score-out-of-10    419
+                                                                homicide per-million-population     55
+                                    inward-foreign-direct-investment-fdi             ps-million     54
+                                                       life-satisfaction        score-out-of-10    419
+                                            male-healthy-life-expectancy                    yrs    254
+                                                              new-houses                 number    346
+                                   outward-foreign-direct-investment-fdi             ps-million     54
+     public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs                minutes    371
+                                               total-value-of-uk-exports             ps-million    222
+        

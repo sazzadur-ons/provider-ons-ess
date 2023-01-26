@@ -1,0 +1,3110 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "sub-regional-data-indicators.csv#dataset",
+    "tables": [
+        {
+            "url": "sub-regional-data-indicators.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Period",
+                        "name": "period",
+                        "propertyUrl": "sub-regional-data-indicators.csv#dimension/period",
+                        "valueUrl": "http://reference.data.gov.uk/id/{+period}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Area",
+                        "name": "area",
+                        "propertyUrl": "sub-regional-data-indicators.csv#dimension/area",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+area}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Measure",
+                        "name": "measure",
+                        "propertyUrl": "http://purl.org/linked-data/cube#measureType",
+                        "valueUrl": "sub-regional-data-indicators.csv#measure/{+measure}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Category",
+                        "name": "category",
+                        "propertyUrl": "sub-regional-data-indicators.csv#dimension/category",
+                        "valueUrl": "category.csv#{+category}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Unit",
+                        "name": "unit",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "sub-regional-data-indicators.csv#unit/{+unit}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Value",
+                        "name": "value",
+                        "propertyUrl": "sub-regional-data-indicators.csv#measure/{+measure}",
+                        "datatype": "double",
+                        "required": false
+                    },
+                    {
+                        "titles": "MAD",
+                        "name": "mad",
+                        "propertyUrl": "sub-regional-data-indicators.csv#attribute/median-absolute-deviation",
+                        "datatype": "decimal",
+                        "required": false
+                    },
+                    {
+                        "titles": "Marker",
+                        "name": "marker",
+                        "propertyUrl": "sub-regional-data-indicators.csv#attribute/observation-status",
+                        "valueUrl": "sub-regional-data-indicators.csv#attribute/observation-status/{+marker}",
+                        "required": false
+                    },
+                    {
+                        "name": "virt_type",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "http://purl.org/linked-data/cube#Observation"
+                    },
+                    {
+                        "name": "virt_dataset",
+                        "virtual": true,
+                        "propertyUrl": "http://purl.org/linked-data/cube#dataSet",
+                        "valueUrl": "sub-regional-data-indicators.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "category",
+                        "reference": {
+                            "resource": "category.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "period",
+                    "area",
+                    "category",
+                    "measure"
+                ],
+                "aboutUrl": "sub-regional-data-indicators.csv#obs/{period},{area},{category}@{measure}"
+            }
+        },
+        {
+            "url": "category.csv",
+            "tableSchema": "category.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/life-satisfaction",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Life satisfaction"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/cycle-to-employment-centre-with-500-to-4999-jobs",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Cycle to employment centre with 500 to 4999 jobs"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DataStructureDefinition"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/schools-and-nursery-schools-rated-good-or-outstanding"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/apprenticeships-achievements"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/overweight-children-at-year-6-age-aged-10-to-11-years"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/anxiety"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/unit"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/4g-coverage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/gross-value-added-per-hour-worked"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/male-healthy-life-expectancy"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/life-satisfaction"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/median-absolute-deviation"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/period"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/total-value-of-uk-exports"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/persistent-absences-for-pupils-eligible-for-free-school-meals"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/drive-to-employment-centre-with-500-to-4999-jobs"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/persistent-absences-for-all-pupils"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/aged-16-to-64-years-level-3-or-above-qualifications"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/overweight-adults-aged-18-years-and-over"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/new-houses"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/gross-median-weekly-pay"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/pupils-at-expected-standards-by-end-of-primary-school"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/persistent-absences-for-pupils-looked-after-by-local-authorities"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/aged-19-years-and-over-further-education-and-skills-learner-achievements"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/cigarette-smokers"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/inward-foreign-direct-investment-fdi"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/feeling-life-is-worthwhile"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/cycle-to-employment-centre-with-500-to-4999-jobs"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/aged-19-years-and-over-further-education-and-skills-participation"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/cancer-diagnosis-at-stage-1-and-2"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/homicide"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/employment-rate-for-16-to-64-year-olds"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/gcses-and-equivalent-in-english-and-maths-by-age-19"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/outward-foreign-direct-investment-fdi"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/apprenticeships-starts"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/overweight-children-at-reception-age-aged-four-to-five-years"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/happiness"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/category"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/area"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/measure-type"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/gigabit-capable-broadband"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/female-healthy-life-expectancy"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/gross-disposable-household-income-per-head"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#component/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-disposable-household-income-per-head"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/schools-and-nursery-schools-rated-good-or-outstanding"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-achievements"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-year-6-age-aged-10-to-11-years"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/anxiety"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#attribute/observation-status"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/4g-coverage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-value-added-per-hour-worked"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/male-healthy-life-expectancy"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/life-satisfaction"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/total-value-of-uk-exports"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#attribute/median-absolute-deviation"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/drive-to-employment-centre-with-500-to-4999-jobs"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-all-pupils"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-16-to-64-years-level-3-or-above-qualifications"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-adults-aged-18-years-and-over"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/new-houses"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-median-weekly-pay"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/pupils-at-expected-standards-by-end-of-primary-school"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-eligible-for-free-school-meals"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-learner-achievements"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cigarette-smokers"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/inward-foreign-direct-investment-fdi"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/feeling-life-is-worthwhile"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cycle-to-employment-centre-with-500-to-4999-jobs"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-participation"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cancer-diagnosis-at-stage-1-and-2"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/homicide"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/employment-rate-for-16-to-64-year-olds"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gcses-and-equivalent-in-english-and-maths-by-age-19"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/outward-foreign-direct-investment-fdi"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-starts"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/period"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-reception-age-aged-four-to-five-years"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/happiness"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-looked-after-by-local-authorities"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/area"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/category"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gigabit-capable-broadband"
+                },
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/female-healthy-life-expectancy"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/persistent-absences-for-all-pupils",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-all-pupils"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-all-pupils"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 18
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/cancer-diagnosis-at-stage-1-and-2",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Cancer diagnosis at stage 1 and 2"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/overweight-children-at-year-6-age-aged-10-to-11-years",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-year-6-age-aged-10-to-11-years"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-year-6-age-aged-10-to-11-years"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 33
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/persistent-absences-for-pupils-eligible-for-free-school-meals",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-eligible-for-free-school-meals"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-eligible-for-free-school-meals"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 19
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/gross-median-weekly-pay",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Gross median weekly pay"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/overweight-adults-aged-18-years-and-over",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-adults-aged-18-years-and-over"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-adults-aged-18-years-and-over"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 34
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/drive-to-employment-centre-with-500-to-4999-jobs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/drive-to-employment-centre-with-500-to-4999-jobs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/drive-to-employment-centre-with-500-to-4999-jobs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 11
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-year-6-age-aged-10-to-11-years",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Overweight children at Year 6 age (aged 10 to 11 years)"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#dimension/period",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Period"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#class/period"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/anxiety",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Anxiety"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/persistent-absences-for-pupils-looked-after-by-local-authorities",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-looked-after-by-local-authorities"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-looked-after-by-local-authorities"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 20
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-participation",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Aged 19 years and over further education and skills participation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#attribute/median-absolute-deviation",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Median Absolute Deviation"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/total-value-of-uk-exports",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Total value of UK exports"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/median-absolute-deviation",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#attribute/median-absolute-deviation"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#attribute/median-absolute-deviation"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 46
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/cancer-diagnosis-at-stage-1-and-2",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cancer-diagnosis-at-stage-1-and-2"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cancer-diagnosis-at-stage-1-and-2"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 35
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Children at expected standard for maths by end of early years foundation stage"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/happiness",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Happiness"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/life-satisfaction",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/life-satisfaction"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/life-satisfaction"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 37
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#attribute/observation-status",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#AttributeProperty",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Observation Status"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/category",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/category"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/category"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 43
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/area",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/area"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/area"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Children at expected standard for communication and language by end of early years foundation stage"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/female-healthy-life-expectancy",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/female-healthy-life-expectancy"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/female-healthy-life-expectancy"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 29
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/male-healthy-life-expectancy",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Male healthy life expectancy"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/pupils-at-expected-standards-by-end-of-primary-school",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Pupils at expected standards by end of primary school"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/inward-foreign-direct-investment-fdi",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/inward-foreign-direct-investment-fdi"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/inward-foreign-direct-investment-fdi"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 8
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/overweight-children-at-reception-age-aged-four-to-five-years",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-reception-age-aged-four-to-five-years"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-reception-age-aged-four-to-five-years"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 32
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/new-houses",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/new-houses"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/new-houses"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 41
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/apprenticeships-achievements",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-achievements"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-achievements"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 26
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#dimension/category",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "category.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Category"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#class/category"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/gross-disposable-household-income-per-head",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-disposable-household-income-per-head"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-disposable-household-income-per-head"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/outward-foreign-direct-investment-fdi",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Outward foreign direct investment (FDI)"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/gigabit-capable-broadband",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gigabit-capable-broadband"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gigabit-capable-broadband"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 13
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/cigarette-smokers",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cigarette-smokers"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cigarette-smokers"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 31
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/employment-rate-for-16-to-64-year-olds",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/employment-rate-for-16-to-64-year-olds"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/employment-rate-for-16-to-64-year-olds"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/aged-19-years-and-over-further-education-and-skills-learner-achievements",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-learner-achievements"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-learner-achievements"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 24
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/aged-19-years-and-over-further-education-and-skills-participation",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-participation"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-participation"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 28
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/employment-rate-for-16-to-64-year-olds",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Employment rate for 16 to 64 year olds"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/homicide",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/homicide"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/homicide"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 42
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-all-pupils",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Persistent absences for all pupils"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 45
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-achievements",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Apprenticeships achievements"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/schools-and-nursery-schools-rated-good-or-outstanding",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/schools-and-nursery-schools-rated-good-or-outstanding"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/schools-and-nursery-schools-rated-good-or-outstanding"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 17
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/4g-coverage",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "4G coverage"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-starts",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Apprenticeships starts"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/4g-coverage",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/4g-coverage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/4g-coverage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 14
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/outward-foreign-direct-investment-fdi",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/outward-foreign-direct-investment-fdi"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/outward-foreign-direct-investment-fdi"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 9
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/anxiety",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/anxiety"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/anxiety"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 40
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 22
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/new-houses",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "New houses"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/drive-to-employment-centre-with-500-to-4999-jobs",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Drive to employment centre with 500 to 4999 jobs"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/total-value-of-uk-exports",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/total-value-of-uk-exports"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/total-value-of-uk-exports"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Cardiovascular mortality considered preventable in persons aged under 75"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-looked-after-by-local-authorities",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Persistent absences for pupils looked after by local authorities"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#class/category",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/gigabit-capable-broadband",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Gigabit capable broadband"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/overweight-adults-aged-18-years-and-over",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Overweight adults (aged 18 years and over)"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/aged-19-years-and-over-further-education-and-skills-learner-achievements",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Aged 19 years and over further education and skills learner achievements"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/period",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/period"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#dimension/period"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/aged-16-to-64-years-level-3-or-above-qualifications",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Aged 16 to 64 years level 3 or above qualifications"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/gross-value-added-per-hour-worked",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Gross Value Added per hour worked"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/gross-disposable-household-income-per-head",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Gross disposable household income per head"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/prov#Activity"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.2.1"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/overweight-children-at-reception-age-aged-four-to-five-years",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Overweight children at reception age (aged four to five years)"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Public transport or walk to employment centre with 500 to 4999 jobs"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/apprenticeships-starts",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-starts"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/apprenticeships-starts"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 25
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#dataset",
+            "@type": [
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/ns/dcat#Dataset"
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "All data included in this fourth iteration of the Subnational Indicators Explorer come from data sources which are already available to the public. All effort has been made to ensure that the data is as inclusive as possible within the delivery timescales."
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Sub-Regional Data Indicators"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-01-26T13:15:49.257539"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-01-26T13:15:49.257539"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/office-for-national-statistics"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Sub-Regional Data Indicators"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Subnational indicators explorer: underlying publicly available datasets"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Sub-Regional Data Indicators"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/observation-status",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#attribute/observation-status"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": false
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 47
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/unit",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 44
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/inward-foreign-direct-investment-fdi",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Inward foreign direct investment (FDI)"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/pupils-at-expected-standards-by-end-of-primary-school",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/pupils-at-expected-standards-by-end-of-primary-school"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/pupils-at-expected-standards-by-end-of-primary-school"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 15
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/gcses-and-equivalent-in-english-and-maths-by-age-19",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "GCSEs (and equivalent) in English and maths by age 19"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/gcses-and-equivalent-in-english-and-maths-by-age-19",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gcses-and-equivalent-in-english-and-maths-by-age-19"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gcses-and-equivalent-in-english-and-maths-by-age-19"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 16
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/schools-and-nursery-schools-rated-good-or-outstanding",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Schools and nursery schools rated good or outstanding"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/cigarette-smokers",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Cigarette smokers"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/happiness",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/happiness"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/happiness"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 39
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/homicide",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Homicide"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/gross-value-added-per-hour-worked",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-value-added-per-hour-worked"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-value-added-per-hour-worked"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/aged-16-to-64-years-level-3-or-above-qualifications",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-16-to-64-years-level-3-or-above-qualifications"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/aged-16-to-64-years-level-3-or-above-qualifications"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 27
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/public-transport-or-walk-to-employment-centre-with-500-to-4999-jobs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 10
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-communication-and-language-by-end-of-early-years-foundation-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 21
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/feeling-life-is-worthwhile",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/feeling-life-is-worthwhile"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/feeling-life-is-worthwhile"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 38
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/male-healthy-life-expectancy",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/male-healthy-life-expectancy"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/male-healthy-life-expectancy"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 30
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/female-healthy-life-expectancy",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Female healthy life expectancy"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-maths-by-end-of-early-years-foundation-stage"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 23
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/cycle-to-employment-centre-with-500-to-4999-jobs",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cycle-to-employment-centre-with-500-to-4999-jobs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cycle-to-employment-centre-with-500-to-4999-jobs"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 12
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#dimension/area",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#DimensionProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Area"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#class/area"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/children-at-expected-standard-for-literacy-by-end-of-early-years-foundation-stage",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Children at expected standard for literacy by end of early years foundation stage"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/feeling-life-is-worthwhile",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Feeling life is worthwhile"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/gross-median-weekly-pay",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-median-weekly-pay"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/gross-median-weekly-pay"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#class/area",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#component/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentSpecification"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "sub-regional-data-indicators.csv#measure/cardiovascular-mortality-considered-preventable-in-persons-aged-under-75"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 36
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#class/period",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class"
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#measure/persistent-absences-for-pupils-eligible-for-free-school-meals",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Persistent absences for pupils eligible for free school meals"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#double"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#dependency/category",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://rdfs.org/ns/void#Dataset"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./category.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "category.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#attribute/observation-status/",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": " "
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#attribute/observation-status/not-available",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "not-available"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "%"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/per-100-000-population",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "100000.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "per 100,000 population"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/ps",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/hasQuantityKind": [
+                {
+                    "@id": "http://qudt.org/vocab/quantitykind/Currency"
+                }
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "\u00a3"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/per-million-population",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1000000.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "per million population"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/minutes",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/hasQuantityKind": [
+                {
+                    "@id": "http://qudt.org/vocab/quantitykind/Time"
+                }
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/MIN"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/MIN"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "time taken to travel a distance"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/MIN"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Minutes"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/score-out-of-10",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "happiness out of 10"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Score out of 10"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/yrs",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/hasQuantityKind": [
+                {
+                    "@id": "http://qudt.org/vocab/quantitykind/Time"
+                }
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/YR"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/YR"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/YR"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "yrs"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/ps-million",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/hasQuantityKind": [
+                {
+                    "@id": "http://qudt.org/vocab/quantitykind/Currency"
+                }
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1000000.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Millions of Pounds Sterling (\u00a3)."
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "\u00a3 million"
+                }
+            ]
+        },
+        {
+            "@id": "sub-regional-data-indicators.csv#unit/number",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/NUM"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Number"
+                }
+            ]
+        }
+    ]
+}
