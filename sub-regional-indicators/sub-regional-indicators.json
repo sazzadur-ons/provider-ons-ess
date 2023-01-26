@@ -2,7 +2,7 @@
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "Sub-Regional Data Indicators",
     "summary": "Subnational indicators explorer: underlying publicly available datasets",
-    "description": "All data included in this fourth iteration of the Subnational indicators explorer come from data sources which are already available to the public. All effort has been made to ensure that the data is as inclusive as possible within the delivery timescales.",
+    "description": "All data included in this fourth iteration of the Subnational Indicators explorer come from data sources which are already available to the public. All effort has been made to ensure that the data is as inclusive as possible within the delivery timescales.",
     "license": "",
     "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
     "themes":"",
