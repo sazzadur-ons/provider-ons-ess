@@ -8,18 +8,182 @@
     "themes":"",
     "columns": {
         "Period": {
+            "type": "dimension",
             "code_list": false,
             "cell_uri_template": "http://reference.data.gov.uk/id/{+period}",
             "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
         },
         "Area": {
-            "label": "Geography",
+            "type": "dimension",
             "code_list": false,
-            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+areacd}",
+            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+area}",
             "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
         },
-        "Indicator": {
-            "type": "measures"
+        "Measure": {
+            "type": "measures",
+            "values": [
+                {
+                    "label": "Gross Value Added per hour worked",
+                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                },
+                {
+                    "label": "Gross median weekly pay",
+                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                },
+                {
+                    "label": "Employment rate for 16 to 64 year olds",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Gross disposable household income per head",
+                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                },
+                {
+                    "label": "Total value of UK exports",
+                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                },
+                {
+                    "label": "Inward foreign direct investment (FDI)",
+                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                },
+                {
+                    "label": "Outward foreign direct investment (FDI)",
+                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                },
+                {
+                    "label": "Public transport or walk to employment centre with 500 to 4999 jobs",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Drive to employment centre with 500 to 4999 jobs",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Cycle to employment centre with 500 to 4999 jobs",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Gigabit capable broadband",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "4G coverage",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Pupils at expected standards by end of primary school",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "GCSEs (and equivalent) in English and maths by age 19",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Schools and nursery schools rated good or outstanding",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Persistent absences for all pupils",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Persistent absences for pupils eligible for free school meals",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Persistent absences for pupils looked after by local authorities",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Children at expected standard for communication and language by end of early years foundation stage",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Children at expected standard for literacy by end of early years foundation stage",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Children at expected standard for maths by end of early years foundation stage",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Aged 19 years and over further education and skills learner achievements",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Apprenticeships starts",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Apprenticeships achievements",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Aged 16 to 64 years level 3 or above qualifications",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Aged 19 years and over further education and skills participation",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Female healthy life expectancy",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Male healthy life expectancy",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Cigarette smokers",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Overweight children at reception age (aged four to five years)",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Overweight children at Year 6 age (aged 10 to 11 years)",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Overweight adults (aged 18 years and over)",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Cancer diagnosis at stage 1 and 2",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Cardiovascular mortality considered preventable in persons aged under 75",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Life satisfaction",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Feeling life is worthwhile",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Happiness",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Anxiety",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "New houses",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                },
+                {
+                    "label": "Homicide",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
+                }
+                
+            ]
         },
         "Category": {
             "type": "dimension"
