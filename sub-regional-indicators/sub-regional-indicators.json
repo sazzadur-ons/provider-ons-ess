@@ -7,26 +7,23 @@
     "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
     "themes":"",
     "columns": {
-        "AREACD": {
-            "label": "Geography",
-            "code_list": false,
-            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+areacd}",
-            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
-        },
-        "AREANM": false,
-        "Geography": false,            
-        "Indicator": {
-            "type": "measures"
-        },
-        "Category": {
-            "type": "dimension"                
-        },
         "Period": {
             "code_list": false,
             "cell_uri_template": "http://reference.data.gov.uk/id/{+period}",
             "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
         },
-        "Measure": false,
+        "Area": {
+            "label": "Geography",
+            "code_list": false,
+            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+areacd}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+        },
+        "Indicator": {
+            "type": "measures"
+        },
+        "Category": {
+            "type": "dimension"
+        },        
         "Unit": {
             "type": "units",
             "values": [
