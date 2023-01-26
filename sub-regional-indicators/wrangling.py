@@ -20,6 +20,7 @@ def wrangle(input: Path(), output: Path()) -> None:
     df['Marker'] = ''
 
     df['Marker'] = df.apply(lambda x: 'not-available' if math.isnan(x['Value']) else '', axis = 1)
+    df['MAD'] = df.apply(lambda x: '' if pd.isnull(x['MAD']) else x['MAD'], axis = 1)
     
     df.to_csv(output, index=False)
     return
