@@ -4,17 +4,23 @@
 - The data cube has the following catalog metadata:
         - Title: Sub-Regional Data Indicators
         - Label: Sub-Regional Data Indicators
-        - Issued: 2023-01-26T13:27:08.374749
-        - Modified: 2023-01-26T13:27:08.374749
+        - Issued: 2023-02-01T13:05:59.527640
+        - Modified: 2023-02-01T13:05:59.527640
         - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
-        - Creator: None
+        - Creator: https://www.gov.uk/government/organisations/office-for-national-statistics
         - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
         - Landing Pages: None
         - Themes: None
-        - Keywords: None
+        - Keywords: 
+		-- model
+		-- employment
+		-- great-britain
+		-- modelling
+		-- output
+		-- subnational
         - Contact Point: None
         - Identifier: Sub-Regional Data Indicators
-        - Comment: Subnational indicators explorer: underlying publicly available datasets
+        - Comment: Subnational indicators explorer: underlying publicly available datasets. April 2017 to March 2022
         - Description: All data included in this fourth iteration of the Subnational Indicators Explorer come from data sources which are already available to the public. All effort has been made to ensure that the data is as inclusive as possible within the delivery timescales.
         
 
@@ -23,8 +29,8 @@
         - Number of Components: 47
         - Components:
                                                                                                                                     Property                                                                                      Property Label Property Type Column Title Observation Value Column Titles  Required
-                                                                                           sub-regional-data-indicators.csv#dimension/period                                                                                              Period     Dimension       Period                                      True
-                                                                                             sub-regional-data-indicators.csv#dimension/area                                                                                                Area     Dimension         Area                                      True
+                                                                                   http://purl.org/linked-data/sdmx/2009/dimension#refPeriod                                                                                                         Dimension       Period                                      True
+                                                                                     http://purl.org/linked-data/sdmx/2009/dimension#refArea                                                                                                         Dimension         Area                                      True
                                                                   sub-regional-data-indicators.csv#measure/gross-value-added-per-hour-worked                                                                   Gross Value Added per hour worked       Measure                                                   True
                                                                             sub-regional-data-indicators.csv#measure/gross-median-weekly-pay                                                                             Gross median weekly pay       Measure                                                   True
                                                              sub-regional-data-indicators.csv#measure/employment-rate-for-16-to-64-year-olds                                                              Employment rate for 16 to 64 year olds       Measure                                                   True
