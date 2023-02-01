@@ -1,20 +1,30 @@
 {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "Sub-Regional Data Indicators",
-    "summary": "Subnational indicators explorer: underlying publicly available datasets",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "summary": "Subnational indicators explorer: underlying publicly available datasets. April 2017 to March 2022",
     "description": "All data included in this fourth iteration of the Subnational Indicators Explorer come from data sources which are already available to the public. All effort has been made to ensure that the data is as inclusive as possible within the delivery timescales.",
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "subnational",
+        "employment",
+        "great-britain",
+        "model",
+        "modelling",
+        "output"
+    ],
     "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "themes": [
+        "sub-national data"
+    ],
     "columns": {
         "Period": {
             "type": "dimension",
-            "code_list": false,
             "cell_uri_template": "http://reference.data.gov.uk/id/{+period}",
             "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
         },
         "Area": {
             "type": "dimension",
-            "code_list": false,
             "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+area}",
             "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
         },
@@ -212,12 +222,10 @@
                 {
                     "label": "per 100,000 population",
                     "from_existing": "http://qudt.org/vocab/unit/NUM",
-                    "scaling_factor": 100000
                 },
                 {
                     "label": "per million population",
                     "from_existing": "http://qudt.org/vocab/unit/NUM",
-                    "scaling_factor": 1000000
                 },
                 {
                     "label": "yrs",
@@ -233,19 +241,18 @@
                     "label": "£ million",
                     "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
                     "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency",
-                    "scaling_factor": 1000000,
                     "description": "Millions of Pounds Sterling (£)."
                 }
             ]
         },
         "Value": {
             "type": "observations",
-            "data_type": "double"
+            "data_type": "float"
         },           
         "MAD": {
             "type": "attribute",
             "label": "Median Absolute Deviation",
-            "data_type": "decimal"
+            "data_type": "float"
         },
         "Marker": {
             "from_template": "observation-status"
