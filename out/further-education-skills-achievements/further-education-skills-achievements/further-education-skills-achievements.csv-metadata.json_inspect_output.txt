@@ -1,0 +1,84 @@
+
+- This file is a data cube.
+
+- The data cube has the following catalog metadata:
+        - Title: Further Education Skills Achievements
+        - Label: Further Education Skills Achievements
+        - Issued: 2023-02-02T14:39:34.779887
+        - Modified: 2023-02-02T14:39:34.779887
+        - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+        - Creator: https://www.gov.uk/government/organisations/office-for-national-statistics
+        - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: 
+		-- united-kingdom
+		-- output
+		-- model
+		-- education
+		-- subnational
+		-- modelling
+        - Contact Point: None
+        - Identifier: Further Education Skills Achievements
+        - Comment: Further Education Skills Achievements 2011 to 2020
+        - Description: Further Education Skills Achievements 2011 to 2020
+        
+
+- The data cube has the following data structure definition:
+        - Dataset Label: Further Education Skills Achievements
+        - Number of Components: 8
+        - Components:
+                                                     Property Property Label Property Type Column Title Observation Value Column Titles  Required
+    http://purl.org/linked-data/sdmx/2009/dimension#refPeriod                    Dimension       Period                     Observation      True
+      http://purl.org/linked-data/sdmx/2009/dimension#refArea                    Dimension         Area                     Observation      True
+  further-education-skills-achievements.csv#dimension/mission        Mission     Dimension      Mission                     Observation      True
+ further-education-skills-achievements.csv#dimension/category       Category     Dimension     Category                     Observation      True
+further-education-skills-achievements.csv#dimension/indicator      Indicator     Dimension    Indicator                     Observation      True
+                 http://purl.org/linked-data/cube#measureType                    Dimension                                                   True
+  http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure                    Attribute                                  Observation      True
+     further-education-skills-achievements.csv#measure/pounds         Pounds       Measure  Observation                     Observation      True
+        - Columns where suppress output is true: 
+		-- Uri Identifier
+
+- The data cube has the following code list information:
+        - Number of Code Lists: 3
+        - Code Lists:
+              Code List Code List Label Columns Used In
+ category.csv#code-list        Category        Category
+indicator.csv#code-list       Indicator       Indicator
+  mission.csv#code-list         Mission         Mission
+
+- The data cube has the following dataset information:
+        - Number of Rows: 466
+        - Number of Duplicates: 0
+        - First 10 Rows: 
+                   Period      Area                                                                   Mission                                            Category                                                                Indicator  Observation
+government-year/2011-2012 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1732970.0
+government-year/2012-2013 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1921820.0
+government-year/2013-2014 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1750600.0
+government-year/2014-2015 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1497100.0
+government-year/2015-2016 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1237950.0
+government-year/2016-2017 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1172980.0
+government-year/2017-2018 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1199560.0
+government-year/2018-2019 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements    1101420.0
+government-year/2019-2020 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements     868930.0
+government-year/2020-2021 E92000001 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements     860020.0
+        - Last 10 Rows: 
+                   Period      Area                                                                   Mission                                            Category                                                                Indicator  Observation
+government-year/2020-2021 E06000054 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       6700.0
+government-year/2018-2019 E10000008 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements      12940.0
+government-year/2019-2020 E10000008 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       9850.0
+government-year/2020-2021 E10000008 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       9790.0
+government-year/2018-2019 E10000013 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       8540.0
+government-year/2019-2020 E10000013 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       7290.0
+government-year/2020-2021 E10000013 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       8120.0
+government-year/2018-2019 E10000027 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       9800.0
+government-year/2019-2020 E10000027 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       9300.0
+government-year/2020-2021 E10000027 mission-6-increasing-high-quality-skills-training-in-every-area-in-the-uk spreading-opportunity-and-improving-public-services aged-19-years-and-over-further-education-and-skills-learner-achievements       9260.0
+        
+
+- The data cube has the following value counts:
+        - Value counts broken-down by measure and unit (of measure):
+Measure   Unit  Count
+ Pounds Number    466
+        

@@ -1,0 +1,325 @@
+[
+    {
+        "message": "Unable to identify {'type': 'observations', 'unit': {'label': 'Number', 'from_existing': 'http://qudt.org/vocab/unit/NUM'}, 'measure': {'label': 'Pounds', 'from_existing': 'http://gss-data.org.uk/def/trade/measure/count'}}",
+        "json_path": "$.columns.Observation",
+        "offending_value": {
+            "type": "observations",
+            "unit": {
+                "label": "Number",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
+            },
+            "measure": {
+                "label": "Pounds",
+                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+            }
+        },
+        "schema_validator_type": "anyOf",
+        "possible_types_with_grouped_errors": [
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Dimension"
+                },
+                [
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    },
+                    {
+                        "message": "'dimension' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Attribute_Resource_New"
+                },
+                [
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    },
+                    {
+                        "message": "'attribute' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Attribute_Resource_Existing"
+                },
+                [
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    },
+                    {
+                        "message": "'attribute' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Attribute_Literal"
+                },
+                [
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    },
+                    {
+                        "message": "'attribute' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Measures_New"
+                },
+                [
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    },
+                    {
+                        "message": "'measures' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Measures_Existing"
+                },
+                [
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    },
+                    {
+                        "message": "'measures' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Observations"
+                },
+                [
+                    {
+                        "message": "'http://gss-data.org.uk/def/trade/measure/count' is not recognised by csvcubed.",
+                        "json_path": "$.measure.from_existing",
+                        "offending_value": "http://gss-data.org.uk/def/trade/measure/count",
+                        "schema_validator_type": "enum",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Units_New"
+                },
+                [
+                    {
+                        "message": "'units' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    },
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "$ref": "#/definitions/v1.0/columnTypes/Units_Existing"
+                },
+                [
+                    {
+                        "message": "'units' was expected",
+                        "json_path": "$.type",
+                        "offending_value": "observations",
+                        "schema_validator_type": "const",
+                        "children": []
+                    },
+                    {
+                        "message": "Additional properties are not allowed ('measure', 'unit' were unexpected)",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "additionalProperties",
+                        "children": []
+                    }
+                ]
+            ],
+            [
+                {
+                    "description": "This column will be present in the CSV but will not be converted to RDF",
+                    "type": "boolean",
+                    "const": false
+                },
+                [
+                    {
+                        "message": "{'type': 'observations', 'unit': {'label': 'Number', 'from_existing': 'http://qudt.org/vocab/unit/NUM'}, 'measure': {'label': 'Pounds', 'from_existing': 'http://gss-data.org.uk/def/trade/measure/count'}} is not of type 'boolean'",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "type",
+                        "children": []
+                    },
+                    {
+                        "message": "False was expected",
+                        "json_path": "$",
+                        "offending_value": {
+                            "type": "observations",
+                            "unit": {
+                                "label": "Number",
+                                "from_existing": "http://qudt.org/vocab/unit/NUM"
+                            },
+                            "measure": {
+                                "label": "Pounds",
+                                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                            }
+                        },
+                        "schema_validator_type": "const",
+                        "children": []
+                    }
+                ]
+            ]
+        ]
+    }
+]
