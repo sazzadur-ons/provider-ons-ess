@@ -1,0 +1,85 @@
+
+- This file is a data cube.
+
+- The data cube has the following catalog metadata:
+        - Title: Gross Disposable Household Income per Household
+        - Label: Gross Disposable Household Income per Household
+        - Issued: 2023-02-02T12:15:50.561875
+        - Modified: 2023-02-02T12:15:50.561875
+        - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+        - Creator: https://www.gov.uk/government/organisations/office-for-national-statistics
+        - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: 
+		-- modelling
+		-- subnational
+		-- model
+		-- income
+		-- output
+		-- united-kingdom
+        - Contact Point: None
+        - Identifier: Gross Disposable Household Income per Household
+        - Comment: Gross Disposable Household Income per Household, 1997 to 2020
+        - Description: Gross Disposable Household Income per Household, 1997 to 2020
+        
+
+- The data cube has the following data structure definition:
+        - Dataset Label: Gross Disposable Household Income per Household
+        - Number of Components: 8
+        - Components:
+                                                               Property Property Label Property Type Column Title Observation Value Column Titles  Required
+     gross-disposable-household-income-per-household.csv#dimension/year           Year     Dimension       Period                     Observation      True
+                http://purl.org/linked-data/sdmx/2009/dimension#refArea                    Dimension         Area                     Observation      True
+  gross-disposable-household-income-per-household.csv#dimension/mission        Mission     Dimension      Mission                     Observation      True
+ gross-disposable-household-income-per-household.csv#dimension/category       Category     Dimension     Category                     Observation      True
+gross-disposable-household-income-per-household.csv#dimension/indicator      Indicator     Dimension    Indicator                     Observation      True
+                           http://purl.org/linked-data/cube#measureType                    Dimension                                                   True
+            http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure                    Attribute                                  Observation      True
+     gross-disposable-household-income-per-household.csv#measure/pounds         Pounds       Measure  Observation                     Observation      True
+        - Columns where suppress output is true: 
+		-- Uri Identifier
+
+- The data cube has the following code list information:
+        - Number of Code Lists: 4
+        - Code Lists:
+              Code List Code List Label Columns Used In
+ category.csv#code-list        Category        Category
+indicator.csv#code-list       Indicator       Indicator
+  mission.csv#code-list         Mission         Mission
+     year.csv#code-list            Year          Period
+
+- The data cube has the following dataset information:
+        - Number of Rows: 9432
+        - Number of Duplicates: 72
+        - First 10 Rows: 
+ Period      Area                                                         Mission                                            Category                                  Indicator  Observation
+   1997 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      10757.0
+   1998 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      10998.0
+   1999 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      11498.0
+   2000 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      12216.0
+   2001 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      12631.0
+   2002 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      12951.0
+   2003 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      13277.0
+   2004 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      13785.0
+   2005 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      14333.0
+   2006 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      14937.0
+        - Last 10 Rows: 
+ Period      Area                                                         Mission                                            Category                                  Indicator  Observation
+   2011 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      14100.0
+   2012 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      14670.0
+   2013 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      14816.0
+   2014 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      15316.0
+   2015 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      15859.0
+   2016 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      16077.0
+   2017 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      16387.0
+   2018 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      17303.0
+   2019 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      17307.0
+   2020 W06000022 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      17655.0
+        
+
+- The data cube has the following value counts:
+        - Value counts broken-down by measure and unit (of measure):
+Measure Unit  Count
+ Pounds    £   9432
+        

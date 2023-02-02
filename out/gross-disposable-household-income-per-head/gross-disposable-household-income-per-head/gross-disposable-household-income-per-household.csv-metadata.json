@@ -1,0 +1,865 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "gross-disposable-household-income-per-household.csv#dataset",
+    "tables": [
+        {
+            "url": "gross-disposable-household-income-per-household.csv",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "titles": "Period",
+                        "name": "period",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/year",
+                        "valueUrl": "year.csv#{+period}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Area",
+                        "name": "area",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+area}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Mission",
+                        "name": "mission",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/mission",
+                        "valueUrl": "mission.csv#{+mission}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Category",
+                        "name": "category",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/category",
+                        "valueUrl": "category.csv#{+category}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Indicator",
+                        "name": "indicator",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/indicator",
+                        "valueUrl": "indicator.csv#{+indicator}",
+                        "required": true
+                    },
+                    {
+                        "titles": "Observation",
+                        "name": "observation",
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#measure/pounds",
+                        "datatype": "decimal",
+                        "required": true
+                    },
+                    {
+                        "name": "virt_slice",
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Slice"
+                    },
+                    {
+                        "name": "virt_slice_structure",
+                        "virtual": true,
+                        "propertyUrl": "qb:sliceStructure",
+                        "valueUrl": "gross-disposable-household-income-per-household.csv#slice/cross-measures"
+                    },
+                    {
+                        "name": "virt_obs_observation",
+                        "virtual": true,
+                        "propertyUrl": "qb:observation",
+                        "valueUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds"
+                    },
+                    {
+                        "name": "virt_obs_observation_meas",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "qb:measureType",
+                        "valueUrl": "gross-disposable-household-income-per-household.csv#measure/pounds"
+                    },
+                    {
+                        "name": "virt_obs_observation_unit",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "gross-disposable-household-income-per-household.csv#unit/ps"
+                    },
+                    {
+                        "name": "virt_dim_observation_period",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/year",
+                        "valueUrl": "year.csv#{+period}"
+                    },
+                    {
+                        "name": "virt_dim_observation_area",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+                        "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{+area}"
+                    },
+                    {
+                        "name": "virt_dim_observation_mission",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/mission",
+                        "valueUrl": "mission.csv#{+mission}"
+                    },
+                    {
+                        "name": "virt_dim_observation_category",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/category",
+                        "valueUrl": "category.csv#{+category}"
+                    },
+                    {
+                        "name": "virt_dim_observation_indicator",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "gross-disposable-household-income-per-household.csv#dimension/indicator",
+                        "valueUrl": "indicator.csv#{+indicator}"
+                    },
+                    {
+                        "name": "virt_obs_observation_type",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "qb:Observation"
+                    },
+                    {
+                        "name": "virt_dataSet_observation",
+                        "virtual": true,
+                        "aboutUrl": "gross-disposable-household-income-per-household.csv#obs/{period},{area},{mission},{category},{indicator}@pounds",
+                        "propertyUrl": "qb:dataSet",
+                        "valueUrl": "gross-disposable-household-income-per-household.csv#dataset"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": "period",
+                        "reference": {
+                            "resource": "year.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "mission",
+                        "reference": {
+                            "resource": "mission.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "category",
+                        "reference": {
+                            "resource": "category.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    },
+                    {
+                        "columnReference": "indicator",
+                        "reference": {
+                            "resource": "indicator.csv",
+                            "columnReference": "uri_identifier"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "period",
+                    "area",
+                    "mission",
+                    "category",
+                    "indicator"
+                ],
+                "aboutUrl": "gross-disposable-household-income-per-household.csv#slice/{period},{area},{mission},{category},{indicator}"
+            }
+        },
+        {
+            "url": "year.csv",
+            "tableSchema": "year.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "mission.csv",
+            "tableSchema": "mission.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "category.csv",
+            "tableSchema": "category.table.json",
+            "suppressOutput": true
+        },
+        {
+            "url": "indicator.csv",
+            "tableSchema": "indicator.table.json",
+            "suppressOutput": true
+        }
+    ],
+    "rdfs:seeAlso": [
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/area",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dimension/year",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "year.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#class/year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/unit",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#attribute": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentRequired": [
+                {
+                    "@value": true
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 7
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#class/mission",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/ns/prov#Activity",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.2.2"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#measure/pounds",
+            "@type": [
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Pounds"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/mission",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/mission"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/mission"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dataset",
+            "@type": [
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://purl.org/linked-data/cube#DataSet",
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#Attachable"
+            ],
+            "http://purl.org/dc/terms/creator": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/office-for-national-statistics"
+                }
+            ],
+            "http://purl.org/dc/terms/description": [
+                {
+                    "@type": "https://www.w3.org/ns/iana/media-types/text/markdown#Resource",
+                    "@value": "Gross Disposable Household Income per Household, 1997 to 2020"
+                }
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Gross Disposable Household Income per Household"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-02-02T12:15:50.561875"
+                }
+            ],
+            "http://purl.org/dc/terms/license": [
+                {
+                    "@id": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-02-02T12:15:50.561875"
+                }
+            ],
+            "http://purl.org/dc/terms/publisher": [
+                {
+                    "@id": "https://www.gov.uk/government/organisations/office-for-national-statistics"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Gross Disposable Household Income per Household"
+                }
+            ],
+            "http://purl.org/linked-data/cube#structure": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#structure"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#comment": [
+                {
+                    "@language": "en",
+                    "@value": "Gross Disposable Household Income per Household, 1997 to 2020"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Gross Disposable Household Income per Household"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#keyword": [
+                {
+                    "@language": "en",
+                    "@value": "model"
+                },
+                {
+                    "@language": "en",
+                    "@value": "united-kingdom"
+                },
+                {
+                    "@language": "en",
+                    "@value": "subnational"
+                },
+                {
+                    "@language": "en",
+                    "@value": "income"
+                },
+                {
+                    "@language": "en",
+                    "@value": "modelling"
+                },
+                {
+                    "@language": "en",
+                    "@value": "output"
+                }
+            ],
+            "http://www.w3.org/ns/dcat#theme": [
+                {
+                    "@id": "sub-national data"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#class/year",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#class/indicator",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#class/category",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dimension/indicator",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "indicator.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Indicator"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#class/indicator"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dimension/mission",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "mission.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Mission"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#class/mission"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dimension/category",
+            "@type": [
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "category.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Category"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#class/category"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/pounds",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#measure/pounds"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#measure/pounds"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 8
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/indicator",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/indicator"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/indicator"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 1
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#slice/cross-measures",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#SliceKey"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/mission"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/category"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/indicator"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/year"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#component/category",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/category"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/category"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#structure",
+            "@type": [
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#component": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/indicator"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/measure-type"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/year"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/pounds"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/unit"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/mission"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/category"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#component/area"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/category"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#measure/pounds"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/indicator"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/year"
+                },
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#dimension/mission"
+                }
+            ],
+            "http://purl.org/linked-data/cube#sliceKey": [
+                {
+                    "@id": "gross-disposable-household-income-per-household.csv#slice/cross-measures"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dependency/year",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./year.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "year.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dependency/mission",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./mission.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "mission.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dependency/category",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./category.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "category.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#dependency/indicator",
+            "@type": [
+                "http://rdfs.org/ns/void#Dataset",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://rdfs.org/ns/void#dataDump": [
+                {
+                    "@id": "./indicator.csv-metadata.json"
+                }
+            ],
+            "http://rdfs.org/ns/void#uriSpace": [
+                {
+                    "@value": "indicator.csv#"
+                }
+            ]
+        },
+        {
+            "@id": "gross-disposable-household-income-per-household.csv#unit/ps",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+            ],
+            "http://qudt.org/schema/qudt/hasQuantityKind": [
+                {
+                    "@id": "http://qudt.org/vocab/quantitykind/Currency"
+                }
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PoundSterling"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "\u00a3"
+                }
+            ]
+        }
+    ]
+}
