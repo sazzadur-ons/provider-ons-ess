@@ -1,9 +1,0 @@
-Uri Identifier,Label,Notation,Parent Uri Identifier,Sort Priority,Description
-council-area,Council Area,council-area,,0,
-country,Country,country,,1,
-local-government-district,Local Government District,local-government-district,,2,
-london-borough,London Borough,london-borough,,3,
-metropolitan-district,Metropolitan District,metropolitan-district,,4,
-non-metropolitan-district,Non-metropolitan District,non-metropolitan-district,,5,
-region,Region,region,,6,
-unitary-authority,Unitary Authority,unitary-authority,,7,
