@@ -35,9 +35,4 @@ def wrangle(input: Path(), output: Path()) -> None:
 
 if __name__ == "__main__":
 
-    df = pd.read_excel("2_2023_GDHIperhead.xlsx")
-    df.to_csv('gross-disposable-household-income-per-head.csv', index = False)
-
-    #I don't know whether this will work but it's worth a punt
-
     wrangle()
