@@ -4,8 +4,8 @@
 - The code list has the following catalog metadata:
         - Title: Mission
         - Label: Mission
-        - Issued: 2023-02-02T12:29:17.390798
-        - Modified: 2023-02-02T12:29:17.390798
+        - Issued: 2023-02-02T12:37:17.319730
+        - Modified: 2023-02-02T12:37:17.319730
         - License: None
         - Creator: None
         - Publisher: None
