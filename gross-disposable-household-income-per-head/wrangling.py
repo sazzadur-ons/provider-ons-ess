@@ -27,7 +27,11 @@ def wrangle(input: Path(), output: Path()) -> None:
     #Indicator seems to just be measure type but unsure if to be used to compare datasets
     #no idea what mission is used for but keeping it in regardless
 
-    #Unsure whether to remove Indicator and include it as the measure in in the config       
+    #Unsure whether to remove Indicator and include it as the measure in in the config    
+     
+    df = df.drop_duplicates()
+
+    #for some reason there are 1to1 dupes   
     
     df.to_csv(output, index=False)
     return
