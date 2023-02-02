@@ -32,10 +32,6 @@
         "Indicator": {
             "type": "dimension"
         },      
-        "Value": {
-            "type": "observations",
-            "data_type": "float"
-        },
         "Observation": {
             "type": "observations",
             "unit": {
