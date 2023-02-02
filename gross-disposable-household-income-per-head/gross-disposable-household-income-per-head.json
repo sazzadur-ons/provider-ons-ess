@@ -1,9 +1,9 @@
 {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
-    "title": "Gross Disposable Household Income per Household",
+    "title": "Gross Disposable Household Income per Head",
     "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
-    "summary": "Gross Disposable Household Income per Household, 1997 to 2020",
-    "description": "Gross Disposable Household Income per Household, 1997 to 2020",
+    "summary": "Gross Disposable Household Income per Head, 1997 to 2020",
+    "description": "Gross Disposable Household Income per Head, 1997 to 2020",
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "keywords": [
         "subnational",
