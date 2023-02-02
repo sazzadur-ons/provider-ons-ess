@@ -4,8 +4,8 @@
 - The data cube has the following catalog metadata:
         - Title: Gross Disposable Household Income per Head
         - Label: Gross Disposable Household Income per Head
-        - Issued: 2023-02-02T12:29:17.400270
-        - Modified: 2023-02-02T12:29:17.400270
+        - Issued: 2023-02-02T12:37:17.331086
+        - Modified: 2023-02-02T12:37:17.331086
         - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
         - Creator: https://www.gov.uk/government/organisations/office-for-national-statistics
         - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
@@ -13,11 +13,11 @@
         - Themes: None
         - Keywords: 
 		-- model
-		-- subnational
-		-- united-kingdom
 		-- modelling
-		-- output
+		-- united-kingdom
 		-- income
+		-- output
+		-- subnational
         - Contact Point: None
         - Identifier: Gross Disposable Household Income per Head
         - Comment: Gross Disposable Household Income per Head, 1997 to 2020
@@ -50,8 +50,8 @@ indicator.csv#code-list       Indicator       Indicator
      year.csv#code-list            Year          Period
 
 - The data cube has the following dataset information:
-        - Number of Rows: 9432
-        - Number of Duplicates: 72
+        - Number of Rows: 9360
+        - Number of Duplicates: 0
         - First 10 Rows: 
  Period      Area                                                         Mission                                            Category                                  Indicator  Observation
    1997 K02000001 mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards gross-disposable-household-income-per-head      10757.0
@@ -81,5 +81,5 @@ indicator.csv#code-list       Indicator       Indicator
 - The data cube has the following value counts:
         - Value counts broken-down by measure and unit (of measure):
 Measure Unit  Count
- Pounds    £   9432
+ Pounds    £   9360
         
