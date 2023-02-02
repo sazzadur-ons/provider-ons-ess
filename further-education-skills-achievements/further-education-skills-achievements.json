@@ -1,0 +1,52 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Further Education Skills Achievements",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "summary": "Further Education Skills Achievements 2011 to 2020",
+    "description": "Further Education Skills Achievements 2011 to 2020",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "subnational",
+        "education",
+        "united-kingdom",
+        "model",
+        "modelling",
+        "output"
+    ],
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "themes": [
+        "sub-national data"
+    ],
+    "columns": {
+        "Period": {
+            "type": "dimension",
+            "cell_uri_template": "http://reference.data.gov.uk/id/{+period}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+        },
+        "Area": {
+            "type": "dimension",
+            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+area}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"        
+        },
+        "Mission": {
+            "type": "dimension"
+        }, 
+        "Category": {
+            "type": "dimension"
+        },   
+        "Indicator": {
+            "type": "dimension"
+        },      
+        "Observation": {
+            "type": "observations",
+            "unit": {
+                "label": "Number",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
+            },
+            "measure": {
+                "label": "Pounds",
+                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+            }
+        }
+    }
+}
