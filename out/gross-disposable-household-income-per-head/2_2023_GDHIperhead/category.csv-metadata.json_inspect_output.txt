@@ -1,0 +1,35 @@
+
+- This file is a code list.
+
+- The code list has the following catalog metadata:
+        - Title: Category
+        - Label: Category
+        - Issued: 2023-02-02T11:52:42.176638
+        - Modified: 2023-02-02T11:52:42.176638
+        - License: None
+        - Creator: None
+        - Publisher: None
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: None
+        - Contact Point: None
+        - Identifier: Category
+        - Comment: None
+        - Description: None
+        
+
+- The code list has the following dataset information:
+        - Number of Concepts: 1
+        - Number of Duplicates: 0
+        - Concepts: 
+                                     Uri Identifier                                                 Label                                            Notation  Parent Uri Identifier  Sort Priority  Description
+boosting-productivity-pay-jobs-and-living-standards Boosting productivity, pay, jobs and living standards boosting-productivity-pay-jobs-and-living-standards                    NaN              0          NaN
+        
+
+- The code list has the following concepts information:
+        - Concepts hierarchy depth: 1
+        - Concepts hierarchy:
+root
+└── Boosting productivity, pay, jobs and living standards
+
+        

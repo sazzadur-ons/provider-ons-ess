@@ -1,0 +1,49 @@
+
+- This file is a code list.
+
+- The code list has the following catalog metadata:
+        - Title: Geography
+        - Label: Geography
+        - Issued: 2023-02-02T11:52:42.163902
+        - Modified: 2023-02-02T11:52:42.163902
+        - License: None
+        - Creator: None
+        - Publisher: None
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: None
+        - Contact Point: None
+        - Identifier: Geography
+        - Comment: None
+        - Description: None
+        
+
+- The code list has the following dataset information:
+        - Number of Concepts: 8
+        - Number of Duplicates: 0
+        - Concepts: 
+           Uri Identifier                     Label                  Notation  Parent Uri Identifier  Sort Priority  Description
+             council-area              Council Area              council-area                    NaN              0          NaN
+                  country                   Country                   country                    NaN              1          NaN
+local-government-district Local Government District local-government-district                    NaN              2          NaN
+           london-borough            London Borough            london-borough                    NaN              3          NaN
+    metropolitan-district     Metropolitan District     metropolitan-district                    NaN              4          NaN
+non-metropolitan-district Non-metropolitan District non-metropolitan-district                    NaN              5          NaN
+                   region                    Region                    region                    NaN              6          NaN
+        unitary-authority         Unitary Authority         unitary-authority                    NaN              7          NaN
+        
+
+- The code list has the following concepts information:
+        - Concepts hierarchy depth: 1
+        - Concepts hierarchy:
+root
+├── Council Area
+├── Country
+├── Local Government District
+├── London Borough
+├── Metropolitan District
+├── Non-metropolitan District
+├── Region
+└── Unitary Authority
+
+        

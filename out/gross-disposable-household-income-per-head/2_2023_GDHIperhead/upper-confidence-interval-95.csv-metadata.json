@@ -1,0 +1,64 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "upper-confidence-interval-95.csv#code-list",
+    "url": "upper-confidence-interval-95.csv",
+    "tableSchema": "upper-confidence-interval-95.table.json",
+    "rdfs:seeAlso": [
+        {
+            "@id": "upper-confidence-interval-95.csv#code-list",
+            "@type": [
+                "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+                "http://www.w3.org/ns/dcat#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/ns/prov#Entity"
+            ],
+            "http://purl.org/dc/terms/identifier": [
+                {
+                    "@value": "Upper Confidence Interval (95%)"
+                }
+            ],
+            "http://purl.org/dc/terms/issued": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-02-02T11:52:42.186304"
+                }
+            ],
+            "http://purl.org/dc/terms/modified": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    "@value": "2023-02-02T11:52:42.186304"
+                }
+            ],
+            "http://purl.org/dc/terms/title": [
+                {
+                    "@language": "en",
+                    "@value": "Upper Confidence Interval (95%)"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Upper Confidence Interval (95%)"
+                }
+            ],
+            "http://www.w3.org/ns/prov#wasGeneratedBy": [
+                {
+                    "@id": "upper-confidence-interval-95.csv#csvcubed-build-activity"
+                }
+            ]
+        },
+        {
+            "@id": "upper-confidence-interval-95.csv#csvcubed-build-activity",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/ns/prov#Activity"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.2.2"
+                }
+            ]
+        }
+    ]
+}

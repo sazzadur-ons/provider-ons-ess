@@ -1,0 +1,94 @@
+
+- This file is a data cube.
+
+- The data cube has the following catalog metadata:
+        - Title: 2 2023 Gdhiperhead
+        - Label: 2 2023 Gdhiperhead
+        - Issued: 2023-02-02T11:52:42.195560
+        - Modified: 2023-02-02T11:52:42.195560
+        - License: None
+        - Creator: None
+        - Publisher: None
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: None
+        - Contact Point: None
+        - Identifier: 2 2023 Gdhiperhead
+        - Comment: None
+        - Description: None
+        
+
+- The data cube has the following data structure definition:
+        - Dataset Label: 2 2023 Gdhiperhead
+        - Number of Components: 15
+        - Components:
+                                                     Property                  Property Label Property Type                    Column Title Observation Value Column Titles  Required
+                      2-2023-gdhiperhead.csv#dimension/areacd                          AREACD     Dimension                          AREACD                                      True
+                      2-2023-gdhiperhead.csv#dimension/areanm                          AREANM     Dimension                          AREANM                                      True
+                   2-2023-gdhiperhead.csv#dimension/geography                       Geography     Dimension                       Geography                                      True
+               2-2023-gdhiperhead.csv#dimension/variable-name                   Variable Name     Dimension                   Variable Name                                      True
+                   2-2023-gdhiperhead.csv#dimension/indicator                       Indicator     Dimension                       Indicator                                      True
+                     2-2023-gdhiperhead.csv#dimension/mission                         Mission     Dimension                         Mission                                      True
+                    2-2023-gdhiperhead.csv#dimension/category                        Category     Dimension                        Category                                      True
+                      2-2023-gdhiperhead.csv#dimension/period                          Period     Dimension                          Period                                      True
+                 http://purl.org/linked-data/cube#measureType                                     Dimension                         Measure                                      True
+                        2-2023-gdhiperhead.csv#measure/pounds                          Pounds       Measure                                                                      True
+  http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure                                     Attribute                            Unit                                      True
+2-2023-gdhiperhead.csv#dimension/lower-confidence-interval-95 Lower Confidence Interval (95%)     Dimension Lower Confidence Interval (95%)                                      True
+2-2023-gdhiperhead.csv#dimension/upper-confidence-interval-95 Upper Confidence Interval (95%)     Dimension Upper Confidence Interval (95%)                                      True
+          2-2023-gdhiperhead.csv#dimension/observation-status              Observation Status     Dimension              Observation Status                                      True
+                    2-2023-gdhiperhead.csv#dimension/polarity                        Polarity     Dimension                        Polarity                                      True
+        - Columns where suppress output is true: 
+		-- Uri Identifier
+
+- The data cube has the following code list information:
+        - Number of Code Lists: 12
+        - Code Lists:
+                                 Code List                 Code List Label                 Columns Used In
+                      areacd.csv#code-list                          AREACD                          AREACD
+                      areanm.csv#code-list                          AREANM                          AREANM
+                    category.csv#code-list                        Category                        Category
+                   geography.csv#code-list                       Geography                       Geography
+                   indicator.csv#code-list                       Indicator                       Indicator
+lower-confidence-interval-95.csv#code-list Lower Confidence Interval (95%) Lower Confidence Interval (95%)
+                     mission.csv#code-list                         Mission                         Mission
+          observation-status.csv#code-list              Observation Status              Observation Status
+                      period.csv#code-list                          Period                          Period
+                    polarity.csv#code-list                        Polarity                        Polarity
+upper-confidence-interval-95.csv#code-list Upper Confidence Interval (95%) Upper Confidence Interval (95%)
+               variable-name.csv#code-list                   Variable Name                   Variable Name
+
+- The data cube has the following dataset information:
+        - Number of Observations: 9432
+        - Number of Duplicates: 72
+        - First 10 Observations: 
+   AREACD         AREANM Geography                              Variable Name                                  Indicator                                                         Mission                                            Category  Period   Value Measure Unit Lower Confidence Interval (95%) Upper Confidence Interval (95%) Observation Status  Polarity
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    1997 10757.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    1998 10998.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    1999 11498.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2000 12216.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2001 12631.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2002 12951.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2003 13277.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2004 13785.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2005 14333.0  pounds   ps                              na                              na       normal-value         1
+k02000001 united-kingdom   country gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2006 14937.0  pounds   ps                              na                              na       normal-value         1
+        - Last 10 Observations: 
+   AREACD  AREANM         Geography                              Variable Name                                  Indicator                                                         Mission                                            Category  Period   Value Measure Unit Lower Confidence Interval (95%) Upper Confidence Interval (95%) Observation Status  Polarity
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2011 14100.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2012 14670.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2013 14816.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2014 15316.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2015 15859.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2016 16077.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2017 16387.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2018 17303.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2019 17307.0  pounds   ps                              na                              na       normal-value         1
+w06000022 newport unitary-authority gross-disposable-household-income-per-head gross-disposable-household-income-per-head mission-1-closing-the-gap-in-median-employment-and-productivity boosting-productivity-pay-jobs-and-living-standards    2020 17655.0  pounds   ps                              na                              na       normal-value         1
+        
+
+- The data cube has the following value counts:
+        - Value counts broken-down by measure and unit (of measure):
+Measure Unit  Count
+ pounds   ps   9432
+        
