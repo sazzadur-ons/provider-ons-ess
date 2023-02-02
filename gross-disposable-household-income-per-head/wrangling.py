@@ -8,7 +8,7 @@ from pathlib import Path
 @click.argument("input", type=click.Path(exists=True, path_type=Path))
 @click.option("--output", default=Path("./output.csv"), type=click.Path(path_type=Path))
 def wrangle(input: Path(), output: Path()) -> None:
-    df = pd.read_excel(input, skiprows=[0])
+    df = pd.read_excel(input)
 
     df = df.drop(columns=['AREANM', 'Geography', 'Variable Name', 'Lower Confidence Interval (95%)', 'Upper Confidence Interval (95%)', 'Observation Status', 'Polarity', 'Notes'])
 
