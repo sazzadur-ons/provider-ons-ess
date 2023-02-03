@@ -45,7 +45,7 @@
             },
             "measure": {
                 "label": "Pounds",
-                "from_existing": "http://gss-data.org.uk/def/trade/measure/count"
+                "from_existing": "http://gss-data.org.uk/def/measure/count"
             }
         }
     }
