@@ -4,8 +4,8 @@
 - The code list has the following catalog metadata:
         - Title: Indicator
         - Label: Indicator
-        - Issued: 2023-02-02T14:39:34.776615
-        - Modified: 2023-02-02T14:39:34.776615
+        - Issued: 2023-02-03T11:54:44.913343
+        - Modified: 2023-02-03T11:54:44.913343
         - License: None
         - Creator: None
         - Publisher: None

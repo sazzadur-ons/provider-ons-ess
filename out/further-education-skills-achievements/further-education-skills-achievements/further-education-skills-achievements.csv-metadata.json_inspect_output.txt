@@ -4,20 +4,20 @@
 - The data cube has the following catalog metadata:
         - Title: Further Education Skills Achievements
         - Label: Further Education Skills Achievements
-        - Issued: 2023-02-02T14:39:34.779887
-        - Modified: 2023-02-02T14:39:34.779887
+        - Issued: 2023-02-03T11:54:44.916783
+        - Modified: 2023-02-03T11:54:44.916783
         - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
         - Creator: https://www.gov.uk/government/organisations/office-for-national-statistics
         - Publisher: https://www.gov.uk/government/organisations/office-for-national-statistics
         - Landing Pages: None
         - Themes: None
         - Keywords: 
-		-- united-kingdom
-		-- output
-		-- model
-		-- education
 		-- subnational
+		-- education
+		-- output
 		-- modelling
+		-- united-kingdom
+		-- model
         - Contact Point: None
         - Identifier: Further Education Skills Achievements
         - Comment: Further Education Skills Achievements 2011 to 2020
