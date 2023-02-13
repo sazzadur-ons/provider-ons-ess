@@ -1,9 +1,9 @@
 {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
-    "title": "Further Education Skills Achievements",
+    "title": "19+ further education and skills learner achievements (qualifications) excluding community learning, multiply and bootcamps",
     "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
-    "summary": "Further Education Skills Achievements 2011 to 2020",
-    "description": "Further Education Skills Achievements 2011 to 2020",
+    "summary": "Aged 19 years and over further education and skills learner achievements",
+    "description": "Count of learners achieving a funded further education and skills learning aim, with the exception of community learning",
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "keywords": [
         "subnational",
