@@ -32,7 +32,13 @@
         },   
         "Indicator": {
             "type": "dimension"
-        },      
+        },
+        "Lower Confidence Interval (95%)":{
+            "type": "attribute"
+        },
+        "Upper Confidence Interval (95%)":{
+            "type": "attribute"
+        }, 
         "Observation": {
             "type": "observations",
             "unit": {
