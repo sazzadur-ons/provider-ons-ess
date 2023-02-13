@@ -1,0 +1,49 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Gross median weekly pay",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "summary": "Gross median weekly pay",
+    "description": "Average (median) weekly pay, based on where people live",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "subnational",
+        "education",
+        "united-kingdom",
+        "model",
+        "modelling",
+        "output"
+    ],
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "themes": [
+        "sub-national data"
+    ],
+    "columns": {
+        "Period": {
+            "from_template": "year"
+        },
+        "Area": {
+            "from_template": "statistical-geography"      
+        },
+        "Mission": {
+            "type": "dimension"
+        }, 
+        "Category": {
+            "type": "dimension"
+        },   
+        "Indicator": {
+            "type": "dimension"
+        },      
+        "Observation": {
+            "type": "observations",
+            "unit": {
+                "label": "£",
+                "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
+                "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency"
+            },
+            "measure": {
+                "label": "Pounds",
+                "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+            }
+        }
+    }
+}
