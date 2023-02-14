@@ -1,0 +1,51 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Average travel time to nearest employment centre with 500 to 4999 jobs available by car",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "summary": "Drive to employment centre with 500 to 4999 jobs",
+    "description": "Average travel time in minutes to nearest employment centre with 500 to 4999 jobs available by car",
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "keywords": [
+        "transport",
+        "employment",
+        "united-kingdom",
+        "model",
+        "modelling",
+        "output"
+    ],
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "themes": [
+        "sub-national-data"
+    ],
+    "columns": {
+        "Period": {
+            "from_template": "year"
+        },
+        "Area": {
+            "from_template": "statistical-geography"       
+        },
+        "Mission": {
+            "type": "dimension"
+        }, 
+        "Category": {
+            "type": "dimension"
+        },   
+        "Indicator": {
+            "type": "dimension"
+        },      
+        "Observation": {
+            "type": "observations",
+            "unit": {
+                "label": "Number",
+                "from_existing": "http://qudt.org/vocab/unit/MIN"
+            },
+            "measure": {
+                "label": "Minutes",
+                "from_existing": "http://gss-data.org.uk/def/measure/count"
+            }
+        },
+        "Notes": {
+            "type": "attribute"
+        }
+    }
+}
