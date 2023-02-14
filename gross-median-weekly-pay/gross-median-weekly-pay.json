@@ -7,7 +7,7 @@
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "keywords": [
         "subnational",
-        "education",
+        "income",
         "united-kingdom",
         "model",
         "modelling",
@@ -15,7 +15,7 @@
     ],
     "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
     "themes": [
-        "sub-national data"
+        "sub-national-data"
     ],
     "columns": {
         "Period": {
