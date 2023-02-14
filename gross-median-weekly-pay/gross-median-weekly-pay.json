@@ -44,12 +44,16 @@
             "unit": {
                 "label": "£",
                 "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
+                "scaling_factor": 1,
                 "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency"
             },
             "measure": {
-                "label": "Pounds",
-                "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                "label": "median-weekly-pay",
+                "from_existing": "http://gss-data.org.uk/def/measure/median-income"
             }
+        },
+        "Marker": {
+            "from_template": "observation-status"
         }
     }
 }
