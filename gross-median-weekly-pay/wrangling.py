@@ -2,6 +2,7 @@ import click
 import pandas as pd
 import math
 from pathlib import Path
+import numpy as np
 
 
 @click.command()
@@ -19,8 +20,16 @@ def wrangle(input: Path(), output: Path()) -> None:
     #Notes are all empty, can add any of these back if needed
 
     df = df.rename(columns= {'AREACD':'Area', 'Value':'Observation'})
+    # print(np.NaN in df["Observation"].unique())
+    # print(df["Observation"].isnull().to_csv("null_values.csv"), index = False)
 
-    df = df[['Period', 'Area', 'Mission', 'Category', 'Indicator', 'Observation', 'Lower Confidence Interval (95%)', 'Upper Confidence Interval (95%)']]
+    df["Marker"] = ''
+    
+    df.loc[(df["Observation"].isnull()), "Marker"] = "N/A"
+
+    print(df["Marker"].unique())
+
+    df = df[['Period', 'Area', 'Mission', 'Category', 'Indicator', 'Observation', 'Marker', 'Lower Confidence Interval (95%)', 'Upper Confidence Interval (95%)']]
 
     #Not sure whether to keep in Indicator or Mission
     #Indicator seems to just be measure type but unsure if to be used to compare datasets
@@ -29,7 +38,6 @@ def wrangle(input: Path(), output: Path()) -> None:
 
     df.to_csv(output, index=False)
     return
-
 
 if __name__ == "__main__":
 
