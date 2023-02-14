@@ -20,21 +20,18 @@ def wrangle(input: Path(), output: Path()) -> None:
     #Notes are all empty, can add any of these back if needed
 
     df = df.rename(columns= {'AREACD':'Area', 'Value':'Observation'})
-    # print(np.NaN in df["Observation"].unique())
-    # print(df["Observation"].isnull().to_csv("null_values.csv"), index = False)
 
+    # Add marker column as there are missing values in observation column
     df["Marker"] = ''
     
     df.loc[(df["Observation"].isnull()), "Marker"] = "N/A"
-
-    print(df["Marker"].unique())
 
     df = df[['Period', 'Area', 'Mission', 'Category', 'Indicator', 'Observation', 'Marker', 'Lower Confidence Interval (95%)', 'Upper Confidence Interval (95%)']]
 
     #Not sure whether to keep in Indicator or Mission
     #Indicator seems to just be measure type but unsure if to be used to compare datasets
     #no idea what mission is used for but keeping it in regardless
-    #Unsure whether to remove Indicator and include it as the measure in in the config
+    #Unsure whether to remove Indicator and include it as the measure in the config
 
     df.to_csv(output, index=False)
     return
