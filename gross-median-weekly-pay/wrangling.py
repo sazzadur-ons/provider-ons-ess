@@ -2,7 +2,6 @@ import click
 import pandas as pd
 import math
 from pathlib import Path
-import numpy as np
 
 
 @click.command()
